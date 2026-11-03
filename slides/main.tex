@@ -1,4 +1,5 @@
 % !TEX program = xelatex
+% !BIB program = biber
 % =====================================================================
 %  Beamer template — adapted from weibo-hot/paper/pre/journal.club
 %  Compile with XeLaTeX + Biber:  latexmk -xelatex main.tex
@@ -7,7 +8,9 @@
 \documentclass[]{beamer}
 \usetheme{Berlin}
 \usepackage{hyperref}
+\hypersetup{colorlinks=true,urlcolor=blue,linkcolor=.,citecolor=.,filecolor=.}
 \usepackage{graphicx}   % figures
+\graphicspath{{../figures/}}
 \usepackage{multicol}   % multi-column layouts
 \usepackage{booktabs}   % tables
 \usepackage{subfigure}  % sub-figures
@@ -22,6 +25,8 @@
 \usetikzlibrary{shapes,decorations,arrows,calc,arrows.meta,fit,positioning}
 
 \setbeamertemplate{caption}{\raggedright\insertcaption\par}
+\setbeamerfont{caption}{size=\tiny}   % captions: tiny + gray
+\setbeamercolor{caption}{fg=gray}
 \setbeamertemplate{footline}{}
 \tikzset{
   -Latex,auto,node distance =1 cm and 1 cm,semithick,
@@ -111,7 +116,20 @@
 % ---------- Helper macros ----------
 \providecommand{\tabfnm}[1]{\textsuperscript{#1}}  % apa7 marker used by \input tables
 \newcommand{\hlt}[1]{\textcolor{red}{\textbf{#1}}}
-\newcommand{\citegray}[1]{{\tiny\textcolor{gray}{\parencite{#1}}}}
+% Citation styling: footnotes and \parencite are gray + tiny everywhere;
+% \textcite keeps the surrounding text style (black, normal size in body text).
+\setbeamerfont{footnote}{size=\tiny}
+\setbeamercolor{footnote}{fg=gray}
+\setbeamercolor{footnote mark}{fg=gray}
+\newcommand{\mkgrayparens}[1]{{\tiny\color{gray}\mkbibparens{#1}}}
+\DeclareCiteCommand{\parencite}[\mkgrayparens]
+  {\usebibmacro{cite:init}\usebibmacro{prenote}\toggletrue{apa:inpcite}}
+  {\usebibmacro{citeindex}\usebibmacro{cite}\usebibmacro{cite:post}}
+  {}
+  {\usebibmacro{postnote}\togglefalse{apa:inpcite}}
+\DeclareMultiCiteCommand{\parencites}[\mkgrayparens]{\parencite}{\setunit{\multicitedelim}}
+\newcommand{\citegray}[1]{\parencite{#1}}  % legacy alias
+\newcommand{\sourcenote}[1]{{\let\thefootnote\relax\footnotetext{#1}}}  % unnumbered gray/tiny footnote
 \newcommand{\referencesize}{\tiny}
 \renewcommand*{\bibfont}{\referencesize}
 
@@ -127,7 +145,7 @@
 \newcommand{\sectionframe}[1]{\section{#1}\dividerframe{#1}}
 
 % ---------- Title page ----------
-\title[AI in Quantitative Social Research]{Using AI Responsibly in Quantitative Social Research}
+\title[AI in Quantitative Social Research]{Responsibly deploy AI in Quantitative Social Research}
 \author[Rongxin Ouyang]{Rongxin Ouyang$^{*}$}
 \institute{\textcolor{gray}{
     $^{*}$ PhD Candidate in Computational Communication, National University of Singapore; rongxin@u.nus.edu\\
@@ -138,8 +156,22 @@ Research Interest: Using causal and computational methods to evaluate societal a
 
 \frame{\titlepage}
 
+\begin{frame}
+  \frametitle{The goal of this session}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.48\textwidth}
+        \large \textcolor{gray}{... lower barrier (of computational skills) ... redistribution of  expertise ... } ``For students, the question is no longer whether they can \textcolor{orange}{code}, but whether they can \textcolor{blue}{audit, critique, adapt, and responsibly deploy} AI-assisted methods without mistaking convenience''
+    \column{0.5\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth]{responsively.use.png}
+        \caption{Source: \textcite{zhou2026be} (pp.~4--5)}
+      \end{figure}
+  \end{columns}
+\end{frame}
+
 % =====================================================================
-\sectionframe{AI: A Bigger Picture}
+\sectionframe{Introduction}
 % =====================================================================
 
 \begin{frame}
@@ -171,38 +203,66 @@ Research Interest: Using causal and computational methods to evaluate societal a
   \frametitle{A Brief History of AI}
   \footnotesize
   \begin{itemize}
-    \item \textbf{1950s} Turing test (1950); ``AI'' coined at the Dartmouth workshop (1956)
-    \item \textbf{1960s--80s} Symbolic AI and expert systems; two ``AI winters''
-    \item \textbf{1990s--2000s} Statistical machine learning: learning rules from data
-    \item \textbf{2012} Deep learning breakthrough in image recognition
-    \item \textbf{2017} Transformer architecture
-    \item \textbf{2018--2020} Pre-trained language models (BERT, GPT-2, GPT-3)
-    \item \textbf{2022--} ChatGPT; \hlt{general-purpose LLMs} enter everyday research practice
-  \end{itemize}
-\end{frame}
-
-% =====================================================================
-\sectionframe{Pre-LLM AI for Quantitative Research}
-% =====================================================================
-
-\begin{frame}
-  \frametitle{Pre-LLM: Machine Learning as a Measurement Tool}
+    \item Observation: Artificial intelligence is a general field developed decades ago (singple-poatrone); Early tools mainly classified, clustered, or predicted from human-produced traces \parencite{zhou2026be}.
+    \item Roughly into pre-LLM and LLM eras for the goal of this session
   \begin{itemize}
-    \item \textbf{Supervised learning}: hand-label a sample, train a classifier, scale up
-    \item \textbf{Unsupervised learning}: topic models, clustering, word embeddings
-    \item \textbf{Text, images, and networks as data}~\citegray{king2013how}
-    \item \textbf{ML for causal inference}: heterogeneous effects, high-dimensional controls
+    \item Before the introduction of Transformers \parencite{vaswani2017attention}, a model structure designed to parallelize training, we have traditional machine learning models such as logistic regression, SVMs, and early neural networks
+    \item After the introduction of Transformers, large-scale pre-trained language models such as BERT and GPT series became prominent, enabling more general-purpose natural language understanding and generation tasks, such as generative language models and conversational agents
+    \item Specifically, we focuse on the LLM era post-2020 \parencite[marked by GPT-3; ][]{xu2026large} and its implications for computational social science research
   \end{itemize}
-  ~\\
-  \textcolor{gray}{Common thread: task-specific models, labeled data, and a researcher-built pipeline}
+  \end{itemize}
 \end{frame}
 
 % =====================================================================
-\sectionframe{LLMs for Quantitative Research}
+\sectionframe{Pre-LLMs AI}
 % =====================================================================
 
 \begin{frame}
-  \frametitle{Three Roles of LLMs in Research}
+  \frametitle{The use of Pre-LLM AI in Quantitative Social Research}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.5\textwidth}
+      \setbeamerfont{itemize/enumerate body}{size=\footnotesize}
+      \footnotesize
+      \begin{itemize}
+        \item \textbf{Supervised learning}: hand-label a sample, train a classifier, scale up
+        \item \textbf{Unsupervised learning}: topic models, clustering, word embeddings
+        \item \textbf{Text, images, and networks as data}~\citegray{king2013how}
+        \item \textbf{ML for causal inference}: heterogeneous effects, high-dimensional controls
+      \end{itemize}
+      ~\\
+      \textcolor{gray}{Common thread: task-specific models, labeled data, and a researcher-built pipeline}
+    \column{0.48\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth]{use.pre.llm.png}
+        \caption{Source: \textcite{grimmer2022text} (p.23) }
+      \end{figure}
+  \end{columns}
+\end{frame}
+
+% =====================================================================
+\sectionframe{LLMs}
+% =====================================================================
+
+\begin{frame}
+  \frametitle{Roles of LLMs in Computational Social Science}
+  \begin{center}
+    \itemize{
+      \item A recent review article suggests four roles of LLMs in computational social science: Subject, Assistant, Collaborator, Evaluator
+    }
+    \end{center}
+    \begin{figure}
+      \includegraphics[width=\linewidth]{../figures/review.tab.1.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Roles of LLMs in Computational Social Science}
+  \begin{center}
+    \itemize{
+      \item By adopting more recent perspectives, we may propose a more comprehensive categorization of LLM roles in CSS; to be elaborated in the following slides
+    }
+  \end{center}
   \begin{center}
     \begin{tikzpicture}[-Latex]
       \node[block, minimum width=2.4cm, minimum height=0.9cm] (s) at (0,0)   {\small \textbf{Subject}};
@@ -217,18 +277,109 @@ Research Interest: Using causal and computational methods to evaluate societal a
       \path (ml) edge (a) (ml) edge (c) (ml) edge (e);
     \end{tikzpicture}
   \end{center}
+  \sourcenote{Source: Four roles (subjects, assistants, collaborators, evaluators) categorized in \textcite{xu2026large}; four categories thought from \textcite{liang2026computational}; and two roles (a research tool, an object of inquiry) adapted from \textcite{zhou2026be}}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{AI as Subject: Categories}
+      \footnotesize
+      \begin{itemize}
+        \item LLMs serve as research subjects
+        \begin{itemize}
+          \item Generate survey responses 
+          \item Simulating behavior sequences
+          \item Simulating social interactions
+        \end{itemize}
+      \end{itemize}
 \end{frame}
 
 \begin{frame}
-  \frametitle{LLM as Subject}
-  \begin{itemize}
-    \item \textbf{Silicon samples}: simulated survey respondents conditioned on personas
-    \item \textbf{Simulated experiments}: pilot designs and power checks before fielding
-    \item \textbf{Agent-based simulation}: populations of LLM agents interacting
-  \end{itemize}
-  ~\\
-  \textcolor{gray}{Key question: when do simulated responses track real human behavior?}
+  \frametitle{AI as Subject: Pros and Cons}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.6\textwidth}
+      \footnotesize
+      \begin{itemize}
+        \item \textbf{Pros:}
+      \begin{itemize}
+      \item Successfully replicate human responses \parencite{argyle2023out}
+      \end{itemize}
+    \end{itemize}
+    \column{0.4\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.9\linewidth]{../figures/gpt.lucid.png}
+        \caption{Analysis of GPT-3 and human responses from the Lucid su; Fig 3 in \textcite{argyle2023out}}
+      \end{figure}
+  \end{columns}
 \end{frame}
+
+
+\begin{frame}
+  \frametitle{AI as Subject: Pros and Cons}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.7\textwidth}
+      \footnotesize
+      \begin{itemize}
+      \item \textbf{Cons:}
+      \begin{itemize}
+        \item Poorly refelcting ``hard-to-reach \textcolor{red}{populations}'' \parencite{bollen2026nationally}; fail to capture experiential and cultural depth \parencite{pataranutaporn2025simulating}
+        \item Reflect certain partisan \parencite{santurkar2023whose} or cultural \textcolor{red}{biases} \parencite{tao2024cultural}
+        \item Closed to averages but less \textcolor{red}{variation} \parencite{bisbee2024synthetica}; have strong, varying biases and have low-variance in opinnion or attitudinal research\parencite{boelaert2025machine}; likely to both misportray and flatten demographic representations \parencite{wang2025large}; and tend to compress heterogeneity into
+simplified typological structures \parencite{xie2025variance}
+      \end{itemize}
+    \end{itemize}
+    \column{0.3\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth]{../figures/cultural.bias.png}
+        \caption{Deviated LLM-generated answers related to values compared with different countries; Fig 1 in \textcite{tao2024cultural}}
+      \end{figure}
+  \end{columns}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{AI as Subject: Pros and Cons}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.7\textwidth}
+      \footnotesize
+      \begin{itemize}
+      \item \textbf{Cons:}
+      \begin{itemize}
+        \item Poorly refelcting ``hard-to-reach \textcolor{red}{populations}'' \parencite{bollen2026nationally}; fail to capture experiential and cultural depth \parencite{pataranutaporn2025simulating}
+        \item Reflect certain partisan \parencite{santurkar2023whose} or cultural \textcolor{red}{biases} \parencite{tao2024cultural}
+        \item Closed to averages but less \textcolor{red}{variation} \parencite{bisbee2024synthetica}; have strong, varying biases and have low-variance in opinnion or attitudinal research\parencite{boelaert2025machine}; likely to both misportray and flatten demographic representations \parencite{wang2025large}; and tend to compress heterogeneity into
+simplified typological structures \parencite{xie2025variance}
+      \end{itemize}
+    \end{itemize}
+    \column{0.3\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth]{../figures/xie.eval.part.png}
+        \caption{Failing to capture the dispersion of real-world distribution; Fig 3 in \textcite{xie2025variance}}
+      \end{figure}
+  \end{columns}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{AI as Subject: Validation}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.7\textwidth}
+      \footnotesize
+      \begin{itemize}
+      \item \textbf{Cons:}
+      \begin{itemize}
+      \end{itemize}
+    \end{itemize}
+    \column{0.3\textwidth}
+      \begin{figure}
+        \centering
+      \end{figure}
+  \end{columns}
+\end{frame}
+
 
 \begin{frame}
   \frametitle{LLM as Method: Assistant}
@@ -259,10 +410,52 @@ Research Interest: Using causal and computational methods to evaluate societal a
   \begin{itemize}
     \item \textbf{Annotation}: zero- and few-shot text classification at scale
     \item \textbf{LLM-as-judge}: scoring quality, stance, or similarity
-    \item \textbf{Review}: feedback on manuscripts, code, and reproducibility
+    \item \textbf{Review}: 
+    \item \textbf{Replication}: To scale up reproducibility of empirical work \parencite{xu2026scaling} 
   \end{itemize}
-  ~\\
-  \textcolor{gray}{Must be validated against human-coded benchmarks}
+\end{frame}
+
+\begin{frame}
+  \frametitle{LLM as Method: Choose the Right Tool}
+      \small
+      \begin{itemize}
+        \item Consider a model as a function, $f(data, algo, object)$, the differences in each part would substantially shape their in-domain capabilities (like better coding or writing)
+        \item In this sense, we may need to choose different models for different tasks, depending on their strengths and limitations
+      \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{LLM as Method: Choose the Right Tool}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.48\textwidth}
+      \small
+      \begin{itemize}
+        \item For example, you may expect \textcolor{blue}{Gemini Carbon} to excel in writing tasks whereas Claude Opus 5.5 outperforms in engineering
+      \end{itemize}
+    \column{0.5\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.8\linewidth]{bench.writing.png}
+        \caption{Source: \url{https://arena.ai/leaderboard/chat/text} (Nov 3, 2026)}
+      \end{figure}
+  \end{columns}
+\end{frame}
+\begin{frame}
+  \frametitle{LLM as Method: Choose the Right Tool}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.48\textwidth}
+      \small
+      \begin{itemize}
+        \item For example, you may expect Gemini Carbon to excel in writing tasks whereas \textcolor{orange}{Claude Opus 5.5} outperforms in engineering
+        \item In general, model labs have different commercialization models, for business model optimized for engineering tasks may prioritize coding capabilities (e.g., Anthropic); please check benchmarks / review the literature / do a pilot test before using a model
+      \end{itemize}
+    \column{0.5\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.8\linewidth]{bench.coding.png}
+        \caption{Source: \url{https://artificialanalysis.ai/agents/coding-agents\#coding-agents-index} (Nov 3, 2026)}
+      \end{figure}
+  \end{columns}
 \end{frame}
 
 \begin{frame}
@@ -290,35 +483,92 @@ Research Interest: Using causal and computational methods to evaluate societal a
   \end{enumerate}
 \end{frame}
 
+% % =====================================================================
+% \sectionframe{Forward-looking}
+% % =====================================================================
+
+% \begin{frame}
+%   \frametitle{Recent Advances}
+%   \begin{itemize}
+%     \item \textbf{Model transparency}: prefer open-weight models and document versions
+%   \end{itemize}
+%   ~\\
+%   \textcolor{gray}{From AI as a tool to AI as a research partner---with guardrails}
+% \end{frame}
+
 % =====================================================================
-\sectionframe{Looking Forward}
+\sectionframe{Takeaways}
 % =====================================================================
 
 \begin{frame}
-  \frametitle{Looking Forward: Responsible Use}
+  \frametitle{Takeaways}
   \begin{itemize}
-    \item \textbf{Disclose}: model, version, prompts, parameters, and date
-    \item \textbf{Validate}: compare against human benchmarks before scaling
-    \item \textbf{Reproduce}: pin versions; prefer open-weight models when possible
-    \item \textbf{Stay accountable}: humans own the design, inference, and claims
+    \item AI models (which includes LLMs) can be subjects, objects, and \textcolor{blue}{methods} in quantitative social research
+    \item \textcolor{blue}{As methods}, they are expected to be used in a responsible way in which validity, reproducibility, bias, hallucination, ethics, and over-reliance are carefully considered
+    \item \textcolor{blue}{Like any other methods}, they evolve in a quick (and potentially quicker pace), but our tastes of good questions remain relatively central to research (and industrial jobs)
+    \item ``... Be skeptic... don't panic!'' \parencite{angrist2009mostly}
   \end{itemize}
-  ~\\
-  \textcolor{gray}{From AI as a tool to AI as a research partner---with guardrails}
 \end{frame}
 
 
-{
-  \setbeamercolor{background canvas}{bg=black}
-  \begin{frame}
-    \begin{center}
-      \Huge{\textcolor{white}{Acknowledgments}}
-    \end{center}
-    \vspace{1cm}
-    \normalsize{\textcolor{white}{We thank \ldots. All errors are our own.}}
-  \end{frame}
-}
+\begin{frame}
+  \frametitle{Takeaways}
+  \begin{itemize}
+    \item ``... Be skeptic... don't panic!'' \parencite{angrist2009mostly}
+  \end{itemize}
+  \begin{figure}
+    \includegraphics[width=1\textwidth]{../figures/dont.panic.png}
+    \caption{Source: \textcite{angrist2009mostly}}
+  \end{figure}
+\end{frame}
 
-\dividerframe{References}
+% =====================================================================
+\sectionframe{Resources}
+% =====================================================================
+
+\begin{frame}
+  \frametitle{Resources}
+  \begin{itemize}
+      \item Locate the most appropriate AI model for your task
+        \begin{itemize}
+          \item Artificial analysis \url{https://artificialanalysis.ai/}
+          \item Arena.ai, blind benchmarking for AI models \url{https://arena.ai/leaderboard/}
+        \end{itemize}
+      \item Find problems in your manuscript
+        \begin{itemize}
+          \item Refine, publication-level technical review; adopted by AEA \url{https://www.refine.ink/}
+          \item OpenAIReview, opensource solution of multi-agent manuscript review by UChicago HAI \url{https://github.com/ChicagoHAI/OpenAIReview}
+          \end{itemize}
+      \item Doublecheck references and citations
+        \begin{itemize}
+          \item CiteVerify, ``a local tool for verifying references in research papers'', \url{https://github.com/cuihuash/CiteVerify}
+          \end{itemize}
+      \item Manage multiple AI models and services
+        \begin{itemize}
+          \item For macOS, magpie, local AI router management for mac \url{https://github.com/yetone/magpie} 
+          \item For other platforms, cc-switch, \url{https://github.com/farion1231/cc-switch}
+        \end{itemize}
+      \item Read scientific literature using your own language
+        \begin{itemize}
+          \item PDFMathReader, read scientific PDFs in your language \url{https://github.com/PDFMathTranslate/PDFMathReader}
+        \end{itemize}
+  \end{itemize}
+\end{frame}
+
+
+
+% {
+%   \setbeamercolor{background canvas}{bg=black}
+%   \begin{frame}
+%     \begin{center}
+%       \Huge{\textcolor{white}{Acknowledgments}}
+%     \end{center}
+%     \vspace{1cm}
+%     \normalsize{\textcolor{white}{We thank \ldots. All errors are our own.}}
+%   \end{frame}
+% }
+
+\sectionframe{References}
 
 \begin{frame}[allowframebreaks]
   \frametitle{References}

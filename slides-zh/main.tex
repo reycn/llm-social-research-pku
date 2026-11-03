@@ -1,4 +1,5 @@
 % !TEX program = xelatex
+% !BIB program = biber
 % =====================================================================
 %  Chinese translation of ../slides/main.tex — keep frame structure in sync
 %  Compile: ttx main   (xelatex + biber + xelatex x2)
@@ -8,6 +9,7 @@
 \usetheme{Berlin}
 \usepackage{hyperref}
 \usepackage{graphicx}   % figures
+\graphicspath{{../figures/}}
 \usepackage{multicol}   % multi-column layouts
 \usepackage{booktabs}   % tables
 \usepackage{subfigure}  % sub-figures
@@ -22,6 +24,8 @@
 \usetikzlibrary{shapes,decorations,arrows,calc,arrows.meta,fit,positioning}
 
 \setbeamertemplate{caption}{\raggedright\insertcaption\par}
+\setbeamerfont{caption}{size=\tiny}   % captions: tiny + gray
+\setbeamercolor{caption}{fg=gray}
 \setbeamertemplate{footline}{}
 \tikzset{
   -Latex,auto,node distance =1 cm and 1 cm,semithick,
@@ -113,7 +117,20 @@
 % ---------- Helper macros ----------
 \providecommand{\tabfnm}[1]{\textsuperscript{#1}}  % apa7 marker used by \input tables
 \newcommand{\hlt}[1]{\textcolor{red}{\textbf{#1}}}
-\newcommand{\citegray}[1]{{\tiny\textcolor{gray}{\parencite{#1}}}}
+% Citation styling: footnotes and \parencite are gray + tiny everywhere;
+% \textcite keeps the surrounding text style (black, normal size in body text).
+\setbeamerfont{footnote}{size=\tiny}
+\setbeamercolor{footnote}{fg=gray}
+\setbeamercolor{footnote mark}{fg=gray}
+\newcommand{\mkgrayparens}[1]{{\tiny\color{gray}\mkbibparens{#1}}}
+\DeclareCiteCommand{\parencite}[\mkgrayparens]
+  {\usebibmacro{cite:init}\usebibmacro{prenote}\toggletrue{apa:inpcite}}
+  {\usebibmacro{citeindex}\usebibmacro{cite}\usebibmacro{cite:post}}
+  {}
+  {\usebibmacro{postnote}\togglefalse{apa:inpcite}}
+\DeclareMultiCiteCommand{\parencites}[\mkgrayparens]{\parencite}{\setunit{\multicitedelim}}
+\newcommand{\citegray}[1]{\parencite{#1}}  % legacy alias
+\newcommand{\sourcenote}[1]{{\let\thefootnote\relax\footnotetext{#1}}}  % unnumbered gray/tiny footnote
 \newcommand{\referencesize}{\tiny}
 \renewcommand*{\bibfont}{\referencesize}
 
@@ -139,6 +156,20 @@
 \begin{document}
 
 \frame{\titlepage}
+
+\begin{frame}
+  \frametitle{计算研究中的转变}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.48\textwidth}
+        \large \textcolor{gray}{……（计算技能）门槛降低……专业知识的重新分配……} “对学生而言，问题不再是他们能否\textcolor{orange}{编程}，而是他们能否\textcolor{blue}{审视、批判、调整并负责任地部署} AI 辅助方法，而不把便利误当作……”
+    \column{0.5\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth]{responsively.use.png}
+        \caption{来源：\textcite{zhou2026be}（第 4--5 页）}
+      \end{figure}
+  \end{columns}
+\end{frame}
 
 % =====================================================================
 \sectionframe{人工智能：宏观图景}
@@ -173,6 +204,8 @@
   \frametitle{人工智能简史}
   \footnotesize
   \begin{itemize}
+    \item 观察：人工智能是一个已发展数十年的综合性领域
+  \begin{itemize}
     \item \textbf{1950 年代} 图灵测试（1950）；达特茅斯会议首次提出“人工智能”（1956）
     \item \textbf{1960--80 年代} 符号主义人工智能与专家系统；两次“AI 寒冬”
     \item \textbf{1990--2000 年代} 统计机器学习：从数据中学习规则
@@ -181,6 +214,7 @@
     \item \textbf{2018--2020} 预训练语言模型（BERT、GPT-2、GPT-3）
     \item \textbf{2022--} ChatGPT；\hlt{通用大语言模型}进入日常科研实践
   \end{itemize}
+  \end{itemize}
 \end{frame}
 
 % =====================================================================
@@ -188,15 +222,25 @@
 % =====================================================================
 
 \begin{frame}
-  \frametitle{前大模型时代：机器学习作为测量工具}
-  \begin{itemize}
-    \item \textbf{监督学习}：人工标注样本，训练分类器，再推广到全样本
-    \item \textbf{无监督学习}：主题模型、聚类、词嵌入
-    \item \textbf{文本、图像与网络即数据}~\citegray{king2013how}
-    \item \textbf{机器学习用于因果推断}：异质性效应、高维控制变量
-  \end{itemize}
-  ~\\
-  \textcolor{gray}{共同特点：针对特定任务的模型、依赖标注数据、由研究者搭建流程}
+  \frametitle{前大模型时代 AI 在定量社会科学研究中的应用}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.5\textwidth}
+      \footnotesize
+      \begin{itemize}
+        \item \textbf{监督学习}：人工标注样本，训练分类器，再推广到全样本
+        \item \textbf{无监督学习}：主题模型、聚类、词嵌入
+        \item \textbf{文本、图像与网络即数据}~\citegray{king2013how}
+        \item \textbf{机器学习用于因果推断}：异质性效应、高维控制变量
+      \end{itemize}
+      ~\\
+      \textcolor{gray}{共同特点：针对特定任务的模型、依赖标注数据、由研究者搭建流程}
+    \column{0.48\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth]{use.pre.llm.png}
+        \caption{来源：\textcite{grimmer2022text}（第 23 页）}
+      \end{figure}
+  \end{columns}
 \end{frame}
 
 % =====================================================================
@@ -204,7 +248,7 @@
 % =====================================================================
 
 \begin{frame}
-  \frametitle{大语言模型在研究中的三种角色}
+  \frametitle{大语言模型在计算社会科学中的角色}
   \begin{center}
     \begin{tikzpicture}[-Latex]
       \node[block, minimum width=2.4cm, minimum height=0.9cm] (s) at (0,0)   {\small \textbf{研究主体}};
@@ -219,6 +263,28 @@
       \path (ml) edge (a) (ml) edge (c) (ml) edge (e);
     \end{tikzpicture}
   \end{center}
+  \sourcenote{来源：四种角色（研究主体、助手、合作者、评估者）的分类见 \textcite{xu2026large}；两种角色（研究工具、研究对象）改编自 \textcite{zhou2026be}}
+\end{frame}
+
+\begin{frame}
+  \frametitle{AI 作为研究主体}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.45\textwidth}
+      \footnotesize
+      \begin{itemize}
+        \item \textbf{硅基样本}：以人物设定为条件的模拟问卷受访者
+        \item \textbf{模拟实验}：正式施测前预演设计、检验统计功效
+        \item \textbf{基于智能体的仿真}：大量大语言模型智能体相互作用
+      \end{itemize}
+      ~\\
+      \textcolor{gray}{关键问题：模拟的回答何时能够反映真实的人类行为？}
+    \column{0.53\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth]{ai.communication.png}
+        \caption{来源： \url{https://drhailiang.com/}}
+      \end{figure}
+  \end{columns}
 \end{frame}
 
 \begin{frame}

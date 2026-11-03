@@ -1,4 +1,4 @@
-PWD /Users/rongxin/Developer/acad/ai-quant-method-pku/slides
+PWD /Users/rongxin/Developer/acad/ai-quant-method-pku/slides-zh
 INPUT /usr/local/texlive/2026/texmf.cnf
 INPUT /usr/local/texlive/2026/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2026/texmf-var/web2c/xetex/xelatex.fmt
@@ -525,6 +525,12 @@ INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 OUTPUT main.xdv
+INPUT ../figures/responsively.use.png
+INPUT ../figures/responsively.use.png
+INPUT ../figures/use.pre.llm.png
+INPUT ../figures/use.pre.llm.png
+INPUT ../figures/ai.communication.png
+INPUT ../figures/ai.communication.png
 OUTPUT main.nav
 OUTPUT main.toc
 OUTPUT main.snm
