@@ -1,0 +1,385 @@
+% !TEX program = xelatex
+% =====================================================================
+%  Beamer template — adapted from weibo-hot/paper/pre/journal.club
+%  Compile with XeLaTeX + Biber:  latexmk -xelatex main.tex
+% =====================================================================
+% \documentclass[draft]{beamer}
+\documentclass[]{beamer}
+\usetheme{Berlin}
+\usepackage{hyperref}
+\usepackage{graphicx}   % figures
+\usepackage{multicol}   % multi-column layouts
+\usepackage{booktabs}   % tables
+\usepackage{subfigure}  % sub-figures
+\usepackage{xcolor}
+\usepackage{color}
+\usepackage{csquotes}
+\usepackage{xltxtra}
+\usepackage{xelatexemoji}
+\usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
+\addbibresource{refs.bib}
+\usepackage{tikz}       % DAG graphs
+\usetikzlibrary{shapes,decorations,arrows,calc,arrows.meta,fit,positioning}
+
+\setbeamertemplate{caption}{\raggedright\insertcaption\par}
+\setbeamertemplate{footline}{}
+\tikzset{
+  -Latex,auto,node distance =1 cm and 1 cm,semithick,
+  state/.style ={ellipse, draw, minimum width = 0.7 cm},
+  block/.style ={rectangle, draw, minimum width = 0.7 cm},
+  point/.style = {circle, draw, inner sep=0.04cm,fill,node contents={}},
+  bidirected/.style={Latex-Latex},
+  el/.style = {inner sep=2pt, align=left, sloped}
+}
+
+% ---------- Colours ----------
+\definecolor{green}{RGB}{62, 138, 46}
+\definecolor{blue}{RGB}{3, 105, 170}
+\definecolor{red}{RGB}{194, 54, 55}
+
+\usecolortheme{beaver}
+
+\definecolor{primary}{RGB}{0,24,49}
+\definecolor{secondary}{RGB}{0,48,96}
+\definecolor{tertiary}{RGB}{94,48,0}
+\definecolor{quaternary}{RGB}{94,48,0}
+\setbeamercolor{titlelike}{parent=palette secondary,fg=white}
+\setbeamercolor{frametitle}{bg=primary!60!white}
+\setbeamercolor{frametitle right}{bg=primary!60!white}
+\setbeamercolor*{palette primary}{bg=primary, fg = white}
+\setbeamercolor*{palette secondary}{bg=secondary, fg = white}
+\setbeamercolor*{palette tertiary}{bg=tertiary, fg = white}
+\setbeamercolor*{palette quaternary}{bg=quaternary, fg = white}
+
+\definecolor{nus_blue}{rgb}{0,0.24,0.49}
+\definecolor{nus_yellow}{rgb}{0.94, 0.48, 0.00}
+\definecolor{nus_yellow_highlight}{rgb}{0.94, 0.48, 0.00}
+
+\setbeamercolor{section in toc}{fg=black,bg=white}
+\setbeamercolor{alerted text}{fg=nus_blue!80!gray}
+\setbeamercolor{navigation symbols}{fg=gray!60!black, bg=gray!10!white}
+\setbeamercolor{navigation symbols dimmed}{fg=gray!50!black}
+\setbeamercolor*{palette primary}{fg=black!60!black,bg=gray!15!white}
+\setbeamercolor*{palette secondary}{fg=black!70!black,bg=gray!15!white}
+\setbeamercolor*{palette tertiary}{bg=black!80!black,fg=gray!10!white}
+\setbeamercolor*{palette quaternary}{fg=black,bg=gray!5!white}
+\setbeamercolor{enumerate item}{fg=black,bg=white}
+\setbeamercolor{itemize item}{fg=black,bg=white}
+\setbeamercolor{item}{fg=black,bg=white}
+\setbeamercolor*{sidebar}{fg=black,bg=gray!15!white}
+
+\setbeamercolor*{palette sidebar primary}{fg=black!10!black}
+\setbeamercolor*{palette sidebar secondary}{fg=white}
+\setbeamercolor*{palette sidebar tertiary}{fg=black!50!black}
+\setbeamercolor*{palette sidebar quaternary}{fg=gray!10!white}
+
+\setbeamercolor{button}{bg=white,fg=black}
+\setbeamercolor{author in head/foot}{bg=black}
+\setbeamercolor{title in head/foot}{bg=black!20}
+\setbeamercolor{titlelike}{bg=black!100!white}
+\setbeamercolor{frametitle}{bg=black!100!white}
+\setbeamercolor{frametitle right}{bg=black!100!white}
+\setbeamercolor{empty}{bg=black}
+
+% ---------- Headline (section navigation) & frame title ----------
+\setbeamertemplate{headline}{%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=3.5ex,dp=3.5ex]{section in head/foot}
+    \insertnavigation{\paperwidth}%
+  \end{beamercolorbox}%
+}
+
+\setbeamertemplate{frametitle}{%
+  \nointerlineskip%
+  \begin{beamercolorbox}[wd=\paperwidth,leftskip=.3cm,rightskip=.3cm plus1fil,vmode]{frametitle}
+    \vskip0.5ex%
+    \usebeamerfont*{frametitle}\strut\insertframetitle\strut\par%
+    \vskip0.05ex%
+  \end{beamercolorbox}%
+}
+
+\setbeamercolor*{separation line}{}
+\setbeamercolor*{fine separation line}{}
+\setbeamercolor{bibliography entry author}{fg=black}
+\setbeamercolor{bibliography entry title}{fg=black}
+\setbeamercolor{bibliography entry location}{fg=black}
+\setbeamercolor{bibliography entry note}{fg=black}
+\setbeamertemplate{bibliography item}{}
+
+% ---------- CJK support ----------
+\usepackage{xeCJK}
+
+% ---------- Helper macros ----------
+\providecommand{\tabfnm}[1]{\textsuperscript{#1}}  % apa7 marker used by \input tables
+\newcommand{\hlt}[1]{\textcolor{red}{\textbf{#1}}}
+\newcommand{\citegray}[1]{{\tiny\textcolor{gray}{\parencite{#1}}}}
+\newcommand{\referencesize}{\tiny}
+\renewcommand*{\bibfont}{\referencesize}
+
+% Black divider slide. \sectionframe{Title} also starts a \section, so the
+% headline navigation highlights correctly. Use \dividerframe{Title} for a
+% divider without a new section (e.g. Acknowledgments, References).
+\newcommand{\dividerframe}[1]{%
+  {\setbeamercolor{background canvas}{bg=black}%
+   \begin{frame}
+     \begin{center}\Huge{\textcolor{white}{#1}}\end{center}
+   \end{frame}}%
+}
+\newcommand{\sectionframe}[1]{\section{#1}\dividerframe{#1}}
+
+% ---------- Title page ----------
+\title[Short Title]{Using AI Responsibly in Quantitative Social Research}
+\author[Rongxin Ouyang]{Presenter Name$^{1\#}$, Coauthor Name$^{1*}$}
+\institute{\textcolor{gray}{
+    $^{\#}$ Presenter. Email: presenter@example.com\\
+    $^{*}$ Corresponding author. Email: corresponding@example.com\\
+    ~\\
+  $^{1}$Affiliation, City\\}}
+\date{\small \textcolor{gray}{\today}}
+
+\begin{document}
+
+\frame{\titlepage}
+
+% =====================================================================
+\sectionframe{Introduction}
+% =====================================================================
+
+\begin{frame}
+  \frametitle{Introduction: Motivation}
+  \begin{itemize}
+    \item A first point with a gray citation~\citegray{king2013how}
+    \item A second point, with a \hlt{highlighted} phrase
+      \begin{itemize}
+        \item A sub-point~\citegray{roberts2018censored}
+        \item A Chinese-language source~\citegray{weibo2026hotlist}
+      \end{itemize}
+  \end{itemize}
+\end{frame}
+
+% Text left, figure right
+\begin{frame}
+  \frametitle{Introduction: Text and Figure}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.6\textwidth}
+      \begin{itemize}
+        \item Prior work finds X \parencite{king2013how}
+        \item \textcolor{gray}{Previously shown point, greyed out for progressive reveal}
+      \end{itemize}
+    \column{0.4\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=1\linewidth]{example-image-a} % replace with fig/xxx.png
+        \caption{\tiny \textcite{king2013how}}
+      \end{figure}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Introduction: Our Approach}
+  \begin{itemize}
+    \item We study \ldots
+    \item We measure \ldots
+    \item We identify \ldots
+    \item We validate \ldots
+  \end{itemize}
+\end{frame}
+
+% =====================================================================
+\sectionframe{Literature}
+% =====================================================================
+
+\begin{frame}
+  \frametitle{Literature 1. Topic}
+  \begin{columns}[T,onlytextwidth]
+    \begin{column}{0.67\textwidth}
+      \footnotesize\let\normalsize\footnotesize
+      \begin{enumerate}
+        \item \textbf{Stage one.} Description \normalsize ~\citegray{king2013how}
+        \item \textbf{Stage two.} Description \normalsize ~\citegray{roberts2018censored}
+      \end{enumerate}
+    \end{column}
+    \begin{column}{0.33\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.92\linewidth]{example-image-b}
+        \caption{\tiny \textcite{roberts2018censored}}
+      \end{figure}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Literature 1. Hypotheses}
+  \small
+  \begin{itemize}
+    \item \textbf{H1. Name.} Statement of the hypothesis
+    \item \textbf{H2. Name.} Statement of the hypothesis
+  \end{itemize}
+  ~\\
+  \begin{center}
+    \begin{tikzpicture}
+      \node[block] (a) at (0,1.6) {\small Mechanism A \tiny (H1)};
+      \node[block] (b) at (0,0) {\small Mechanism B \tiny (H2)};
+      \node[state, minimum width=1.6cm] (y) at (7.2,0.8) {\small $Y$};
+      \path (a) edge node[el,above]{\tiny channel a} (y);
+      \path (b) edge node[el,below]{\tiny channel b} (y);
+    \end{tikzpicture}
+  \end{center}
+\end{frame}
+
+% =====================================================================
+\sectionframe{Data}
+% =====================================================================
+
+\begin{frame}[shrink]
+  \frametitle{Data: Sources}
+  \begin{enumerate}
+    \item \textbf{Dataset A}: description \tiny (coverage, frequency) \normalsize
+      \begin{itemize}
+        \item N observations; key variables
+      \end{itemize}
+    \item \textbf{Dataset B}: description
+  \end{enumerate}
+\end{frame}
+
+% =====================================================================
+\sectionframe{Methods}
+% =====================================================================
+
+\begin{frame}
+  \frametitle{Methods 1: Model}
+  \begin{itemize}
+    \item Unit of analysis: \textbf{unit}
+    \item Estimator~\citegray{king2013how}
+    \small
+    \begin{itemize}
+      \item $x_i$: key regressor
+      \item $z_{it}$: controls
+    \end{itemize}
+  \end{itemize}
+  \begin{equation}
+    y_{it} = \alpha + \beta_1 \textcolor{red}{x_i} + \beta_2 z_{it} + \varepsilon_{it}
+  \end{equation}
+\end{frame}
+
+% =====================================================================
+\sectionframe{Results}
+% =====================================================================
+
+\begin{frame}
+  \frametitle{Results: Overview}
+  \begin{enumerate}
+    \item \textbf{Finding 1}: \ldots
+    \item \textbf{Finding 2}: \ldots
+    \item \textbf{Finding 3}: \ldots
+  \end{enumerate}
+\end{frame}
+
+% Regression table (swap the tabular for \input{../output/tab/xxx.tex})
+\begin{frame}[shrink]
+  \frametitle{Result 1: Main Estimates}
+  \begin{table}
+    \resizebox{0.6\linewidth}{!}{%
+      \begin{tabular}{lccc}
+        \toprule
+                & M1      & M2      & M3      \\
+        \midrule
+        $x_i$   & 0.040\tabfnm{***} & 0.038\tabfnm{***} & 0.034\tabfnm{***} \\
+                & (0.003) & (0.003) & (0.003) \\
+        Controls & No     & Yes     & Yes     \\
+        \bottomrule
+      \end{tabular}
+    }
+  \end{table}
+  \tiny \textcolor{gray}{Note. $^{*} p < .05$, $^{**} p < .01$, $^{***} p < .001$.}
+\end{frame}
+
+% Bullets left, result figure right
+\begin{frame}
+  \frametitle{Result 1: Interpretation}
+  \begin{columns}
+    \column{0.4\textwidth}
+    \footnotesize\let\normalsize\footnotesize
+    \begin{itemize}
+      \item Coefficient is positive \tiny \textcolor{gray}{($.034$, $p < .001$)} \normalsize , about \hlt{3.5\% per SD}
+      \item Second takeaway
+    \end{itemize}
+    \column{0.6\textwidth}
+    \centering
+    \includegraphics[width=0.85\linewidth]{example-image-c}\par
+    \tiny \textcolor{gray}{Figure note in gray.}
+  \end{columns}
+\end{frame}
+
+% =====================================================================
+\sectionframe{Discussion}
+% =====================================================================
+
+\begin{frame}
+  \frametitle{Discussion}
+  \begin{itemize}
+    \item Implication 1
+    \item Implication 2
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Limitations}
+  \begin{enumerate}
+    \item \textbf{Measurement.} \ldots
+    \item \textbf{Identification.} \ldots
+    \item \textbf{Generalizability.} \ldots
+  \end{enumerate}
+\end{frame}
+
+% =====================================================================
+\sectionframe{Supplementary Information}
+% =====================================================================
+
+\begin{frame}
+  \frametitle{SI: Two Sub-Figures}
+  \begin{figure}
+    \subfigure[Panel A]{
+      \begin{minipage}[l]{0.45\linewidth}
+        \includegraphics[width=1\linewidth]{example-image-a}
+      \end{minipage}
+    }
+    \subfigure[Panel B]{
+      \begin{minipage}[l]{0.45\linewidth}
+        \includegraphics[width=1\linewidth]{example-image-b}
+      \end{minipage}
+    }
+  \end{figure}
+\end{frame}
+
+{
+  \setbeamercolor{background canvas}{bg=black}
+  \begin{frame}
+    \begin{center}
+      \Huge{\textcolor{white}{Acknowledgments}}
+    \end{center}
+    \vspace{1cm}
+    \normalsize{\textcolor{white}{We thank \ldots. All errors are our own.}}
+  \end{frame}
+}
+
+\dividerframe{References}
+
+\begin{frame}[allowframebreaks]
+  \frametitle{References}
+  \begingroup
+  \referencesize\color{black}
+  \printbibliography[notkeyword=chinese,heading=none]
+  \endgroup
+\end{frame}
+
+% Entries tagged `keywords = {chinese}` in refs.bib are listed here
+\begin{frame}[allowframebreaks]
+  \frametitle{References (in Chinese)}
+  \begingroup
+  \referencesize\color{black}
+  \printbibliography[keyword=chinese,heading=none]
+  \endgroup
+\end{frame}
+
+\end{document}
