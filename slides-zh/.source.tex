@@ -127,230 +127,185 @@
 \newcommand{\sectionframe}[1]{\section{#1}\dividerframe{#1}}
 
 % ---------- Title page ----------
-\title[Short Title]{Using AI Responsibly in Quantitative Social Research}
-\author[Rongxin Ouyang]{Presenter Name$^{1\#}$, Coauthor Name$^{1*}$}
+\title[AI in Quantitative Social Research]{Using AI Responsibly in Quantitative Social Research}
+\author[Rongxin Ouyang]{Rongxin Ouyang$^{*}$}
 \institute{\textcolor{gray}{
-    $^{\#}$ Presenter. Email: presenter@example.com\\
-    $^{*}$ Corresponding author. Email: corresponding@example.com\\
-    ~\\
-  $^{1}$Affiliation, City\\}}
-\date{\small \textcolor{gray}{\today}}
+    $^{*}$ PhD Candidate in Computational Communication, National University of Singapore; rongxin@u.nus.edu\\
+Research Interest: Using causal and computational methods to evaluate societal and political impacts of digital information technologies}}
+\date{\small \textcolor{gray}{November 5, 2026}}
 
 \begin{document}
 
 \frame{\titlepage}
 
 % =====================================================================
-\sectionframe{Introduction}
+\sectionframe{AI: A Bigger Picture}
 % =====================================================================
 
 \begin{frame}
-  \frametitle{Introduction: Motivation}
-  \begin{itemize}
-    \item A first point with a gray citation~\citegray{king2013how}
-    \item A second point, with a \hlt{highlighted} phrase
-      \begin{itemize}
-        \item A sub-point~\citegray{roberts2018censored}
-        \item A Chinese-language source~\citegray{weibo2026hotlist}
-      \end{itemize}
-  \end{itemize}
-\end{frame}
-
-% Text left, figure right
-\begin{frame}
-  \frametitle{Introduction: Text and Figure}
+  \frametitle{What Is AI?}
   \begin{columns}[T,onlytextwidth]
-    \column{0.6\textwidth}
+    \column{0.55\textwidth}
       \begin{itemize}
-        \item Prior work finds X \parencite{king2013how}
-        \item \textcolor{gray}{Previously shown point, greyed out for progressive reveal}
+        \item ``The science and engineering of making intelligent machines'' \textcolor{gray}{\tiny (McCarthy)}
+        \item Systems that \hlt{perceive} their environment and \hlt{act} to achieve goals
+        \item A nested family of techniques, not a single technology
       \end{itemize}
-    \column{0.4\textwidth}
-      \begin{figure}
-        \centering
-        \includegraphics[width=1\linewidth]{example-image-a} % replace with fig/xxx.png
-        \caption{\tiny \textcite{king2013how}}
-      \end{figure}
+    \column{0.45\textwidth}
+      \begin{center}
+        \begin{tikzpicture}[-,every node/.style={font=\tiny}]
+          \draw[fill=gray!10] (0,0) ellipse (2.2 and 1.6);
+          \draw[fill=gray!25] (0,-0.3) ellipse (1.7 and 1.2);
+          \draw[fill=gray!40] (0,-0.6) ellipse (1.2 and 0.8);
+          \draw[fill=red!30]  (0,-0.85) ellipse (0.7 and 0.45);
+          \node at (0,1.3)   {Artificial Intelligence};
+          \node at (0,0.6)   {Machine Learning};
+          \node at (0,-0.1)  {Deep Learning};
+          \node at (0,-0.85) {LLMs};
+        \end{tikzpicture}
+      \end{center}
   \end{columns}
 \end{frame}
 
 \begin{frame}
-  \frametitle{Introduction: Our Approach}
+  \frametitle{A Brief History of AI}
+  \footnotesize
   \begin{itemize}
-    \item We study \ldots
-    \item We measure \ldots
-    \item We identify \ldots
-    \item We validate \ldots
+    \item \textbf{1950s} Turing test (1950); ``AI'' coined at the Dartmouth workshop (1956)
+    \item \textbf{1960s--80s} Symbolic AI and expert systems; two ``AI winters''
+    \item \textbf{1990s--2000s} Statistical machine learning: learning rules from data
+    \item \textbf{2012} Deep learning breakthrough in image recognition
+    \item \textbf{2017} Transformer architecture
+    \item \textbf{2018--2020} Pre-trained language models (BERT, GPT-2, GPT-3)
+    \item \textbf{2022--} ChatGPT; \hlt{general-purpose LLMs} enter everyday research practice
   \end{itemize}
 \end{frame}
 
 % =====================================================================
-\sectionframe{Literature}
+\sectionframe{Pre-LLM AI for Quantitative Research}
 % =====================================================================
 
 \begin{frame}
-  \frametitle{Literature 1. Topic}
-  \begin{columns}[T,onlytextwidth]
-    \begin{column}{0.67\textwidth}
-      \footnotesize\let\normalsize\footnotesize
-      \begin{enumerate}
-        \item \textbf{Stage one.} Description \normalsize ~\citegray{king2013how}
-        \item \textbf{Stage two.} Description \normalsize ~\citegray{roberts2018censored}
-      \end{enumerate}
-    \end{column}
-    \begin{column}{0.33\textwidth}
-      \begin{figure}
-        \centering
-        \includegraphics[width=0.92\linewidth]{example-image-b}
-        \caption{\tiny \textcite{roberts2018censored}}
-      \end{figure}
-    \end{column}
-  \end{columns}
-\end{frame}
-
-\begin{frame}
-  \frametitle{Literature 1. Hypotheses}
-  \small
+  \frametitle{Pre-LLM: Machine Learning as a Measurement Tool}
   \begin{itemize}
-    \item \textbf{H1. Name.} Statement of the hypothesis
-    \item \textbf{H2. Name.} Statement of the hypothesis
+    \item \textbf{Supervised learning}: hand-label a sample, train a classifier, scale up
+    \item \textbf{Unsupervised learning}: topic models, clustering, word embeddings
+    \item \textbf{Text, images, and networks as data}~\citegray{king2013how}
+    \item \textbf{ML for causal inference}: heterogeneous effects, high-dimensional controls
   \end{itemize}
   ~\\
+  \textcolor{gray}{Common thread: task-specific models, labeled data, and a researcher-built pipeline}
+\end{frame}
+
+% =====================================================================
+\sectionframe{LLMs for Quantitative Research}
+% =====================================================================
+
+\begin{frame}
+  \frametitle{Three Roles of LLMs in Research}
   \begin{center}
-    \begin{tikzpicture}
-      \node[block] (a) at (0,1.6) {\small Mechanism A \tiny (H1)};
-      \node[block] (b) at (0,0) {\small Mechanism B \tiny (H2)};
-      \node[state, minimum width=1.6cm] (y) at (7.2,0.8) {\small $Y$};
-      \path (a) edge node[el,above]{\tiny channel a} (y);
-      \path (b) edge node[el,below]{\tiny channel b} (y);
+    \begin{tikzpicture}[-Latex]
+      \node[block, minimum width=2.4cm, minimum height=0.9cm] (s) at (0,0)   {\small \textbf{Subject}};
+      \node[block, minimum width=2.4cm, minimum height=0.9cm] (m) at (4,0)   {\small \textbf{Method}};
+      \node[block, minimum width=2.4cm, minimum height=0.9cm] (o) at (8,0)   {\small \textbf{Object}};
+      \node[font=\tiny, align=center] at (0,-1) {LLM \emph{stands in}\\for humans};
+      \node[font=\tiny, align=center] (ml) at (4,-1) {LLM \emph{does}\\research work};
+      \node[font=\tiny, align=center] at (8,-1) {LLM \emph{is studied}};
+      \node[state, font=\tiny] (a) at (1.9,-2.6) {Assistant};
+      \node[state, font=\tiny] (c) at (4,-2.6)   {Collaborator};
+      \node[state, font=\tiny] (e) at (6.1,-2.6) {Evaluator};
+      \path (ml) edge (a) (ml) edge (c) (ml) edge (e);
     \end{tikzpicture}
   \end{center}
 \end{frame}
 
-% =====================================================================
-\sectionframe{Data}
-% =====================================================================
-
-\begin{frame}[shrink]
-  \frametitle{Data: Sources}
-  \begin{enumerate}
-    \item \textbf{Dataset A}: description \tiny (coverage, frequency) \normalsize
-      \begin{itemize}
-        \item N observations; key variables
-      \end{itemize}
-    \item \textbf{Dataset B}: description
-  \end{enumerate}
-\end{frame}
-
-% =====================================================================
-\sectionframe{Methods}
-% =====================================================================
-
 \begin{frame}
-  \frametitle{Methods 1: Model}
+  \frametitle{LLM as Subject}
   \begin{itemize}
-    \item Unit of analysis: \textbf{unit}
-    \item Estimator~\citegray{king2013how}
-    \small
-    \begin{itemize}
-      \item $x_i$: key regressor
-      \item $z_{it}$: controls
-    \end{itemize}
+    \item \textbf{Silicon samples}: simulated survey respondents conditioned on personas
+    \item \textbf{Simulated experiments}: pilot designs and power checks before fielding
+    \item \textbf{Agent-based simulation}: populations of LLM agents interacting
   \end{itemize}
-  \begin{equation}
-    y_{it} = \alpha + \beta_1 \textcolor{red}{x_i} + \beta_2 z_{it} + \varepsilon_{it}
-  \end{equation}
+  ~\\
+  \textcolor{gray}{Key question: when do simulated responses track real human behavior?}
 \end{frame}
-
-% =====================================================================
-\sectionframe{Results}
-% =====================================================================
 
 \begin{frame}
-  \frametitle{Results: Overview}
-  \begin{enumerate}
-    \item \textbf{Finding 1}: \ldots
-    \item \textbf{Finding 2}: \ldots
-    \item \textbf{Finding 3}: \ldots
-  \end{enumerate}
-\end{frame}
-
-% Regression table (swap the tabular for \input{../output/tab/xxx.tex})
-\begin{frame}[shrink]
-  \frametitle{Result 1: Main Estimates}
-  \begin{table}
-    \resizebox{0.6\linewidth}{!}{%
-      \begin{tabular}{lccc}
-        \toprule
-                & M1      & M2      & M3      \\
-        \midrule
-        $x_i$   & 0.040\tabfnm{***} & 0.038\tabfnm{***} & 0.034\tabfnm{***} \\
-                & (0.003) & (0.003) & (0.003) \\
-        Controls & No     & Yes     & Yes     \\
-        \bottomrule
-      \end{tabular}
-    }
-  \end{table}
-  \tiny \textcolor{gray}{Note. $^{*} p < .05$, $^{**} p < .01$, $^{***} p < .001$.}
-\end{frame}
-
-% Bullets left, result figure right
-\begin{frame}
-  \frametitle{Result 1: Interpretation}
-  \begin{columns}
-    \column{0.4\textwidth}
-    \footnotesize\let\normalsize\footnotesize
-    \begin{itemize}
-      \item Coefficient is positive \tiny \textcolor{gray}{($.034$, $p < .001$)} \normalsize , about \hlt{3.5\% per SD}
-      \item Second takeaway
-    \end{itemize}
-    \column{0.6\textwidth}
-    \centering
-    \includegraphics[width=0.85\linewidth]{example-image-c}\par
-    \tiny \textcolor{gray}{Figure note in gray.}
-  \end{columns}
-\end{frame}
-
-% =====================================================================
-\sectionframe{Discussion}
-% =====================================================================
-
-\begin{frame}
-  \frametitle{Discussion}
+  \frametitle{LLM as Method: Assistant}
   \begin{itemize}
-    \item Implication 1
-    \item Implication 2
+    \item Writing, debugging, and translating analysis code
+    \item Searching and summarizing literature
+    \item Editing and polishing prose
+    \item Data cleaning and wrangling
+  \end{itemize}
+  ~\\
+  \textcolor{gray}{The researcher specifies the task; the LLM speeds up execution}
+\end{frame}
+
+\begin{frame}
+  \frametitle{LLM as Method: Collaborator}
+  \begin{itemize}
+    \item Brainstorming research questions and hypotheses
+    \item Critiquing research designs and identification strategies
+    \item Proposing measures, robustness checks, and alternative explanations
+    \item Agentic workflows: multi-step analysis with researcher oversight
+  \end{itemize}
+  ~\\
+  \textcolor{gray}{The LLM contributes ideas; the researcher remains accountable}
+\end{frame}
+
+\begin{frame}
+  \frametitle{LLM as Method: Evaluator}
+  \begin{itemize}
+    \item \textbf{Annotation}: zero- and few-shot text classification at scale
+    \item \textbf{LLM-as-judge}: scoring quality, stance, or similarity
+    \item \textbf{Review}: feedback on manuscripts, code, and reproducibility
+  \end{itemize}
+  ~\\
+  \textcolor{gray}{Must be validated against human-coded benchmarks}
+\end{frame}
+
+\begin{frame}
+  \frametitle{LLM as Object}
+  \begin{itemize}
+    \item \textbf{Auditing models}: political slant, social bias, and value alignment
+    \item \textbf{Effects on people}: persuasion, learning, labor, and well-being
+    \item \textbf{Effects on information ecosystems}: AI-generated content and search
   \end{itemize}
 \end{frame}
+
+% =====================================================================
+\sectionframe{Limitations}
+% =====================================================================
 
 \begin{frame}
   \frametitle{Limitations}
   \begin{enumerate}
-    \item \textbf{Measurement.} \ldots
-    \item \textbf{Identification.} \ldots
-    \item \textbf{Generalizability.} \ldots
+    \item \textbf{Validity.} Outputs may not measure what we intend
+    \item \textbf{Reproducibility.} Closed models, silent updates, and stochastic outputs
+    \item \textbf{Bias.} Training data over-represent some groups and languages
+    \item \textbf{Hallucination.} Fabricated facts and citations
+    \item \textbf{Ethics.} Privacy, consent, and data sent to third parties
+    \item \textbf{Over-reliance.} Deskilling and unexamined defaults
   \end{enumerate}
 \end{frame}
 
 % =====================================================================
-\sectionframe{Supplementary Information}
+\sectionframe{Looking Forward}
 % =====================================================================
 
 \begin{frame}
-  \frametitle{SI: Two Sub-Figures}
-  \begin{figure}
-    \subfigure[Panel A]{
-      \begin{minipage}[l]{0.45\linewidth}
-        \includegraphics[width=1\linewidth]{example-image-a}
-      \end{minipage}
-    }
-    \subfigure[Panel B]{
-      \begin{minipage}[l]{0.45\linewidth}
-        \includegraphics[width=1\linewidth]{example-image-b}
-      \end{minipage}
-    }
-  \end{figure}
+  \frametitle{Looking Forward: Responsible Use}
+  \begin{itemize}
+    \item \textbf{Disclose}: model, version, prompts, parameters, and date
+    \item \textbf{Validate}: compare against human benchmarks before scaling
+    \item \textbf{Reproduce}: pin versions; prefer open-weight models when possible
+    \item \textbf{Stay accountable}: humans own the design, inference, and claims
+  \end{itemize}
+  ~\\
+  \textcolor{gray}{From AI as a tool to AI as a research partner---with guardrails}
 \end{frame}
+
 
 {
   \setbeamercolor{background canvas}{bg=black}
@@ -373,13 +328,5 @@
   \endgroup
 \end{frame}
 
-% Entries tagged `keywords = {chinese}` in refs.bib are listed here
-\begin{frame}[allowframebreaks]
-  \frametitle{References (in Chinese)}
-  \begingroup
-  \referencesize\color{black}
-  \printbibliography[keyword=chinese,heading=none]
-  \endgroup
-\end{frame}
 
 \end{document}

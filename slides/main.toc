@@ -1,0 +1,5 @@
+\beamer@sectionintoc {1}{AI: A Bigger Picture}{2}{0}{1}
+\beamer@sectionintoc {2}{Pre-LLM AI for Quantitative Research}{5}{0}{2}
+\beamer@sectionintoc {3}{LLMs for Quantitative Research}{7}{0}{3}
+\beamer@sectionintoc {4}{Limitations}{14}{0}{4}
+\beamer@sectionintoc {5}{Looking Forward}{16}{0}{5}

@@ -1,7 +1,5 @@
-\beamer@sectionintoc {1}{引言}{2}{0}{1}
-\beamer@sectionintoc {2}{文献综述}{6}{0}{2}
-\beamer@sectionintoc {3}{数据}{9}{0}{3}
-\beamer@sectionintoc {4}{研究方法}{11}{0}{4}
-\beamer@sectionintoc {5}{研究结果}{13}{0}{5}
-\beamer@sectionintoc {6}{讨论}{17}{0}{6}
-\beamer@sectionintoc {7}{补充材料}{20}{0}{7}
+\beamer@sectionintoc {1}{人工智能：宏观图景}{2}{0}{1}
+\beamer@sectionintoc {2}{前大模型时代的定量研究 AI}{5}{0}{2}
+\beamer@sectionintoc {3}{大语言模型与定量研究}{7}{0}{3}
+\beamer@sectionintoc {4}{局限性}{14}{0}{4}
+\beamer@sectionintoc {5}{展望}{16}{0}{5}
