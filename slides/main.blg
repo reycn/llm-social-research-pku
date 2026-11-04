@@ -1,0 +1,22 @@
+[0] Config.pm:328> INFO - This is Biber 2.21
+[0] Config.pm:331> INFO - Logfile is 'main.blg'
+[28] biber-darwin:342> INFO - === Thu Nov  5, 2026, 00:57:12
+[36] Biber.pm:421> INFO - Reading 'main.bcf'
+[88] Biber.pm:1002> INFO - Found 70 citekeys in bib section 0
+[97] Biber.pm:4487> INFO - Processing section 0
+[102] Biber.pm:4678> INFO - Looking for bibtex file 'refs.bib' for section 0
+[103] bibtex.pm:1713> INFO - LaTeX decoding ...
+[146] bibtex.pm:1519> INFO - Found BibTeX data source 'refs.bib'
+[537] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[537] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[537] Biber.pm:4307> INFO - Sorting list 'nyt/apasortcite//global/global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[537] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[650] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[650] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[650] Biber.pm:4307> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[650] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[700] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[755] bbl.pm:779> INFO - Output to main.bbl
+[756] Biber.pm:132> WARN - Duplicate entry key: 'jiang2024balanced' in file 'refs.bib', skipping ...
+[756] Biber.pm:132> WARN - Duplicate entry key: 'mukerjee2023metrics' in file 'refs.bib', skipping ...
+[756] Biber.pm:134> INFO - WARNINGS: 2
