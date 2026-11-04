@@ -179,7 +179,7 @@ Using causal and computational methods to evaluate \\societal and political impa
   \frametitle{The goal of this session}
   \begin{columns}[T,onlytextwidth]
     \column{0.48\textwidth}
-        \textcolor{gray}{(... lower barrier (of computational skills) ... redistribution of  expertise ... )} \\``For students, the question is no longer whether they can \textcolor{orange}{code}, but whether they can \textcolor{blue}{audit, critique, adapt, and responsibly deploy} AI-assisted methods without mistaking convenience'' \parencite{zhou2026be}
+        \textcolor{gray}{... lower barrier (of computational skills) ... redistribution of  expertise ... } \\``For students, the question is no longer whether they can \textcolor{orange}{code}, but whether they can \textcolor{blue}{audit, critique, adapt, and responsibly deploy} AI-assisted methods without mistaking convenience...'' \parencite{zhou2026be}
     \column{0.5\textwidth}
       \begin{figure}
         \centering
@@ -286,6 +286,44 @@ Using causal and computational methods to evaluate \\societal and political impa
 \end{frame}
 
 
+
+\begin{frame}
+  \frametitle{Example: Making Laughter}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.5\textwidth}
+      \footnotesize
+      \begin{itemize}
+        \item \textcite{zhao2025making} ask how district media convergence centers fight for public attention on Douyin
+        \item LDA on Douyin posts
+      \end{itemize}
+    \column{0.48\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{ye2023.png}
+        \caption{Source: \textcite{zhao2025making}}
+      \end{figure}
+  \end{columns}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Example: Metrics in action}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.5\textwidth}
+      \footnotesize
+      \begin{itemize}
+        \item \textcite{mukerjee2023metrics} ask how audience engagement metrics shape news organizations' content production on Facebook
+        \item Topic modeling (\textcolor{blue}{discovery}) on all Facebook posts by major U.S. media outlets, combined with longitudinal analysis
+        \item Mannual coding of topic categories
+      \end{itemize}
+    \column{0.48\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{mukerjee.2023.png}
+        \caption{Source: \textcite{mukerjee2023metrics}}
+      \end{figure}
+  \end{columns}
+\end{frame}
 
 % =====================================================================
 \tutframe{*TUT1}{Sentiment classification using RoBERTa\\Online material:\\\textcolor{white}{\hyperlink{https://colab.research.google.com/github/DhavalTaunk08/NLP_scripts/blob/master/sentiment_analysis_using_roberta.ipynb}{Google Colab Link}}}
@@ -691,19 +729,45 @@ simplified typological structures \parencite{xie2025variance}
 
 \begin{frame}
   \frametitle{LLMs deployed responsibly: Validity and Reliability}
-  % \begin{columns}[T,onlytextwidth]
-  %   \column{0.48\textwidth}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.48\textwidth}
       \small
       \begin{itemize}
         \item Again, always verify the validity and reliability of the model outputs before using them in your research
       \end{itemize}
-  %   \column{0.5\textwidth}
-  %     \begin{figure}
-  %       \centering
-  %       \includegraphics[width=0.8\linewidth,height=0.6\textheight,keepaspectratio]{bench.coding.png}
-  %       \caption{Source: \url{https://artificialanalysis.ai/agents/coding-agents\#coding-agents-index} (Nov 3, 2026)}
-  %     \end{figure}
-  % \end{columns}
+    \column{0.5\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{../figures/validity}
+        \caption{Validity and reliability; from \textcite{babbie2021practice}}
+      \end{figure}
+  \end{columns}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{LLMs deployed responsibly: Reproducibility}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.48\textwidth}
+      \small
+      \begin{itemize}
+        \item Reproducibility is important to science
+        \item Ensure that the AI part of your research is reproducible by:
+        \begin{itemize}
+          \item Preferring API-based access over chat-based access
+          \item Documenting model versions, prompts, thinking level, and parameters
+          \item Providing detailed procedures
+          \item Sharing code and data
+          \item Fixing the random seed and temperature (search for details)
+        \end{itemize}
+      \end{itemize}
+    \column{0.5\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{ouyang.2026.png}
+        \caption{Replicating \textcite{mukerjee2023metrics} on Twitter; Source: \textcite{ouyang2026how}}
+      \end{figure}
+  \end{columns}
 \end{frame}
 
 \begin{frame}
@@ -730,6 +794,7 @@ simplified typological structures \parencite{xie2025variance}
       \end{figure}
   \end{columns}
 \end{frame}
+
 
 
 % =====================================================================

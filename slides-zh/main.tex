@@ -181,7 +181,7 @@
   \frametitle{本次课的目标}
   \begin{columns}[T,onlytextwidth]
     \column{0.48\textwidth}
-        \textcolor{gray}{（……（计算技能）门槛降低……专业知识的重新分配……）} \\“对学生而言，问题不再是他们能否\textcolor{orange}{编程}，而是他们能否\textcolor{blue}{审视、批判、调整并负责任地部署} AI 辅助方法，而不把便利误当作……” \parencite{zhou2026be}
+        \textcolor{gray}{……（计算技能）门槛降低……专业知识的重新分配……} \\“对学生而言，问题不再是他们能否\textcolor{orange}{编程}，而是他们能否\textcolor{blue}{审视、批判、调整并负责任地部署} AI 辅助方法，而不把便利误当作……” \parencite{zhou2026be}
     \column{0.5\textwidth}
       \begin{figure}
         \centering
@@ -288,6 +288,45 @@
 \end{frame}
 
 
+
+\begin{frame}
+  \frametitle{案例：制造笑声}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.5\textwidth}
+      \footnotesize
+      \begin{itemize}
+        \item \textcite{zhao2025making} 探究受众互动指标如何影响新闻机构在 Facebook 上的内容生产
+        \item 对美国主要媒体在 Facebook 上发布的全部帖子进行主题建模（\textcolor{blue}{发现}），并结合纵向数据分析
+        \item 人工编码主题类别
+      \end{itemize}
+    \column{0.48\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{ye2023.png}
+        \caption{来源：\textcite{zhao2025making}}
+      \end{figure}
+  \end{columns}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{案例：指标在行动}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.5\textwidth}
+      \footnotesize
+      \begin{itemize}
+        \item \textcite{mukerjee2023metrics} 探究受众互动指标如何影响新闻机构在 Facebook 上的内容生产
+        \item 对美国主要媒体在 Facebook 上发布的全部帖子进行主题建模（\textcolor{blue}{发现}），并结合纵向数据分析
+        \item 人工编码主题类别
+      \end{itemize}
+    \column{0.48\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{mukerjee.2023.png}
+        \caption{来源：\textcite{mukerjee2023metrics}}
+      \end{figure}
+  \end{columns}
+\end{frame}
 
 % =====================================================================
 \tutframe{*TUT1}{使用 RoBERTa 进行情感分类\\在线材料：\\\textcolor{white}{\hyperlink{https://colab.research.google.com/github/DhavalTaunk08/NLP_scripts/blob/master/sentiment_analysis_using_roberta.ipynb}{Google Colab 链接}}}
@@ -669,10 +708,44 @@
 
 \begin{frame}
   \frametitle{负责任地使用大语言模型：效度与信度}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.48\textwidth}
       \small
       \begin{itemize}
         \item 再次强调：在研究中使用模型输出之前，务必检验其效度与信度
       \end{itemize}
+    \column{0.5\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{../figures/validity}
+        \caption{效度与信度；见 \textcite{babbie2021practice}}
+      \end{figure}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \frametitle{负责任地使用大语言模型：可复现性}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.48\textwidth}
+      \small
+      \begin{itemize}
+        \item 可复现性对科学至关重要
+        \item 通过以下方式确保研究中人工智能部分可复现：
+        \begin{itemize}
+          \item 优先使用 API 调用，而非聊天界面
+          \item 记录模型版本、提示词、思考等级与参数
+          \item 提供详细的操作流程
+          \item 共享代码与数据
+          \item 固定随机种子与温度（具体请自行检索）
+        \end{itemize}
+      \end{itemize}
+    \column{0.5\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{ouyang.2026.png}
+        \caption{在 Twitter 上复现 \textcite{mukerjee2023metrics}；来源：\textcite{ouyang2026how}}
+      \end{figure}
+  \end{columns}
 \end{frame}
 
 \begin{frame}

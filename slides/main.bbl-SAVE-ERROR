@@ -2876,6 +2876,51 @@
       \verb 32381
       \endverb
     \endentry
+    \entry{mukerjee2023metrics}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=3659da0d13d1495058d810d60f587f52}{%
+           family={Mukerjee},
+           familyi={M\bibinitperiod},
+           given={Subhayan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=54a02adc1caa50ccff97346915e1b92d}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Tian},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cc9e773549a427527d59a93df6564469}{%
+           family={Peng},
+           familyi={P\bibinitperiod},
+           given={Yilang},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{911b06ec72be0fd061df98888ed3af54}
+      \strng{fullhash}{e3fe30c121fab44aee9101d517bfcef5}
+      \strng{fullhashraw}{e3fe30c121fab44aee9101d517bfcef5}
+      \strng{bibnamehash}{e3fe30c121fab44aee9101d517bfcef5}
+      \strng{authorbibnamehash}{e3fe30c121fab44aee9101d517bfcef5}
+      \strng{authornamehash}{911b06ec72be0fd061df98888ed3af54}
+      \strng{authorfullhash}{e3fe30c121fab44aee9101d517bfcef5}
+      \strng{authorfullhashraw}{e3fe30c121fab44aee9101d517bfcef5}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Communication}
+      \field{langid}{english}
+      \field{title}{Metrics in Action: How Social Media Metrics Shape News Production on {{Facebook}}}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1093/joc/jqad012
+      \endverb
+    \endentry
     \entry{ouyang-etal-2025-pdfmathtranslate}{inbook}{}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=83de2f10035355a3899433da83d07a85}{%
@@ -2938,6 +2983,7 @@
       \strng{editornamehash}{6fa91bbb0304a8dfc5d266a16acd42da}
       \strng{editorfullhash}{3051b4d50500787d5be25172947578c4}
       \strng{editorfullhashraw}{3051b4d50500787d5be25172947578c4}
+      \field{extraname}{1}
       \field{sortinit}{O}
       \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
       \field{extradatescope}{labelyear}
@@ -2955,6 +3001,52 @@
       \range{pages}{7}
       \verb{doi}
       \verb 10.18653/v1/2025.emnlp-demos.71
+      \endverb
+    \endentry
+    \entry{ouyang2026how}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=83de2f10035355a3899433da83d07a85}{%
+           family={Ouyang},
+           familyi={O\bibinitperiod},
+           given={Rongxin},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3659da0d13d1495058d810d60f587f52}{%
+           family={Mukerjee},
+           familyi={M\bibinitperiod},
+           given={Subhayan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=54a02adc1caa50ccff97346915e1b92d}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Tian},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f12b92f5a764d1cdef6cd331f532d429}
+      \strng{fullhash}{0b8d2010a026c9ec80939c52f69796d9}
+      \strng{fullhashraw}{0b8d2010a026c9ec80939c52f69796d9}
+      \strng{bibnamehash}{0b8d2010a026c9ec80939c52f69796d9}
+      \strng{authorbibnamehash}{0b8d2010a026c9ec80939c52f69796d9}
+      \strng{authornamehash}{f12b92f5a764d1cdef6cd331f532d429}
+      \strng{authorfullhash}{0b8d2010a026c9ec80939c52f69796d9}
+      \strng{authorfullhashraw}{0b8d2010a026c9ec80939c52f69796d9}
+      \field{extraname}{2}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The International Journal of Press/Politics}
+      \field{langid}{english}
+      \field{title}{How Social Media Metrics Shape News Production: {{A}} Replication Study}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1177/19401612251411639
       \endverb
     \endentry
     \entry{park2023generative}{article}{}{}
@@ -7832,6 +7924,51 @@
       \verb 32381
       \endverb
     \endentry
+    \entry{mukerjee2023metrics}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=3659da0d13d1495058d810d60f587f52}{%
+           family={Mukerjee},
+           familyi={M\bibinitperiod},
+           given={Subhayan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=54a02adc1caa50ccff97346915e1b92d}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Tian},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cc9e773549a427527d59a93df6564469}{%
+           family={Peng},
+           familyi={P\bibinitperiod},
+           given={Yilang},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{911b06ec72be0fd061df98888ed3af54}
+      \strng{fullhash}{e3fe30c121fab44aee9101d517bfcef5}
+      \strng{fullhashraw}{e3fe30c121fab44aee9101d517bfcef5}
+      \strng{bibnamehash}{e3fe30c121fab44aee9101d517bfcef5}
+      \strng{authorbibnamehash}{e3fe30c121fab44aee9101d517bfcef5}
+      \strng{authornamehash}{911b06ec72be0fd061df98888ed3af54}
+      \strng{authorfullhash}{e3fe30c121fab44aee9101d517bfcef5}
+      \strng{authorfullhashraw}{e3fe30c121fab44aee9101d517bfcef5}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Communication}
+      \field{langid}{english}
+      \field{title}{Metrics in Action: How Social Media Metrics Shape News Production on {{Facebook}}}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1093/joc/jqad012
+      \endverb
+    \endentry
     \entry{ouyang-etal-2025-pdfmathtranslate}{inbook}{}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=83de2f10035355a3899433da83d07a85}{%
@@ -7894,6 +8031,7 @@
       \strng{editornamehash}{6fa91bbb0304a8dfc5d266a16acd42da}
       \strng{editorfullhash}{3051b4d50500787d5be25172947578c4}
       \strng{editorfullhashraw}{3051b4d50500787d5be25172947578c4}
+      \field{extraname}{1}
       \field{sortinit}{O}
       \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
       \field{extradatescope}{labelyear}
@@ -7911,6 +8049,52 @@
       \range{pages}{7}
       \verb{doi}
       \verb 10.18653/v1/2025.emnlp-demos.71
+      \endverb
+    \endentry
+    \entry{ouyang2026how}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=83de2f10035355a3899433da83d07a85}{%
+           family={Ouyang},
+           familyi={O\bibinitperiod},
+           given={Rongxin},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3659da0d13d1495058d810d60f587f52}{%
+           family={Mukerjee},
+           familyi={M\bibinitperiod},
+           given={Subhayan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=54a02adc1caa50ccff97346915e1b92d}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Tian},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f12b92f5a764d1cdef6cd331f532d429}
+      \strng{fullhash}{0b8d2010a026c9ec80939c52f69796d9}
+      \strng{fullhashraw}{0b8d2010a026c9ec80939c52f69796d9}
+      \strng{bibnamehash}{0b8d2010a026c9ec80939c52f69796d9}
+      \strng{authorbibnamehash}{0b8d2010a026c9ec80939c52f69796d9}
+      \strng{authornamehash}{f12b92f5a764d1cdef6cd331f532d429}
+      \strng{authorfullhash}{0b8d2010a026c9ec80939c52f69796d9}
+      \strng{authorfullhashraw}{0b8d2010a026c9ec80939c52f69796d9}
+      \field{extraname}{2}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The International Journal of Press/Politics}
+      \field{langid}{english}
+      \field{title}{How Social Media Metrics Shape News Production: {{A}} Replication Study}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1177/19401612251411639
       \endverb
     \endentry
     \entry{park2023generative}{article}{}{}
