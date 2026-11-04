@@ -3179,4 +3179,104 @@
     <bcf:citekey order="78" intorder="1">gilardi2023chatgpt</bcf:citekey>
     <bcf:citekey order="78" intorder="2">jiang2024balanced</bcf:citekey>
     <bcf:citekey order="78" intorder="3">goyal2023news</bcf:citekey>
-    <bcf:citekey order="78" intorder="4">chew202
+    <bcf:citekey order="78" intorder="4">chew2023llmassisted</bcf:citekey>
+    <bcf:citekey order="79" intorder="1">yu2025leveraging</bcf:citekey>
+    <bcf:citekey order="79" intorder="2">luceri2024leveraging</bcf:citekey>
+    <bcf:citekey order="79" intorder="3">feng2024what</bcf:citekey>
+    <bcf:citekey order="80" intorder="1">gilardi2023chatgpt</bcf:citekey>
+    <bcf:citekey order="81" intorder="1">gilardi2023chatgpt</bcf:citekey>
+    <bcf:citekey order="82" intorder="1">gehrmann2024literature</bcf:citekey>
+    <bcf:citekey order="82" intorder="2">dennstadt2024title</bcf:citekey>
+    <bcf:citekey order="82" intorder="3">jiang2024balanced</bcf:citekey>
+    <bcf:citekey order="82" intorder="4">asai2026synthesizing</bcf:citekey>
+    <bcf:citekey order="83" intorder="1">si2024cana</bcf:citekey>
+    <bcf:citekey order="83" intorder="2">wang2024scimon</bcf:citekey>
+    <bcf:citekey order="83" intorder="3">yang2024large</bcf:citekey>
+    <bcf:citekey order="84" intorder="1">baek2025researchagent</bcf:citekey>
+    <bcf:citekey order="84" intorder="2">manning2024automated</bcf:citekey>
+    <bcf:citekey order="85" intorder="1">asai2026synthesizing</bcf:citekey>
+    <bcf:citekey order="86" intorder="1">asai2026synthesizing</bcf:citekey>
+    <bcf:citekey order="87" intorder="1">gehrmann2024literature</bcf:citekey>
+    <bcf:citekey order="87" intorder="2">dennstadt2024title</bcf:citekey>
+    <bcf:citekey order="87" intorder="3">jiang2024balanced</bcf:citekey>
+    <bcf:citekey order="87" intorder="4">asai2026synthesizing</bcf:citekey>
+    <bcf:citekey order="88" intorder="1">si2024cana</bcf:citekey>
+    <bcf:citekey order="88" intorder="2">wang2024scimon</bcf:citekey>
+    <bcf:citekey order="88" intorder="3">yang2024large</bcf:citekey>
+    <bcf:citekey order="89" intorder="1">baek2025researchagent</bcf:citekey>
+    <bcf:citekey order="89" intorder="2">manning2024automated</bcf:citekey>
+    <bcf:citekey order="90" intorder="1">si2024cana</bcf:citekey>
+    <bcf:citekey order="91" intorder="1">si2024cana</bcf:citekey>
+    <bcf:citekey order="92" intorder="1">si2024cana</bcf:citekey>
+    <bcf:citekey order="93" intorder="1">si2024cana</bcf:citekey>
+    <bcf:citekey order="94" intorder="1">lin2023llmeval</bcf:citekey>
+    <bcf:citekey order="94" intorder="2">shankar2024who</bcf:citekey>
+    <bcf:citekey order="94" intorder="3">wang2024humanllma</bcf:citekey>
+    <bcf:citekey order="94" intorder="4">zheng2023judging</bcf:citekey>
+    <bcf:citekey order="95" intorder="1">liang2024can</bcf:citekey>
+    <bcf:citekey order="95" intorder="2">li2024sentiment</bcf:citekey>
+    <bcf:citekey order="95" intorder="3">ke2024critiquellm</bcf:citekey>
+    <bcf:citekey order="95" intorder="4">king2026aia</bcf:citekey>
+    <bcf:citekey order="96" intorder="1">king2026aia</bcf:citekey>
+    <bcf:citekey order="97" intorder="1">king2026aia</bcf:citekey>
+    <bcf:citekey order="98" intorder="1">zhou2026be</bcf:citekey>
+    <bcf:citekey order="99" intorder="1">liu2026positivity</bcf:citekey>
+    <bcf:citekey order="100" intorder="1">liu2026positivity</bcf:citekey>
+    <bcf:citekey order="101" intorder="1">liu2026positivity</bcf:citekey>
+    <bcf:citekey order="102" intorder="1">liu2026positivity</bcf:citekey>
+    <bcf:citekey order="103" intorder="1">angrist2009mostly</bcf:citekey>
+    <bcf:citekey order="104" intorder="1">angrist2009mostly</bcf:citekey>
+    <bcf:citekey order="105" intorder="1">angrist2009mostly</bcf:citekey>
+    <bcf:citekey order="106" intorder="1">ouyang-etal-2025-pdfmathtranslate</bcf:citekey>
+  </bcf:section>
+  <!-- SORTING TEMPLATES -->
+  <bcf:sortingtemplate name="nyt">
+    <bcf:sort order="1">
+      <bcf:sortitem order="1">presort</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="2" final="1">
+      <bcf:sortitem order="1">sortkey</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="3">
+      <bcf:sortitem order="1">sortname</bcf:sortitem>
+      <bcf:sortitem order="2">author</bcf:sortitem>
+      <bcf:sortitem order="3">editor</bcf:sortitem>
+      <bcf:sortitem order="4">translator</bcf:sortitem>
+      <bcf:sortitem order="5">sorttitle</bcf:sortitem>
+      <bcf:sortitem order="6">title</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="4">
+      <bcf:sortitem order="1">sortyear</bcf:sortitem>
+      <bcf:sortitem order="2">year</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="5">
+      <bcf:sortitem order="1">sorttitle</bcf:sortitem>
+      <bcf:sortitem order="2">title</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="6">
+      <bcf:sortitem order="1">volume</bcf:sortitem>
+      <bcf:sortitem literal="1" order="2">0</bcf:sortitem>
+    </bcf:sort>
+  </bcf:sortingtemplate>
+  <!-- DATALISTS -->
+  <bcf:datalist section="0"
+                name="nyt/apasortcite//global/global/global"
+                type="entry"
+                sortingtemplatename="nyt"
+                sortingnamekeytemplatename="apasortcite"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global"
+                namehashtemplatename="global">
+  </bcf:datalist>
+  <bcf:datalist section="0"
+                name="nyt/global//global/global/global"
+                type="entry"
+                sortingtemplatename="nyt"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global"
+                namehashtemplatename="global">
+  </bcf:datalist>
+</bcf:controlfile>

@@ -1,7 +1,7 @@
 \beamer@sectionintoc {1}{引言}{3}{0}{1}
 \beamer@sectionintoc {2}{前大模型时代的 AI}{7}{0}{2}
 \beamer@sectionintoc {3}{大语言模型}{10}{0}{3}
-\beamer@sectionintoc {4}{局限性}{30}{0}{4}
-\beamer@sectionintoc {5}{要点总结}{32}{0}{5}
-\beamer@sectionintoc {6}{资源}{35}{0}{6}
-\beamer@sectionintoc {7}{参考文献}{39}{0}{7}
+\beamer@sectionintoc {4}{负责任地使用}{29}{0}{4}
+\beamer@sectionintoc {5}{要点总结}{36}{0}{5}
+\beamer@sectionintoc {6}{资源}{39}{0}{6}
+\beamer@sectionintoc {7}{参考文献}{43}{0}{7}
