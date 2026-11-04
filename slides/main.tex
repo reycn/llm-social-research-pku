@@ -152,9 +152,8 @@
    \end{frame}}%
 }
 \NewDocumentCommand{\sectionframe}{O{#2} m}{\section[#1]{#2}\dividerframe{#2}}  % optional [short] title for the headline
-% Blue tutorial divider: \tutframe{TUT1}{Subtitle} — starts a section named by #1.
+% Blue tutorial divider: \tutframe{TUT1}{Subtitle} — not a section, so it stays out of the headline navigation.
 \newcommand{\tutframe}[2]{%
-  \section{#1}%
   {\setbeamercolor{background canvas}{bg=blue}%
    \begin{frame}
      \begin{center}\color{white}
@@ -289,10 +288,8 @@ Using causal and computational methods to evaluate societal and political impact
 
 
 % =====================================================================
-\tutframe{TUT1}{Binary classification of sentiment using RoBERTa}
+\tutframe{TUT1}{Sentiment classification using RoBERTa}
 % =====================================================================
-
-
 
 
 % =====================================================================
@@ -360,6 +357,28 @@ Using causal and computational methods to evaluate societal and political impact
       \end{figure}
   \end{columns}
 \end{frame}
+
+% \begin{frame}
+%   \frametitle{LLMs as Subjects: Categories}
+%   \begin{columns}[T,onlytextwidth]
+%     \column{0.55\textwidth}
+%       \footnotesize
+%       \begin{itemize}
+%         \item LLMs serve as research subjects, according to \textcite{xu2026large}:
+%         \begin{itemize}
+%           \item Generate survey responses \parencite{dillion2023cana,dominguez-olmedo2024questioninga,hamalainen2023evaluatinga,xie2025variance}
+%           \item Simulating behavior sequences \parencite{wang2025user,park2023generativea,yan2024opencity}
+%           \item Simulating social interactions \parencite{ashery2025emergent,gao2025s,xie2024can,zhang2024exploring}
+%         \end{itemize}
+%       \end{itemize}
+%     \column{0.43\textwidth}
+%       \begin{figure}
+%         \centering
+%         \includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{synthetic.communicative.env.png}
+%         \caption{Synthetic communicative environment in a randomized experiment; \textcite{allamong2026causal}}
+%       \end{figure}
+%   \end{columns}
+% \end{frame}
 
 \begin{frame}
   \frametitle{LLMs as Subjects: Pros and Cons}
@@ -472,43 +491,105 @@ simplified typological structures \parencite{xie2025variance}
   \end{columns}
 \end{frame}
 
+\begin{frame}
+  \frametitle{LLMs as Methods: Assistant}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.5\textwidth}
+  \begin{itemize}
+    \item Interviewing human participants (qualitative)\parencite{hanschmann2025ladderchat,li2024lminterview, park2026llma, tuggener2024roleplaying}
+    \item \textbf{Supporting experiments} \parencite{velez2025confronting, hackenburg2024evaluating, argyle2023leveraging,allamong2026causal}
+    \item Analysing textual content \parencite{gilardi2023chatgpt, jiang2024balanced, goyal2023news, chew2023llmassisted}
+    \item Mining social networks \parencite{yu2025leveraging, luceri2024leveraging, feng2024what}
+  \end{itemize}
+
+    \column{0.43\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{synthetic.communicative.env.png}
+        \caption{Synthetic communicative environment in a randomized experiment; \textcite{allamong2026causal}}
+      \end{figure}
+  \end{columns}
+\end{frame}
 
 \begin{frame}
   \frametitle{LLMs as Methods: Assistant}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.5\textwidth}
   \begin{itemize}
-    \item Writing, debugging, and translating analysis code
-    \item Searching and summarizing literature
-    \item Editing and polishing prose
-    \item Data cleaning and wrangling
+    \item Interviewing human participants (qualitative)\parencite{hanschmann2025ladderchat,li2024lminterview, park2026llma, tuggener2024roleplaying}
+    \item Supporting experiments \parencite{velez2025confronting, hackenburg2024evaluating, argyle2023leveraging,allamong2026causal}
+    \item \textbf{Analysing textual content} \parencite{gilardi2023chatgpt, jiang2024balanced, goyal2023news, chew2023llmassisted}
+    \item Mining social networks \parencite{yu2025leveraging, luceri2024leveraging, feng2024what}
   \end{itemize}
-  ~\\
-  \textcolor{gray}{The researcher specifies the task; the LLM speeds up execution}
+
+    \column{0.43\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{fig1.outperform.png}
+        \caption{Better annotation than crowd-workers; \textcite{gilardi2023chatgpt}}
+      \end{figure}
+  \end{columns}
 \end{frame}
 
 \begin{frame}
   \frametitle{LLMs as Methods: Collaborator}
-  \begin{itemize}
-    \item Brainstorming research questions and hypotheses
-    \item Critiquing research designs and identification strategies
-    \item Proposing measures, robustness checks, and alternative explanations
-    \item Agentic workflows: multi-step analysis with researcher oversight
-  \end{itemize}
-  ~\\
-  \textcolor{gray}{The LLM contributes ideas; the researcher remains accountable}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.55\textwidth}
+      \begin{itemize}
+
+        \only<1>{%
+        \item \textbf{Reviewing literature} \parencite{gehrmann2024literature, dennstadt2024title,jiang2024balanced, asai2026synthesizing}
+        \item Proposing hypotheses \parencite{si2024cana,wang2024scimon,yang2024large}
+        }%
+        \only<2>{%
+        \item Reviewing literature \parencite{gehrmann2024literature, dennstadt2024title,jiang2024balanced, asai2026synthesizing}
+        \item \textbf{Proposing hypotheses }\parencite{si2024cana,wang2024scimon,yang2024large}
+        }%
+        \item Designing research protocols \parencite{baek2025researchagent,manning2024automated}
+      \end{itemize}
+    \column{0.45\textwidth}
+      % Three images don't fit stacked: slide 1 = literature review, slide 2 = hypotheses.
+      \begin{figure}
+        \centering
+        \only<1>{%
+        \includegraphics[width=\linewidth,height=0.3\textheight,keepaspectratio]{lit.1.png}\\[1ex]
+        \includegraphics[width=\linewidth,height=0.3\textheight,keepaspectratio]{lit.2.png}
+        \caption{PhD level literature review system conducted by LLM; see \textcite{asai2026synthesizing}}}%
+        \only<2>{%
+        \includegraphics[trim=0 0 24 0,clip,width=\linewidth,height=0.6\textheight,keepaspectratio]{better.hypo.png}
+        \caption{Better novelty and excitement in hypotheses generated by LLM; see \textcite{si2024cana}}
+        }%
+      \end{figure}
+  \end{columns}
 \end{frame}
+
+
+
+% =====================================================================
+\tutframe{TUT2}{Topic classification using LLMs\\Don't forget about validation!}
+% =====================================================================
+
+
 
 \begin{frame}
   \frametitle{LLMs as Methods: Evaluator}
-  \begin{itemize}
-    \item \textbf{Annotation}: zero- and few-shot text classification at scale
-    \item \textbf{LLM-as-judge}: scoring quality, stance, or similarity
-    \item \textbf{Review}: 
-    \item \textbf{Replication}: To scale up reproducibility of empirical work \parencite{xu2026scaling} 
-  \end{itemize}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.55\textwidth}
+      \begin{itemize}
+        \item Evaluating research protocols \parencite{lin2023llmeval, shankar2024who, wang2024humanllma, zheng2023judging}
+        \item \textbf{Critiquing research outcomes} \parencite{liang2024can, li2024sentiment, ke2024critiquellm, king2026aia}
+      \end{itemize}
+    \column{0.45\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{ai.dominate.png}
+        \caption{AI reviews dominate human reviews; source: \parencite{king2026aia}; not peer-reviewed but well designed}
+      \end{figure}
+  \end{columns}
 \end{frame}
 
 \begin{frame}
-  \frametitle{LLMs as Methods: Choose the Right Tool}
+  \frametitle{LLMs deployed responsibly: Selection}
       \small
       \begin{itemize}
         \item Consider a model as a function, $f(data, algo, object)$, the differences in each part would substantially shape their in-domain capabilities (like better coding or writing)
@@ -517,7 +598,7 @@ simplified typological structures \parencite{xie2025variance}
 \end{frame}
 
 \begin{frame}
-  \frametitle{LLMs as Methods: Choose the Right Tool}
+  \frametitle{LLMs deployed responsibly: Selection}
   \begin{columns}[T,onlytextwidth]
     \column{0.48\textwidth}
       \small
@@ -533,7 +614,7 @@ simplified typological structures \parencite{xie2025variance}
   \end{columns}
 \end{frame}
 \begin{frame}
-  \frametitle{LLMs as Methods: Choose the Right Tool}
+  \frametitle{LLMs deployed responsibly: Selection}
   \begin{columns}[T,onlytextwidth]
     \column{0.48\textwidth}
       \small
@@ -552,12 +633,25 @@ simplified typological structures \parencite{xie2025variance}
 
 \begin{frame}
   \frametitle{LLMs as Objects}
-  \begin{itemize}
-    \item \textbf{Auditing models}: political slant, social bias, and value alignment
-    \item \textbf{Effects on people}: persuasion, learning, labor, and well-being
-    \item \textbf{Effects on information ecosystems}: AI-generated content and search
-  \end{itemize}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.55\textwidth}
+      \begin{itemize}
+        \item ``A communication technology that reconfigures production, circulation, interpretation, and power across media systems, raising critical questions about authenticity, access, and the reproduction of social inequalitie.''\parencite{zhou2026be}
+        \item For example, \textcite{liu2026positivity} evaluates how LLM generated summaries shape public sentiment, the treatment of which is the model.
+      \end{itemize}
+    \column{0.45\textwidth}
+      \begin{center}
+        \begin{figure}
+        \includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{llm.emotion.png}
+        \caption{AIGS as objects in \textcite{liu2026positivity}}
+        \end{figure}
+      \end{center}
+  \end{columns}
 \end{frame}
+
+% =====================================================================
+\tutframe{Quiz}{Pop-up question: Propose one research question involving LLMs as objects in the online group}
+% =====================================================================
 
 % =====================================================================
 \sectionframe{Limitations}

@@ -1,8 +1,7 @@
 \beamer@sectionintoc {1}{Introduction}{3}{0}{1}
 \beamer@sectionintoc {2}{Pre-LLMs AI}{7}{0}{2}
-\beamer@sectionintoc {3}{TUT1}{9}{0}{3}
-\beamer@sectionintoc {4}{LLMs}{10}{0}{4}
-\beamer@sectionintoc {5}{Limitations}{26}{0}{5}
-\beamer@sectionintoc {6}{Takeaways}{28}{0}{6}
-\beamer@sectionintoc {7}{Resources}{31}{0}{7}
-\beamer@sectionintoc {8}{References}{34}{0}{8}
+\beamer@sectionintoc {3}{LLMs}{10}{0}{3}
+\beamer@sectionintoc {4}{Limitations}{30}{0}{4}
+\beamer@sectionintoc {5}{Takeaways}{32}{0}{5}
+\beamer@sectionintoc {6}{Resources}{35}{0}{6}
+\beamer@sectionintoc {7}{References}{38}{0}{7}
