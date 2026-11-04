@@ -5,9 +5,10 @@
 %  Compile: ttx main   (xelatex + biber + xelatex x2)
 % =====================================================================
 % \documentclass[draft]{beamer}
-\documentclass[]{beamer}
+\documentclass[aspectratio=169]{beamer}
 \usetheme{Berlin}
 \usepackage{hyperref}
+\hypersetup{colorlinks=true,urlcolor=blue,linkcolor=.,citecolor=.,filecolor=.}
 \usepackage{graphicx}   % figures
 \graphicspath{{../figures/}}
 \usepackage{multicol}   % multi-column layouts
@@ -40,6 +41,7 @@
 \definecolor{green}{RGB}{62, 138, 46}
 \definecolor{blue}{RGB}{3, 105, 170}
 \definecolor{red}{RGB}{194, 54, 55}
+\definecolor{orange}{RGB}{205, 121, 92}
 
 \usecolortheme{beaver}
 
@@ -92,11 +94,19 @@
   \end{beamercolorbox}%
 }
 
+% Frame titles numbered <section>.<n>; repeated titles (overlays, "Pros and
+% Cons" x3, frame breaks) keep the same number. No number before section 1.
+\newcounter{ftnum}[section]
+\gdef\ftlast{}
 \setbeamertemplate{frametitle}{%
+  \edef\ftcur{\thesection}%
+  \ifx\insertframetitle\ftlast\ifx\ftcur\ftlastsec\else\stepcounter{ftnum}\fi
+  \else\stepcounter{ftnum}\fi
+  \global\let\ftlast\insertframetitle\global\let\ftlastsec\ftcur
   \nointerlineskip%
   \begin{beamercolorbox}[wd=\paperwidth,leftskip=.3cm,rightskip=.3cm plus1fil,vmode]{frametitle}
     \vskip0.5ex%
-    \usebeamerfont*{frametitle}\strut\insertframetitle\strut\par%
+    \usebeamerfont*{frametitle}\strut\ifnum\value{section}>0 \thesection.\theftnum\quad\fi\insertframetitle\strut\par%
     \vskip0.05ex%
   \end{beamercolorbox}%
 }
@@ -143,13 +153,23 @@
      \begin{center}\Huge{\textcolor{white}{#1}}\end{center}
    \end{frame}}%
 }
-\newcommand{\sectionframe}[1]{\section{#1}\dividerframe{#1}}
+\NewDocumentCommand{\sectionframe}{O{#2} m}{\section[#1]{#2}\dividerframe{#2}}  % optional [short] title for the headline
+% Blue tutorial divider: \tutframe{TUT1}{Subtitle} — not a section, so it stays out of the headline navigation.
+\newcommand{\tutframe}[2]{%
+  {\setbeamercolor{background canvas}{bg=blue}%
+   \begin{frame}
+     \begin{center}\color{white}
+       {\Huge #1}\\[1.5ex]
+       {\Large #2}
+     \end{center}
+   \end{frame}}%
+}
 
 % ---------- Title page ----------
-\title[定量社会科学研究中的人工智能]{在定量社会科学研究中负责任地使用人工智能}
+\title[定量社会科学研究中的人工智能]{在定量社会科学研究中负责任地使用人工智能\\\small 社会研究方法课程单元}
 \author[Rongxin Ouyang]{Rongxin Ouyang$^{*}$}
 \institute{\textcolor{gray}{
-    $^{*}$ 新加坡国立大学计算传播学博士候选人；rongxin@u.nus.edu\\
+    $^{*}$ 新加坡国立大学计算传播学博士候选人\\邮箱：rongxin@u.nus.edu / 网站：https://rongxin.me\\
 研究方向：运用因果推断与计算方法评估数字信息技术的社会与政治影响}}
 \date{\small \textcolor{gray}{2026 年 11 月 5 日}}
 
@@ -158,21 +178,21 @@
 \frame{\titlepage}
 
 \begin{frame}
-  \frametitle{计算研究中的转变}
+  \frametitle{本次课的目标}
   \begin{columns}[T,onlytextwidth]
     \column{0.48\textwidth}
-        \large \textcolor{gray}{……（计算技能）门槛降低……专业知识的重新分配……} “对学生而言，问题不再是他们能否\textcolor{orange}{编程}，而是他们能否\textcolor{blue}{审视、批判、调整并负责任地部署} AI 辅助方法，而不把便利误当作……”
+        \textcolor{gray}{（……（计算技能）门槛降低……专业知识的重新分配……）} \\“对学生而言，问题不再是他们能否\textcolor{orange}{编程}，而是他们能否\textcolor{blue}{审视、批判、调整并负责任地部署} AI 辅助方法，而不把便利误当作……” \parencite{zhou2026be}
     \column{0.5\textwidth}
       \begin{figure}
         \centering
-        \includegraphics[width=\linewidth]{responsively.use.png}
-        \caption{来源：\textcite{zhou2026be}（第 4--5 页）}
+        \includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{responsively.use.png}
+        \caption{来源：\textcite{zhou2026be}}
       \end{figure}
   \end{columns}
 \end{frame}
 
 % =====================================================================
-\sectionframe{人工智能：宏观图景}
+\sectionframe{引言}
 % =====================================================================
 
 \begin{frame}
@@ -180,9 +200,27 @@
   \begin{columns}[T,onlytextwidth]
     \column{0.55\textwidth}
       \begin{itemize}
-        \item “制造智能机器的科学与工程” \textcolor{gray}{\tiny （McCarthy）}
-        \item 能够\hlt{感知}环境并为实现目标而\hlt{行动}的系统
-        \item 一个层层嵌套的技术家族，而非单一技术
+        \item 能够智能地行动的计算智能体 \parencite{poole2023artificial}
+        \item 但什么是智能？——见右图
+      \end{itemize}
+    \column{0.45\textwidth}
+      \begin{center}
+        \begin{figure}
+        \includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{percy.intell.png}
+        \caption{来源：\hyperlink{https://stanford-cs221.github.io/lectures/?trace=welcome}{Stanford CS221, Percy Liang}}
+        \end{figure}
+      \end{center}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \frametitle{什么是人工智能？}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.55\textwidth}
+      \begin{itemize}
+        \item 能够智能地行动的计算智能体 \parencite[][]{poole2023artificial}
+        \item 但什么是智能？——见右图
+        \item 更重要的是，请注意以下概念之间的区别……
       \end{itemize}
     \column{0.45\textwidth}
       \begin{center}
@@ -201,54 +239,87 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{人工智能简史}
+  \frametitle{大语言模型简史}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.6\textwidth}
   \footnotesize
   \begin{itemize}
-    \item 观察：人工智能是一个已发展数十年的综合性领域
-  \begin{itemize}
-    \item \textbf{1950 年代} 图灵测试（1950）；达特茅斯会议首次提出“人工智能”（1956）
-    \item \textbf{1960--80 年代} 符号主义人工智能与专家系统；两次“AI 寒冬”
-    \item \textbf{1990--2000 年代} 统计机器学习：从数据中学习规则
-    \item \textbf{2012} 深度学习在图像识别上取得突破
-    \item \textbf{2017} Transformer 架构问世
-    \item \textbf{2018--2020} 预训练语言模型（BERT、GPT-2、GPT-3）
-    \item \textbf{2022--} ChatGPT；\hlt{通用大语言模型}进入日常科研实践
+    \item * 人工智能是一个已发展数十年的古老领域 \parencite[参见][]{poole2023artificial}
+    \item * 前大模型时代，早期工具主要基于人类产生的痕迹数据进行分类、聚类或预测 \parencite{zhou2026be}。\footnote{类似地，Percy Liang 以 2016 年、2018 年和当下划分三个时期，见 \url{https://cs336.stanford.edu/lectures/?trace=lecture_01}}
+    \item * 大语言模型的诞生：Transformer \parencite{vaswani2017attention}，一种可并行训练的模型结构，使大规模数据与大模型成为可能
+    \item 后大模型时代：本课聚焦 2020 年后的大语言模型时代 \parencite[以 GPT-3 为标志；][]{xu2026large} 及其对计算社会科学研究的意义；并简要演示基于 BERT 的文本分类
   \end{itemize}
-  \end{itemize}
-\end{frame}
-
-% =====================================================================
-\sectionframe{前大模型时代的定量研究 AI}
-% =====================================================================
-
-\begin{frame}
-  \frametitle{前大模型时代 AI 在定量社会科学研究中的应用}
-  \begin{columns}[T,onlytextwidth]
-    \column{0.5\textwidth}
-      \footnotesize
-      \begin{itemize}
-        \item \textbf{监督学习}：人工标注样本，训练分类器，再推广到全样本
-        \item \textbf{无监督学习}：主题模型、聚类、词嵌入
-        \item \textbf{文本、图像与网络即数据}~\citegray{king2013how}
-        \item \textbf{机器学习用于因果推断}：异质性效应、高维控制变量
-      \end{itemize}
-      ~\\
-      \textcolor{gray}{共同特点：针对特定任务的模型、依赖标注数据、由研究者搭建流程}
-    \column{0.48\textwidth}
+    \column{0.38\textwidth}
       \begin{figure}
         \centering
-        \includegraphics[width=\linewidth]{use.pre.llm.png}
-        \caption{来源：\textcite{grimmer2022text}（第 23 页）}
+        \includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{transformer.png}
+        \caption{摘自 \textcite{vaswani2017attention}}
       \end{figure}
   \end{columns}
 \end{frame}
 
 % =====================================================================
-\sectionframe{大语言模型与定量研究}
+\sectionframe{前大模型时代的 AI}
+% =====================================================================
+
+\begin{frame}
+  \frametitle{前大模型时代 AI 在社会科学中的应用}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.5\textwidth}
+      \setbeamerfont{itemize/enumerate body}{size=\footnotesize}
+      \footnotesize
+      \begin{itemize}
+        \item 按照 \textcite{grimmer2021machine} 的分类，社会科学研究常借助机器学习完成多种任务：
+        \begin{itemize}
+          \item 发现；例如文本分类 \textcolor{blue}{（教程一）}
+          \item 测量；例如
+          \item 因果推断；例如
+          \item 预测；例如
+        \end{itemize}
+        \item 如有兴趣，可选修汇丰商学院 FIN528 金融机器学习 / 高级机器学习
+      \end{itemize}
+    \column{0.48\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{mlss.png}
+        \caption{来源：\textcite{grimmer2021machine}（第 23 页）}
+      \end{figure}
+  \end{columns}
+\end{frame}
+
+
+
+% =====================================================================
+\tutframe{TUT1}{使用 RoBERTa 进行情感分类}
+% =====================================================================
+
+
+% =====================================================================
+\sectionframe{大语言模型}
 % =====================================================================
 
 \begin{frame}
   \frametitle{大语言模型在计算社会科学中的角色}
+  \footnotesize
+  \begin{center}
+    \itemize{
+      \item 大语言模型（LLM）大致指参数量不少于 10 亿的语言模型（Percy Liang；如 GPT、Claude）\footnote{本课并非计算机课程，采用这一定义应无大碍。}
+      \item 一篇近期综述提出大语言模型在计算社会科学中的四种角色：研究主体、助手、合作者、评估者
+    }
+    \end{center}
+    \begin{figure}
+      \includegraphics[width=0.85\linewidth,height=0.45\textheight,keepaspectratio]{../figures/review.tab.1.png}
+      \caption{来源：\textcite{xu2026large}}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{大语言模型在计算社会科学中的角色}
+  \begin{center}
+    \itemize{
+      \item 从更多视角出发，我们可以对大语言模型在计算社会科学中的角色提出更全面的分类；后续幻灯片将逐一展开
+    }
+  \end{center}
   \begin{center}
     \begin{tikzpicture}[-Latex]
       \node[block, minimum width=2.4cm, minimum height=0.9cm] (s) at (0,0)   {\small \textbf{研究主体}};
@@ -263,84 +334,302 @@
       \path (ml) edge (a) (ml) edge (c) (ml) edge (e);
     \end{tikzpicture}
   \end{center}
-  \sourcenote{来源：四种角色（研究主体、助手、合作者、评估者）的分类见 \textcite{xu2026large}；两种角色（研究工具、研究对象）改编自 \textcite{zhou2026be}}
+  \sourcenote{来源：四种角色（研究主体、助手、合作者、评估者）的分类见 \textcite{xu2026large}；四个类别见 \textcite{liang2026computational}；两种角色（研究工具、研究对象）改编自 \textcite{zhou2026be}}
 \end{frame}
 
+
 \begin{frame}
-  \frametitle{AI 作为研究主体}
+  \frametitle{大语言模型作为研究主体：类别}
   \begin{columns}[T,onlytextwidth]
-    \column{0.45\textwidth}
+    \column{0.55\textwidth}
       \footnotesize
       \begin{itemize}
-        \item \textbf{硅基样本}：以人物设定为条件的模拟问卷受访者
-        \item \textbf{模拟实验}：正式施测前预演设计、检验统计功效
-        \item \textbf{基于智能体的仿真}：大量大语言模型智能体相互作用
+        \item 根据 \textcite{xu2026large}，大语言模型可充当研究主体：
+        \begin{itemize}
+          \item 生成问卷回答 \parencite{dillion2023cana,dominguez-olmedo2024questioninga,hamalainen2023evaluatinga,xie2025variance}
+          \item 模拟行为序列 \parencite{wang2025user,park2023generativea,yan2024opencity}
+          \item 模拟社会互动 \parencite{ashery2025emergent,gao2025s,xie2024can,zhang2024exploring}
+        \end{itemize}
       \end{itemize}
-      ~\\
-      \textcolor{gray}{关键问题：模拟的回答何时能够反映真实的人类行为？}
-    \column{0.53\textwidth}
+    \column{0.43\textwidth}
       \begin{figure}
         \centering
-        \includegraphics[width=\linewidth]{ai.communication.png}
-        \caption{来源： \url{https://drhailiang.com/}}
+        \includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{stanford.town.png}
+        \caption{模拟小镇中的生成式智能体；\textcite{park2023generative}}
       \end{figure}
   \end{columns}
 \end{frame}
 
 \begin{frame}
-  \frametitle{大语言模型作为研究主体}
-  \begin{itemize}
-    \item \textbf{硅基样本}：以人物设定为条件的模拟问卷受访者
-    \item \textbf{模拟实验}：正式施测前预演设计、检验统计功效
-    \item \textbf{基于智能体的仿真}：大量大语言模型智能体相互作用
-  \end{itemize}
-  ~\\
-  \textcolor{gray}{关键问题：模拟的回答何时能够反映真实的人类行为？}
+  \frametitle{大语言模型作为研究主体：优势与不足}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.6\textwidth}
+      \footnotesize
+      \begin{itemize}
+        \item \textbf{优势：}
+      \begin{itemize}
+      \item 在问卷调查中成功复现人类回答 \parencite{argyle2023out}
+      \item 产生可信的个体行为与涌现的社会行为 \parencite{park2023generative}
+      \item 复现社会规范的涌现 \parencite{ashery2025emergent}
+      \item 等等
+      \end{itemize}
+    \end{itemize}
+    \column{0.4\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.9\linewidth,height=0.6\textheight,keepaspectratio]{../figures/gpt.lucid.png}
+        \caption{GPT-3 与 Lucid 调查中人类回答的对比分析；\textcite{argyle2023out} 图 3}
+      \end{figure}
+  \end{columns}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{大语言模型作为研究主体：优势与不足}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.6\textwidth}
+      \footnotesize
+      \begin{itemize}
+      \item \textbf{不足：}
+      \begin{itemize}
+        \item 难以反映“难以触达的\textcolor{red}{人群}” \parencite{bollen2026nationally}；无法捕捉经验与文化层面的深度 \parencite{pataranutaporn2025simulating}
+        \item 体现特定的党派 \parencite{santurkar2023whose} 或文化\textcolor{red}{偏差} \parencite{tao2024cultural}
+        \item 接近均值但\textcolor{red}{变异}不足 \parencite{bisbee2024synthetica}；在意见或态度研究中存在强烈且多变的偏差、方差偏低 \parencite{boelaert2025machine}；容易同时误描并扁平化人口群体特征 \parencite{wang2025large}；并倾向于将异质性压缩为简化的类型结构 \parencite{xie2025variance}
+      \end{itemize}
+    \end{itemize}
+    \column{0.4\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{../figures/cultural.bias.png}
+        \caption{大语言模型生成的价值观回答与不同国家相比存在偏离；\textcite{tao2024cultural} 图 1}
+      \end{figure}
+  \end{columns}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{大语言模型作为研究主体：优势与不足}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.6\textwidth}
+      \footnotesize
+      \begin{itemize}
+      \item \textbf{不足：}
+      \begin{itemize}
+        \item 难以反映“难以触达的\textcolor{red}{人群}” \parencite{bollen2026nationally}；无法捕捉经验与文化层面的深度 \parencite{pataranutaporn2025simulating}
+        \item 体现特定的党派 \parencite{santurkar2023whose} 或文化\textcolor{red}{偏差} \parencite{tao2024cultural}
+        \item 接近均值但\textcolor{red}{变异}不足 \parencite{bisbee2024synthetica}；在意见或态度研究中存在强烈且多变的偏差、方差偏低 \parencite{boelaert2025machine}；容易同时误描并扁平化人口群体特征 \parencite{wang2025large}；并倾向于将异质性压缩为简化的类型结构 \parencite{xie2025variance}
+      \end{itemize}
+    \end{itemize}
+    \column{0.4\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{../figures/xie.eval.part.png}
+        \caption{未能捕捉真实世界分布的离散程度；\textcite{xie2025variance} 图 3}
+      \end{figure}
+  \end{columns}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{大语言模型作为研究主体：评估}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.6\textwidth}
+      \footnotesize
+      \begin{itemize}
+        \item \textit{效度}与\textit{信度}仍是关注焦点 \parencite{zhou2026be}；请参阅叶老师此前的课程
+    \end{itemize}
+    \column{0.4\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{../figures/validity}
+        \caption{效度与信度；见 \textcite{babbie2021practice}}
+      \end{figure}
+  \end{columns}
+\end{frame}
+\begin{frame}
+  \frametitle{大语言模型作为研究主体：改进}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.6\textwidth}
+      \footnotesize
+      \begin{itemize}
+        \item \textit{效度}与\textit{信度}仍是关注焦点 \parencite{zhou2026be}
+      \item 三种改进策略
+      \begin{itemize}
+        \item 对齐（使用前）：调整模型输出；主要由企业和计算机科学研究完成
+        \item 优化（使用中）：通过\textbf{微调或提示}策略提升特定任务的表现 \parencite[如][]{xie2025variance,tao2024cultural,kolluri2025finetuning}
+        \item 校正（使用后）：事后修正；计量经济学与机器学习文献中的新兴方向 \parencite[如][]{chernozhukov2018double, egami2024using}
+      \end{itemize}
+    \end{itemize}
+    \column{0.4\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{../figures/tao.prompt.better.png}
+        \caption{提示可缓解文化偏差；来源：\textcite{tao2024cultural} 图 2}
+      \end{figure}
+  \end{columns}
 \end{frame}
 
 \begin{frame}
   \frametitle{大语言模型作为研究方法：助手}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.5\textwidth}
   \begin{itemize}
-    \item 编写、调试和转换分析代码
-    \item 检索与总结文献
-    \item 编辑与润色文字
-    \item 数据清洗与整理
+    \item 访谈人类参与者（质性研究）\parencite{hanschmann2025ladderchat,li2024lminterview, park2026llma, tuggener2024roleplaying}
+    \item \textbf{支持实验研究} \parencite{velez2025confronting, hackenburg2024evaluating, argyle2023leveraging,allamong2026causal}
+    \item 分析文本内容 \parencite{gilardi2023chatgpt, jiang2024balanced, goyal2023news, chew2023llmassisted}
+    \item 挖掘社交网络 \parencite{yu2025leveraging, luceri2024leveraging, feng2024what}
   \end{itemize}
-  ~\\
-  \textcolor{gray}{研究者设定任务，大语言模型加速执行}
+
+    \column{0.43\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{synthetic.communicative.env.png}
+        \caption{随机实验中的合成传播环境；\textcite{allamong2026causal}}
+      \end{figure}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \frametitle{大语言模型作为研究方法：助手}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.5\textwidth}
+  \begin{itemize}
+    \item 访谈人类参与者（质性研究）\parencite{hanschmann2025ladderchat,li2024lminterview, park2026llma, tuggener2024roleplaying}
+    \item 支持实验研究 \parencite{velez2025confronting, hackenburg2024evaluating, argyle2023leveraging,allamong2026causal}
+    \item \textbf{分析文本内容} \parencite{gilardi2023chatgpt, jiang2024balanced, goyal2023news, chew2023llmassisted}
+    \item 挖掘社交网络 \parencite{yu2025leveraging, luceri2024leveraging, feng2024what}
+  \end{itemize}
+
+    \column{0.43\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{fig1.outperform.png}
+        \caption{标注质量优于众包工作者；\textcite{gilardi2023chatgpt}}
+      \end{figure}
+  \end{columns}
 \end{frame}
 
 \begin{frame}
   \frametitle{大语言模型作为研究方法：合作者}
-  \begin{itemize}
-    \item 头脑风暴研究问题与假设
-    \item 评议研究设计与识别策略
-    \item 提出测量方式、稳健性检验和替代解释
-    \item 智能体工作流：在研究者监督下完成多步骤分析
-  \end{itemize}
-  ~\\
-  \textcolor{gray}{大语言模型贡献想法，研究者承担责任}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.55\textwidth}
+      \begin{itemize}
+
+        \only<1>{%
+        \item \textbf{文献综述} \parencite{gehrmann2024literature, dennstadt2024title,jiang2024balanced, asai2026synthesizing}
+        \item 提出假设 \parencite{si2024cana,wang2024scimon,yang2024large}
+        }%
+        \only<2>{%
+        \item 文献综述 \parencite{gehrmann2024literature, dennstadt2024title,jiang2024balanced, asai2026synthesizing}
+        \item \textbf{提出假设} \parencite{si2024cana,wang2024scimon,yang2024large}
+        }%
+        \item 设计研究方案 \parencite{baek2025researchagent,manning2024automated}
+      \end{itemize}
+    \column{0.45\textwidth}
+      % Three images don't fit stacked: slide 1 = literature review, slide 2 = hypotheses.
+      \begin{figure}
+        \centering
+        \only<1>{%
+        \includegraphics[width=\linewidth,height=0.3\textheight,keepaspectratio]{lit.1.png}\\[1ex]
+        \includegraphics[width=\linewidth,height=0.3\textheight,keepaspectratio]{lit.2.png}
+        \caption{由大语言模型完成的博士水平文献综述系统；见 \textcite{asai2026synthesizing}}}%
+        \only<2>{%
+        \includegraphics[trim=0 0 24 0,clip,width=\linewidth,height=0.6\textheight,keepaspectratio]{better.hypo.png}
+        \caption{大语言模型生成的假设在新颖性与吸引力上更优；见 \textcite{si2024cana}}
+        }%
+      \end{figure}
+  \end{columns}
 \end{frame}
+
+
+
+% =====================================================================
+\tutframe{TUT2}{使用大语言模型进行主题分类\\别忘了效度检验！}
+% =====================================================================
+
+
 
 \begin{frame}
   \frametitle{大语言模型作为研究方法：评估者}
-  \begin{itemize}
-    \item \textbf{标注}：大规模零样本与少样本文本分类
-    \item \textbf{大语言模型评审}：对质量、立场或相似度打分
-    \item \textbf{审阅}：对稿件、代码和可复现性提供反馈
-  \end{itemize}
-  ~\\
-  \textcolor{gray}{必须以人工编码的基准进行验证}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.55\textwidth}
+      \begin{itemize}
+        \item 评估研究方案 \parencite{lin2023llmeval, shankar2024who, wang2024humanllma, zheng2023judging}
+        \item \textbf{评议研究成果} \parencite{liang2024can, li2024sentiment, ke2024critiquellm, king2026aia}
+      \end{itemize}
+    \column{0.45\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{ai.dominate.png}
+        \caption{AI 评审全面优于人类评审；来源：\parencite{king2026aia}；未经同行评议，但设计严谨}
+      \end{figure}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \frametitle{负责任地使用大语言模型：模型选择}
+      \small
+      \begin{itemize}
+        \item 将模型视为一个函数 $f(data, algo, object)$，各部分的差异会显著塑造其领域内能力（如更擅长编程或写作）
+        \item 因此，我们可能需要根据不同模型的优势与局限，为不同任务选择不同模型
+      \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{负责任地使用大语言模型：模型选择}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.48\textwidth}
+      \small
+      \begin{itemize}
+        \item 例如，\textcolor{blue}{Gemini Carbon} 可能更擅长写作任务，而 Claude Opus 5.5 在工程任务上表现更好
+      \end{itemize}
+    \column{0.5\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.8\linewidth,height=0.6\textheight,keepaspectratio]{bench.writing.png}
+        \caption{来源：\url{https://arena.ai/leaderboard/chat/text}（2026 年 11 月 3 日）}
+      \end{figure}
+  \end{columns}
+\end{frame}
+\begin{frame}
+  \frametitle{负责任地使用大语言模型：模型选择}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.48\textwidth}
+      \small
+      \begin{itemize}
+        \item 例如，Gemini Carbon 可能更擅长写作任务，而 \textcolor{orange}{Claude Opus 5.5} 在工程任务上表现更好
+        \item 总体而言，各模型厂商的商业化路径不同，面向工程任务优化商业模式的厂商可能优先发展编程能力（如 Anthropic）；使用某一模型前，请查看基准测试、回顾文献或进行预测试
+      \end{itemize}
+    \column{0.5\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.8\linewidth,height=0.6\textheight,keepaspectratio]{bench.coding.png}
+        \caption{来源：\url{https://artificialanalysis.ai/agents/coding-agents\#coding-agents-index}（2026 年 11 月 3 日）}
+      \end{figure}
+  \end{columns}
 \end{frame}
 
 \begin{frame}
   \frametitle{大语言模型作为研究对象}
-  \begin{itemize}
-    \item \textbf{模型审计}：政治倾向、社会偏见与价值对齐
-    \item \textbf{对人的影响}：说服、学习、劳动与福祉
-    \item \textbf{对信息生态的影响}：AI 生成内容与搜索
-  \end{itemize}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.55\textwidth}
+      \begin{itemize}
+        \item “一种重塑媒介系统中生产、流通、阐释与权力的传播技术，引发了关于真实性、可及性以及社会不平等再生产的关键问题。”\parencite{zhou2026be}
+        \item 例如，\textcite{liu2026positivity} 评估了大语言模型生成的摘要如何塑造公众情绪，其处理变量即为模型本身。
+      \end{itemize}
+    \column{0.45\textwidth}
+      \begin{center}
+        \begin{figure}
+        \includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{llm.emotion.png}
+        \caption{\textcite{liu2026positivity} 中作为研究对象的 AI 生成摘要（AIGS）}
+        \end{figure}
+      \end{center}
+  \end{columns}
 \end{frame}
+
+% =====================================================================
+\tutframe{小测验}{随堂问题：在线上小组中提出一个以大语言模型为研究对象的研究问题}
+% =====================================================================
 
 % =====================================================================
 \sectionframe{局限性}
@@ -359,33 +648,72 @@
 \end{frame}
 
 % =====================================================================
-\sectionframe{展望}
+\sectionframe{要点总结}
 % =====================================================================
 
 \begin{frame}
-  \frametitle{展望：负责任地使用}
+  \frametitle{要点总结}
   \begin{itemize}
-    \item \textbf{披露}：模型、版本、提示词、参数和使用日期
-    \item \textbf{验证}：大规模应用前与人工基准比对
-    \item \textbf{复现}：固定模型版本；尽可能使用开放权重模型
-    \item \textbf{担责}：研究设计、推断和结论由人负责
+    \item AI 模型（包括大语言模型）在定量社会研究中可以充当研究主体、研究对象和\textcolor{blue}{研究方法}
+    \item \textcolor{blue}{作为研究方法}，应以负责任的方式使用，审慎考虑效度、可复现性、偏差、幻觉、伦理与过度依赖等问题
+    \item \textcolor{blue}{与其他方法一样}，它们发展迅速（且可能越来越快），但对好问题的品味始终是研究（以及业界工作；相信我）的核心
   \end{itemize}
-  ~\\
-  \textcolor{gray}{从工具到研究伙伴——但须有护栏}
 \end{frame}
 
-{
-  \setbeamercolor{background canvas}{bg=black}
-  \begin{frame}
-    \begin{center}
-      \Huge{\textcolor{white}{致谢}}
-    \end{center}
-    \vspace{1cm}
-    \normalsize{\textcolor{white}{感谢\ldots。文责自负。}}
-  \end{frame}
-}
 
-\dividerframe{参考文献}
+\begin{frame}
+  \frametitle{要点总结}
+  \begin{itemize}
+    \item 最后一句话：“……保持怀疑……但别慌！” \parencite{angrist2009mostly}
+  \end{itemize}
+  \begin{figure}
+    \includegraphics[width=1\textwidth,height=0.6\textheight,keepaspectratio]{../figures/dont.panic.png}
+    \caption{来源：\textcite{angrist2009mostly}}
+  \end{figure}
+\end{frame}
+
+% =====================================================================
+\sectionframe{资源}
+% =====================================================================
+
+\begin{frame}
+  \frametitle{资源}
+  \begin{itemize}
+      \item \textbf{为任务找到最合适的 AI 模型}
+        \begin{itemize}
+          \item Artificial Analysis \url{https://artificialanalysis.ai/}
+          \item Arena.ai，AI 模型盲测排行榜 \url{https://arena.ai/leaderboard/}
+        \end{itemize}
+      \item \textbf{发现稿件中的问题}
+        \begin{itemize}
+          \item Refine，发表级技术审阅；已被美国经济学会（AEA）采用 \url{https://www.refine.ink/}
+          \item OpenAIReview，芝加哥大学 HAI 开源的多智能体稿件审阅方案 \url{https://github.com/ChicagoHAI/OpenAIReview}
+          \end{itemize}
+      \item \textbf{复核参考文献与引用}
+        \begin{itemize}
+          \item CiteVerify，“一款用于核验论文参考文献的本地工具”，\url{https://github.com/cuihuash/CiteVerify}
+          \item 与前沿模型对话也会有所帮助
+          \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{资源}
+  \begin{itemize}
+      \item \textbf{统一管理多个 AI 模型与服务}
+        \begin{itemize}
+          \item macOS：magpie，Mac 本地 AI 路由管理工具 \url{https://github.com/yetone/magpie}
+          \item 其他平台：cc-switch，\url{https://github.com/farion1231/cc-switch}
+        \end{itemize}
+      \item \textbf{用母语阅读科学文献}
+        \begin{itemize}
+          \item PDFMathTranslate，以你的语言阅读科学 PDF \url{https://github.com/PDFMathTranslate/PDFMathReader} \parencite{ouyang-etal-2025-pdfmathtranslate}
+        \end{itemize}
+  \end{itemize}
+\end{frame}
+
+
+\sectionframe{参考文献}
 
 \begin{frame}[allowframebreaks]
   \frametitle{参考文献}

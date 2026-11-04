@@ -1,7 +1,7 @@
 \beamer@sectionintoc {1}{Introduction}{3}{0}{1}
 \beamer@sectionintoc {2}{Pre-LLMs AI}{7}{0}{2}
 \beamer@sectionintoc {3}{LLMs}{10}{0}{3}
-\beamer@sectionintoc {4}{Limitations}{30}{0}{4}
-\beamer@sectionintoc {5}{Takeaways}{32}{0}{5}
-\beamer@sectionintoc {6}{Resources}{35}{0}{6}
-\beamer@sectionintoc {7}{References}{38}{0}{7}
+\beamer@sectionintoc {4}{Deploy Responsively}{28}{0}{4}
+\beamer@sectionintoc {5}{Takeaways}{35}{0}{5}
+\beamer@sectionintoc {6}{Resources}{38}{0}{6}
+\beamer@sectionintoc {7}{References}{41}{0}{7}

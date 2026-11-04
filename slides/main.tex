@@ -270,11 +270,11 @@ Using causal and computational methods to evaluate societal and political impact
         \item Social science research often leverages machine learning for various tasks, according to the typology in \textcite{grimmer2021machine}:
         \begin{itemize}
           \item Discovery; e.g., text classification \textcolor{blue}{(Tutorial I)}
-          \item Measurement; e.g., 
-          \item Causal Inference; e.g., 
-          \item Prediction; e.g., 
+          \item Measurement; e.g., regression
+          \item Causal Inference; e.g., heterogeneous treatment effects
+          \item Prediction; e.g., forecasting social trends
         \end{itemize}
-        \item Take FIN528 Machine Learning for Finance / Advanced MachineLearning at PHBS if interested
+        \item Take FIN528 Machine Learning for Finance / Advanced Machine Learning at PHBS if interested
       \end{itemize}
     \column{0.48\textwidth}
       \begin{figure}
@@ -588,6 +588,40 @@ simplified typological structures \parencite{xie2025variance}
   \end{columns}
 \end{frame}
 
+
+% =====================================================================
+\tutframe{TUT3}{Critically evaluate LLM-generated review comments}
+% =====================================================================
+
+
+
+\begin{frame}
+  \frametitle{LLMs as Objects}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.55\textwidth}
+      \begin{itemize}
+        \item ``A communication technology that reconfigures production, circulation, interpretation, and power across media systems, raising critical questions about authenticity, access, and the reproduction of social inequalitie.''\parencite{zhou2026be}
+        \item For example, \textcite{liu2026positivity} evaluates how LLM generated summaries shape public sentiment, the treatment of which is the model.
+      \end{itemize}
+    \column{0.45\textwidth}
+      \begin{center}
+        \begin{figure}
+        \includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{llm.emotion.png}
+        \caption{AIGS as objects in \textcite{liu2026positivity}}
+        \end{figure}
+      \end{center}
+  \end{columns}
+\end{frame}
+
+% =====================================================================
+\tutframe{Quiz}{Propose one research question involving LLMs as objects in the online chatgroup\\Please briefly clarify: \\(a) the question of interest \\(b) operationalization of your variables \\(c) the most important figure to be presented \\(d) expected contribution }
+% =====================================================================
+
+
+% =====================================================================
+\sectionframe{Deploy Responsively}
+% =====================================================================
+
 \begin{frame}
   \frametitle{LLMs deployed responsibly: Selection}
       \small
@@ -613,6 +647,7 @@ simplified typological structures \parencite{xie2025variance}
       \end{figure}
   \end{columns}
 \end{frame}
+
 \begin{frame}
   \frametitle{LLMs deployed responsibly: Selection}
   \begin{columns}[T,onlytextwidth]
@@ -631,43 +666,52 @@ simplified typological structures \parencite{xie2025variance}
   \end{columns}
 \end{frame}
 
+
 \begin{frame}
-  \frametitle{LLMs as Objects}
-  \begin{columns}[T,onlytextwidth]
-    \column{0.55\textwidth}
+  \frametitle{LLMs deployed responsibly: Validity and Reliability}
+  % \begin{columns}[T,onlytextwidth]
+  %   \column{0.48\textwidth}
+      \small
       \begin{itemize}
-        \item ``A communication technology that reconfigures production, circulation, interpretation, and power across media systems, raising critical questions about authenticity, access, and the reproduction of social inequalitie.''\parencite{zhou2026be}
-        \item For example, \textcite{liu2026positivity} evaluates how LLM generated summaries shape public sentiment, the treatment of which is the model.
+        \item Again, always verify the validity and reliability of the model outputs before using them in your research
       \end{itemize}
-    \column{0.45\textwidth}
-      \begin{center}
-        \begin{figure}
-        \includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{llm.emotion.png}
-        \caption{AIGS as objects in \textcite{liu2026positivity}}
-        \end{figure}
-      \end{center}
-  \end{columns}
+  %   \column{0.5\textwidth}
+  %     \begin{figure}
+  %       \centering
+  %       \includegraphics[width=0.8\linewidth,height=0.6\textheight,keepaspectratio]{bench.coding.png}
+  %       \caption{Source: \url{https://artificialanalysis.ai/agents/coding-agents\#coding-agents-index} (Nov 3, 2026)}
+  %     \end{figure}
+  % \end{columns}
 \end{frame}
-
-% =====================================================================
-\tutframe{Quiz}{Pop-up question: Propose one research question involving LLMs as objects in the online group}
-% =====================================================================
-
-% =====================================================================
-\sectionframe{Limitations}
-% =====================================================================
 
 \begin{frame}
-  \frametitle{Limitations}
-  \begin{enumerate}
-    \item \textbf{Validity.} Outputs may not measure what we intend
-    \item \textbf{Reproducibility.} Closed models, silent updates, and stochastic outputs
-    \item \textbf{Bias.} Training data over-represent some groups and languages
-    \item \textbf{Hallucination.} Fabricated facts and citations
-    \item \textbf{Ethics.} Privacy, consent, and data sent to third parties
-    \item \textbf{Over-reliance.} Deskilling and unexamined defaults
-  \end{enumerate}
+  \frametitle{LLMs deployed responsibly: Reproducibility}
+  % \begin{columns}[T,onlytextwidth]
+  %   \column{0.48\textwidth}
+      \small
+      \begin{itemize}
+        \item Reproducibility is important to science
+        \item Ensure that artificial intelligence part of your research is reproducible by 
+        \begin{itemize}
+          \item Prefer API-based access over chat-based access
+          \item Documenting model versions, prompts, thinking-level, and parameters
+          \item Providing detailed procedures
+          \item Sharing code and data
+          \item Fixing the seed for randomness and temperature (search for details)
+        \end{itemize}
+      \end{itemize}
+  %   \column{0.5\textwidth}
+  %     \begin{figure}
+  %       \centering
+  %       \includegraphics[width=0.8\linewidth,height=0.6\textheight,keepaspectratio]{bench.coding.png}
+  %       \caption{Source: \url{https://artificialanalysis.ai/agents/coding-agents\#coding-agents-index} (Nov 3, 2026)}
+  %     \end{figure}
+  % \end{columns}
 \end{frame}
+
+% =====================================================================
+\tutframe{*TUT4 \& 5}{Multimodal object detection and controlled stimulus generation}
+% =====================================================================
 
 % % =====================================================================
 % \sectionframe{Forward-looking}
