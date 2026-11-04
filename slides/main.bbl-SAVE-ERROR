@@ -4856,6 +4856,56 @@
       \verb 10.18653/v1/2024.acl-long.782
       \endverb
     \endentry
+    \entry{zhao2025making}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=915a6c16dfbc964adfb34e35f69a1d35}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Luming},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d60e001d742659e646a947ea71bee467}{%
+           family={Ye},
+           familyi={Y\bibinitperiod},
+           given={WeiMing},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Routledge}%
+      }
+      \strng{namehash}{f99dbb6ec6b8c5097e4f911b40d2f0cc}
+      \strng{fullhash}{f99dbb6ec6b8c5097e4f911b40d2f0cc}
+      \strng{fullhashraw}{f99dbb6ec6b8c5097e4f911b40d2f0cc}
+      \strng{bibnamehash}{f99dbb6ec6b8c5097e4f911b40d2f0cc}
+      \strng{authorbibnamehash}{f99dbb6ec6b8c5097e4f911b40d2f0cc}
+      \strng{authornamehash}{f99dbb6ec6b8c5097e4f911b40d2f0cc}
+      \strng{authorfullhash}{f99dbb6ec6b8c5097e4f911b40d2f0cc}
+      \strng{authorfullhashraw}{f99dbb6ec6b8c5097e4f911b40d2f0cc}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{day}{4}
+      \field{issn}{1751-2786}
+      \field{journaltitle}{Journalism Practice}
+      \field{month}{3}
+      \field{number}{3}
+      \field{shortjournal}{Journal. Pract.}
+      \field{shorttitle}{Making {{Laughter}}}
+      \field{title}{Making {{Laughter}}: {{How Chinese Official Media Produce News}} on the {{Douyin}} ({{TikTok}})}
+      \field{volume}{19}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{pages}{665\bibrangedash 689}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1080/17512786.2023.2199720
+      \endverb
+    \endentry
     \entry{zheng2023judging}{online}{}{}
       \name{author}{13}{}{%
         {{un=0,uniquepart=base,hash=0beb8f75088bfac1e81ca3840d0e89f0}{%
@@ -9902,6 +9952,56 @@
       \range{pages}{64}
       \verb{doi}
       \verb 10.18653/v1/2024.acl-long.782
+      \endverb
+    \endentry
+    \entry{zhao2025making}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=915a6c16dfbc964adfb34e35f69a1d35}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Luming},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d60e001d742659e646a947ea71bee467}{%
+           family={Ye},
+           familyi={Y\bibinitperiod},
+           given={WeiMing},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Routledge}%
+      }
+      \strng{namehash}{f99dbb6ec6b8c5097e4f911b40d2f0cc}
+      \strng{fullhash}{f99dbb6ec6b8c5097e4f911b40d2f0cc}
+      \strng{fullhashraw}{f99dbb6ec6b8c5097e4f911b40d2f0cc}
+      \strng{bibnamehash}{f99dbb6ec6b8c5097e4f911b40d2f0cc}
+      \strng{authorbibnamehash}{f99dbb6ec6b8c5097e4f911b40d2f0cc}
+      \strng{authornamehash}{f99dbb6ec6b8c5097e4f911b40d2f0cc}
+      \strng{authorfullhash}{f99dbb6ec6b8c5097e4f911b40d2f0cc}
+      \strng{authorfullhashraw}{f99dbb6ec6b8c5097e4f911b40d2f0cc}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{day}{4}
+      \field{issn}{1751-2786}
+      \field{journaltitle}{Journalism Practice}
+      \field{month}{3}
+      \field{number}{3}
+      \field{shortjournal}{Journal. Pract.}
+      \field{shorttitle}{Making {{Laughter}}}
+      \field{title}{Making {{Laughter}}: {{How Chinese Official Media Produce News}} on the {{Douyin}} ({{TikTok}})}
+      \field{volume}{19}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{pages}{665\bibrangedash 689}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1080/17512786.2023.2199720
       \endverb
     \endentry
     \entry{zheng2023judging}{online}{}{}
