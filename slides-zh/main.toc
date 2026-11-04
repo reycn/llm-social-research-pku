@@ -4,4 +4,4 @@
 \beamer@sectionintoc {4}{局限性}{30}{0}{4}
 \beamer@sectionintoc {5}{要点总结}{32}{0}{5}
 \beamer@sectionintoc {6}{资源}{35}{0}{6}
-\beamer@sectionintoc {7}{参考文献}{38}{0}{7}
+\beamer@sectionintoc {7}{参考文献}{39}{0}{7}

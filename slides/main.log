@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.11)  4 NOV 2026 20:15
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.11)  4 NOV 2026 22:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/rongxin/Developer/acad/ai-quant-method-pku/slides/main
-(/Users/rongxin/Developer/acad/ai-quant-method-pku/slides/main.tex
+**/Users/rongxin/Developer/acad/llm-social-research-pku/slides/main
+(/Users/rongxin/Developer/acad/llm-social-research-pku/slides/main.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
 (/usr/local/texlive/2026/texmf-dist/tex/latex/beamer/beamer.cls
@@ -1534,9 +1534,9 @@ File: ../figures/llm.emotion.png Graphic file (type bmp)
 
 ]
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 632.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 633.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <7> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 632.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 633.
  [29
 
 ]
@@ -1572,6 +1572,8 @@ File: ../figures/dont.panic.png Graphic file (type bmp)
 
 ] [41
 
+] [42
+
 ]
 
 Package fontspec Info: 
@@ -1592,10 +1594,7 @@ Package fontspec Info:
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
 (fontspec)             <->"[FandolFang-Regular.otf]/OT:script=hani;language=dflt;"
 
- [42
-
-] [43
-
+ [43
 
 ] [44
 
@@ -1610,6 +1609,9 @@ Package fontspec Info:
 
 
 ] [48
+
+
+] [49
 
 
 ]
@@ -1634,12 +1636,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41632 strings out of 468168
- 925955 string characters out of 5432815
- 2058792 words of memory out of 5000000
- 69587 multiletter control sequences out of 15000+600000
+ 41634 strings out of 468168
+ 925985 string characters out of 5432815
+ 2061354 words of memory out of 5000000
+ 69589 multiletter control sequences out of 15000+600000
  636811 words of font info for 110 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 128i,20n,123p,746b,5845s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,20n,123p,750b,5845s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (48 pages).
+Output written on main.pdf (49 pages).
