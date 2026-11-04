@@ -837,6 +837,77 @@
       \verb 10.1017/pan.2025.10022
       \endverb
     \endentry
+    \entry{chernozhukov2017double}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=c75cbe2cefd1e532f636a50892605d06}{%
+           family={Chernozhukov},
+           familyi={C\bibinitperiod},
+           given={Victor},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ef4b66d2ca2dde47ec1b0afa98306775}{%
+           family={Chetverikov},
+           familyi={C\bibinitperiod},
+           given={Denis},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d3c2cc443c71254678269de10d61d61c}{%
+           family={Demirer},
+           familyi={D\bibinitperiod},
+           given={Mert},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7e6b0ea4eee38822cdb0a4361e98752c}{%
+           family={Duflo},
+           familyi={D\bibinitperiod},
+           given={Esther},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b38b53cdfa3ce5b62046f22663d5cc6f}{%
+           family={Hansen},
+           familyi={H\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9c98526d9f1775b95096664c9cf0c633}{%
+           family={Newey},
+           familyi={N\bibinitperiod},
+           given={Whitney},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e8ad45c8076487daa445bfbeb4e02a04}
+      \strng{fullhash}{e1a12cf73f48bd79781ea27c9191c2a8}
+      \strng{fullhashraw}{e1a12cf73f48bd79781ea27c9191c2a8}
+      \strng{bibnamehash}{e1a12cf73f48bd79781ea27c9191c2a8}
+      \strng{authorbibnamehash}{e1a12cf73f48bd79781ea27c9191c2a8}
+      \strng{authornamehash}{e8ad45c8076487daa445bfbeb4e02a04}
+      \strng{authorfullhash}{e1a12cf73f48bd79781ea27c9191c2a8}
+      \strng{authorfullhashraw}{e1a12cf73f48bd79781ea27c9191c2a8}
+      \field{extraname}{1}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0002-8282}
+      \field{journaltitle}{American Economic Review}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{number}{5}
+      \field{shortjournal}{Am. Econ. Rev.}
+      \field{title}{Double/{{Debiased}}/{{Neyman Machine Learning}} of {{Treatment Effects}}}
+      \field{volume}{107}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{pages}{261\bibrangedash 265}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1257/aer.p20171038
+      \endverb
+    \endentry
     \entry{chernozhukov2018double}{article}{}{}
       \name{author}{7}{}{%
         {{un=0,uniquepart=base,hash=c75cbe2cefd1e532f636a50892605d06}{%
@@ -890,6 +961,7 @@
       \strng{authornamehash}{e8ad45c8076487daa445bfbeb4e02a04}
       \strng{authorfullhash}{7892f5fdea2b46a0fb4e6c031c27c781}
       \strng{authorfullhashraw}{7892f5fdea2b46a0fb4e6c031c27c781}
+      \field{extraname}{2}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{extradatescope}{labelyear}
@@ -1845,6 +1917,55 @@
       \verb 10.1007/978-3-031-88045-2_4
       \endverb
     \endentry
+    \entry{imai2026leveraging}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=3fb69a8c942c769b74775b484c82bbe9}{%
+           family={Imai},
+           familyi={I\bibinitperiod},
+           given={Kosuke},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7aad2ddf8217def3d1ece0931f3e7a29}{%
+           family={Nakamura},
+           familyi={N\bibinitperiod},
+           given={Kentaro},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Proceedings of the National Academy of Sciences}%
+      }
+      \strng{namehash}{78041fd2022b92966203bb05d2f90553}
+      \strng{fullhash}{78041fd2022b92966203bb05d2f90553}
+      \strng{fullhashraw}{78041fd2022b92966203bb05d2f90553}
+      \strng{bibnamehash}{78041fd2022b92966203bb05d2f90553}
+      \strng{authorbibnamehash}{78041fd2022b92966203bb05d2f90553}
+      \strng{authornamehash}{78041fd2022b92966203bb05d2f90553}
+      \strng{authorfullhash}{78041fd2022b92966203bb05d2f90553}
+      \strng{authorfullhashraw}{78041fd2022b92966203bb05d2f90553}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{8}
+      \field{journaltitle}{Proceedings of the National Academy of Sciences}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{number}{36}
+      \field{shortjournal}{Proc. Natl. Acad. Sci.}
+      \field{title}{Leveraging Generative {{AI}} for Causal Inference with Unstructured Data}
+      \field{volume}{123}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \field{pages}{e2530532123}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1073/pnas.2530532123
+      \endverb
+    \endentry
     \entry{jiang2024balanced}{inbook}{}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=fb9df8ae6f2840327f9f6ac22a775a0a}{%
@@ -2113,6 +2234,45 @@
       \verb{url}
       \verb https://gking.harvard.edu/peerless/
       \endverb
+    \endentry
+    \entry{king2026}{unpublished}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=e62a3c431989b28a48ea18aa5cfcfbed}{%
+           family={King},
+           familyi={K\bibinitperiod},
+           given={Gary},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=525088c4272a93c67f7c5e47f118568c}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Yiqing},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2da86ed464d675ab077eb2e5d3ea8d9c}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Leo\bibnamedelima Y.},
+           giveni={L\bibinitperiod\bibinitdelim Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{bbe58ba46a4c96bd6f0396dc9aec81c2}
+      \strng{fullhash}{3ada0caeb17f17941aa7c7b9eda10be9}
+      \strng{fullhashraw}{3ada0caeb17f17941aa7c7b9eda10be9}
+      \strng{bibnamehash}{3ada0caeb17f17941aa7c7b9eda10be9}
+      \strng{authorbibnamehash}{3ada0caeb17f17941aa7c7b9eda10be9}
+      \strng{authornamehash}{bbe58ba46a4c96bd6f0396dc9aec81c2}
+      \strng{authorfullhash}{3ada0caeb17f17941aa7c7b9eda10be9}
+      \strng{authorfullhashraw}{3ada0caeb17f17941aa7c7b9eda10be9}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Replication Certification at Publication: Checkable by Anyone, Anywhere, in Seconds, Forever}
+      \field{year}{2026}
     \endentry
     \entry{kolluri2025finetuning}{inbook}{}{}
       \name{author}{4}{}{%
@@ -5633,6 +5793,77 @@
       \verb 10.1017/pan.2025.10022
       \endverb
     \endentry
+    \entry{chernozhukov2017double}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=c75cbe2cefd1e532f636a50892605d06}{%
+           family={Chernozhukov},
+           familyi={C\bibinitperiod},
+           given={Victor},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ef4b66d2ca2dde47ec1b0afa98306775}{%
+           family={Chetverikov},
+           familyi={C\bibinitperiod},
+           given={Denis},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d3c2cc443c71254678269de10d61d61c}{%
+           family={Demirer},
+           familyi={D\bibinitperiod},
+           given={Mert},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7e6b0ea4eee38822cdb0a4361e98752c}{%
+           family={Duflo},
+           familyi={D\bibinitperiod},
+           given={Esther},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b38b53cdfa3ce5b62046f22663d5cc6f}{%
+           family={Hansen},
+           familyi={H\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9c98526d9f1775b95096664c9cf0c633}{%
+           family={Newey},
+           familyi={N\bibinitperiod},
+           given={Whitney},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e8ad45c8076487daa445bfbeb4e02a04}
+      \strng{fullhash}{e1a12cf73f48bd79781ea27c9191c2a8}
+      \strng{fullhashraw}{e1a12cf73f48bd79781ea27c9191c2a8}
+      \strng{bibnamehash}{e1a12cf73f48bd79781ea27c9191c2a8}
+      \strng{authorbibnamehash}{e1a12cf73f48bd79781ea27c9191c2a8}
+      \strng{authornamehash}{e8ad45c8076487daa445bfbeb4e02a04}
+      \strng{authorfullhash}{e1a12cf73f48bd79781ea27c9191c2a8}
+      \strng{authorfullhashraw}{e1a12cf73f48bd79781ea27c9191c2a8}
+      \field{extraname}{1}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0002-8282}
+      \field{journaltitle}{American Economic Review}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{number}{5}
+      \field{shortjournal}{Am. Econ. Rev.}
+      \field{title}{Double/{{Debiased}}/{{Neyman Machine Learning}} of {{Treatment Effects}}}
+      \field{volume}{107}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{pages}{261\bibrangedash 265}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1257/aer.p20171038
+      \endverb
+    \endentry
     \entry{chernozhukov2018double}{article}{}{}
       \name{author}{7}{}{%
         {{un=0,uniquepart=base,hash=c75cbe2cefd1e532f636a50892605d06}{%
@@ -5686,6 +5917,7 @@
       \strng{authornamehash}{e8ad45c8076487daa445bfbeb4e02a04}
       \strng{authorfullhash}{7892f5fdea2b46a0fb4e6c031c27c781}
       \strng{authorfullhashraw}{7892f5fdea2b46a0fb4e6c031c27c781}
+      \field{extraname}{2}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{extradatescope}{labelyear}
@@ -6641,6 +6873,55 @@
       \verb 10.1007/978-3-031-88045-2_4
       \endverb
     \endentry
+    \entry{imai2026leveraging}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=3fb69a8c942c769b74775b484c82bbe9}{%
+           family={Imai},
+           familyi={I\bibinitperiod},
+           given={Kosuke},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7aad2ddf8217def3d1ece0931f3e7a29}{%
+           family={Nakamura},
+           familyi={N\bibinitperiod},
+           given={Kentaro},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Proceedings of the National Academy of Sciences}%
+      }
+      \strng{namehash}{78041fd2022b92966203bb05d2f90553}
+      \strng{fullhash}{78041fd2022b92966203bb05d2f90553}
+      \strng{fullhashraw}{78041fd2022b92966203bb05d2f90553}
+      \strng{bibnamehash}{78041fd2022b92966203bb05d2f90553}
+      \strng{authorbibnamehash}{78041fd2022b92966203bb05d2f90553}
+      \strng{authornamehash}{78041fd2022b92966203bb05d2f90553}
+      \strng{authorfullhash}{78041fd2022b92966203bb05d2f90553}
+      \strng{authorfullhashraw}{78041fd2022b92966203bb05d2f90553}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{8}
+      \field{journaltitle}{Proceedings of the National Academy of Sciences}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{number}{36}
+      \field{shortjournal}{Proc. Natl. Acad. Sci.}
+      \field{title}{Leveraging Generative {{AI}} for Causal Inference with Unstructured Data}
+      \field{volume}{123}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \field{pages}{e2530532123}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1073/pnas.2530532123
+      \endverb
+    \endentry
     \entry{jiang2024balanced}{inbook}{}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=fb9df8ae6f2840327f9f6ac22a775a0a}{%
@@ -6909,6 +7190,45 @@
       \verb{url}
       \verb https://gking.harvard.edu/peerless/
       \endverb
+    \endentry
+    \entry{king2026}{unpublished}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=e62a3c431989b28a48ea18aa5cfcfbed}{%
+           family={King},
+           familyi={K\bibinitperiod},
+           given={Gary},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=525088c4272a93c67f7c5e47f118568c}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Yiqing},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2da86ed464d675ab077eb2e5d3ea8d9c}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Leo\bibnamedelima Y.},
+           giveni={L\bibinitperiod\bibinitdelim Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{bbe58ba46a4c96bd6f0396dc9aec81c2}
+      \strng{fullhash}{3ada0caeb17f17941aa7c7b9eda10be9}
+      \strng{fullhashraw}{3ada0caeb17f17941aa7c7b9eda10be9}
+      \strng{bibnamehash}{3ada0caeb17f17941aa7c7b9eda10be9}
+      \strng{authorbibnamehash}{3ada0caeb17f17941aa7c7b9eda10be9}
+      \strng{authornamehash}{bbe58ba46a4c96bd6f0396dc9aec81c2}
+      \strng{authorfullhash}{3ada0caeb17f17941aa7c7b9eda10be9}
+      \strng{authorfullhashraw}{3ada0caeb17f17941aa7c7b9eda10be9}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Replication Certification at Publication: Checkable by Anyone, Anywhere, in Seconds, Forever}
+      \field{year}{2026}
     \endentry
     \entry{kolluri2025finetuning}{inbook}{}{}
       \name{author}{4}{}{%

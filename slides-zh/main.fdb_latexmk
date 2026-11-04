@@ -1,17 +1,17 @@
 # Fdb version 4
-["biber main"] 1793804894.39764 "main.bcf" "main.bbl" "main" 1793804916.82401 0
-  "main.bcf" 1793804914.63459 144725 467b5cc71a59274436f13178b19fd709 "xelatex"
-  "refs.bib" 1793776052.34786 39633 0084a4d2e1210a49b851468ad8f7ef9c ""
+["biber main"] 1793807361.0397 "main.bcf" "main.bbl" "main" 1793807385.20303 0
+  "main.bcf" 1793807382.66744 145234 6dd44db6388607beafa65d5492d1854e "xelatex"
+  "refs.bib" 1793807237.46531 40808 56b495889c4d3249781b53875c77af24 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["xdvipdfmx"] 1793804914.7212 "main.xdv" "main.pdf" "main" 1793804916.82594 0
-  "main.xdv" 1793804914.63571 2556240 b72075d78c854c3cc44e40322eb084ea "xelatex"
+["xdvipdfmx"] 1793807382.75156 "main.xdv" "main.pdf" "main" 1793807385.20504 0
+  "main.xdv" 1793807382.66841 2648068 fb72d74ea30b2668d58a5770f2a4b2bf "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1793804905.12486 "main.tex" "main.xdv" "main" 1793804916.82407 0
+["xelatex"] 1793807372.54445 "main.tex" "main.xdv" "main" 1793807385.2031 0
   "../figures/ai.dominate.png" 1793776031.45439 64695 6bc136e1f4847d08c114a512fe2d8171 ""
   "../figures/bench.coding.png" 1793691328.61006 70918 742962a4b28327ddc0e119a577eee9d4 ""
   "../figures/bench.writing.png" 1793691347.46008 124042 f2e11580baf3f068fad751e3ed1c333e ""
@@ -19,7 +19,9 @@
   "../figures/cultural.bias.png" 1793695502.22682 396795 3e6495e3eef67d28fcf10b29f3ab9810 ""
   "../figures/dont.panic.png" 1793686593.09792 64036 cbd1da090ff27d2e63681314cceac120 ""
   "../figures/fig1.outperform.png" 1793774371.14557 91466 4eacdc0e8a85df8fea75652d8a5f7889 ""
+  "../figures/gary.replication.png" 1793807266.96393 343406 43283a5f08ab9d0b62c952c903931024 ""
   "../figures/gpt.lucid.png" 1793692715.42965 69590 634d69ecb4d311ba7d27518788d2e5f2 ""
+  "../figures/imai.pnas.png" 1793805390.01529 272861 7fa5c140e8668254f111539aae98c091 ""
   "../figures/lit.1.png" 1793774785.7788 41485 36d49d01f0caf5cd10236659933af67f ""
   "../figures/lit.2.png" 1793774785.75674 56372 eef201b874d1d711c3db7b83ca828c6b ""
   "../figures/llm.emotion.png" 1793773182.461 118944 6c19125d930ad688f25038d8bedfdd07 ""
@@ -298,12 +300,12 @@
   "/usr/local/texlive/2026/texmf-dist/web2c/texmf.cnf" 1770478701 43630 e9fa012910491fe5ae08a72c3c2997a7 ""
   "/usr/local/texlive/2026/texmf-var/web2c/xetex/xelatex.fmt" 1773163828 5948561 c88b6825410754ac8662ac4a0806877d ""
   "/usr/local/texlive/2026/texmf.cnf" 1772409725 577 648cd9f92f9c0eac486f4c71c85cfbbe ""
-  "main.aux" 1793804914.62189 36734 4e7c9135398d5387e495918fc91a14c2 "xelatex"
-  "main.bbl" 1793804895.47443 384210 1b2b60f58022a2cef345263f3c7ceeba "biber main"
-  "main.nav" 1793804914.63562 5838 4bded4c1c6cb002044ebb1f186cbcbc6 "xelatex"
-  "main.out" 1793804914.63325 559 4e0447df45f64f9af61e58857038e268 "xelatex"
-  "main.run.xml" 1793804914.63545 2456 ea9f3883384e82d68d02438387ab455c "xelatex"
-  "main.tex" 1793804832.78104 34823 b97dc9821c99c6854a6dc18bda11554b ""
+  "main.aux" 1793807382.6545 38055 d3086af033ab9e6eabba668fbdc5c339 "xelatex"
+  "main.bbl" 1793807362.19984 397016 90bc226978f98d753ebf1157d3ec6bba "biber main"
+  "main.nav" 1793807382.66832 5931 8f966a2f09a7457725c0c440d21c15c9 "xelatex"
+  "main.out" 1793807382.6664 559 4e0447df45f64f9af61e58857038e268 "xelatex"
+  "main.run.xml" 1793807382.66818 2456 ea9f3883384e82d68d02438387ab455c "xelatex"
+  "main.tex" 1793807297.89455 35995 8f2f5b89245c936e3beeb1a5045f543e ""
   (generated)
   "main.aux"
   "main.bcf"

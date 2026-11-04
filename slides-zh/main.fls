@@ -572,6 +572,8 @@ INPUT ../figures/ai.dominate.png
 INPUT ../figures/ai.dominate.png
 INPUT ../figures/llm.emotion.png
 INPUT ../figures/llm.emotion.png
+INPUT ../figures/imai.pnas.png
+INPUT ../figures/imai.pnas.png
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
@@ -581,6 +583,8 @@ INPUT ../figures/bench.writing.png
 INPUT ../figures/bench.writing.png
 INPUT ../figures/bench.coding.png
 INPUT ../figures/bench.coding.png
+INPUT ../figures/gary.replication.png
+INPUT ../figures/gary.replication.png
 INPUT ../figures/dont.panic.png
 INPUT ../figures/dont.panic.png
 INPUT ../figures/dont.panic.png

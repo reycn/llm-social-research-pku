@@ -164,7 +164,7 @@
 }
 
 % ---------- Title page ----------
-\title[AI in Quantitative Social Research]{Responsibly Deploy AI in Quantitative Social Research\\\small As a part of module Social Research Methods}
+\title[AI in Quantitative Social Research]{Responsibly Deploy AI in Quantitative Social Research\\\small As part of the Social Research Methods module}
 \author[Rongxin Ouyang]{Rongxin Ouyang$^{*}$}
 \institute{\textcolor{gray}{
     $^{*}$ PhD Candidate in Computational Communication, National University of Singapore\\Email: rongxin@u.nus.edu / Website: https://rongxin.me\\
@@ -194,12 +194,12 @@ Using causal and computational methods to evaluate \\societal and political impa
 % =====================================================================
 
 \begin{frame}
-  \frametitle{What Is artificial intelligence?}
+  \frametitle{What is artificial intelligence?}
   \begin{columns}[T,onlytextwidth]
     \column{0.55\textwidth}
       \begin{itemize}
         \item Computational agents that act intelligently  \parencite{poole2023artificial}
-        \item But what is intelligence -- see Figure
+        \item But what is intelligence? See the figure
       \end{itemize}
     \column{0.45\textwidth}
       \begin{center}
@@ -212,13 +212,13 @@ Using causal and computational methods to evaluate \\societal and political impa
 \end{frame}
 
 \begin{frame}
-  \frametitle{What Is artificial intelligence?}
+  \frametitle{What is artificial intelligence?}
   \begin{columns}[T,onlytextwidth]
     \column{0.55\textwidth}
       \begin{itemize}
         \item Computational agents that act intelligently \parencite[][]{poole2023artificial}; 
-        \item But what is intelligence -- see Figure
-        \item More importantly, please be ware of the differences ...
+        \item But what is intelligence? See the figure
+        \item More importantly, please be aware of the differences ...
       \end{itemize}
     \column{0.45\textwidth}
       \begin{center}
@@ -243,9 +243,9 @@ Using causal and computational methods to evaluate \\societal and political impa
   \footnotesize
   \begin{itemize}
     \item * Artificial intelligence is an old field developed decades ago \parencite[see][]{poole2023artificial}; 
-    \item * Pre-LLMs, early tools mainly classified, clustered, or predicted from human-produced traces \parencite{zhou2026be}. \footnote{Likewise, Percy Liang uses 2016, 2018, and Today to divide three time periods, see \url{https://cs336.stanford.edu/lectures/?trace=lecture_01}}
-    \item * Birth of LLMs, Transformers \parencite{vaswani2017attention}, a model structure to parallelize training enabling large datasets and model sizes
-    \item Post-LLMs, we focus on the LLM era post-2020 \parencite[marked by GPT-3; ][]{xu2026large} and its implications for computational social science research; with just a brief tutorical of text classficiation using RoBERTa
+    \item * Pre-LLMs: early tools mainly classified, clustered, or predicted from human-produced traces \parencite{zhou2026be}. \footnote{Likewise, Percy Liang uses 2016, 2018, and today to divide three time periods; see \url{https://cs336.stanford.edu/lectures/?trace=lecture_01}}
+    \item * Birth of LLMs: the Transformer \parencite{vaswani2017attention}, a model architecture that parallelizes training, enabling large datasets and model sizes
+    \item Post-LLMs: we focus on the LLM era after 2020 \parencite[marked by GPT-3; ][]{xu2026large} and its implications for computational social science research, with a brief tutorial on text classification using RoBERTa
   \end{itemize}
     \column{0.38\textwidth}
       \begin{figure}
@@ -302,8 +302,8 @@ Using causal and computational methods to evaluate \\societal and political impa
   \footnotesize
   \begin{center}
     \itemize{
-      \item Large language models (LLMs) are language models roughly with no less than 1 billion parameters (Percy Liang; e.g., GPT, Claude)\footnote{We are not a CS class, so it should be fine to use this definition.}
-      \item A recent review article suggests four roles of LLMs in computational social science: Subject, assistant, collaborator, evaluator
+      \item Large language models (LLMs) are language models with roughly 1 billion or more parameters (Percy Liang; e.g., GPT, Claude)\footnote{This is not a CS class, so it should be fine to use this definition.}
+      \item A recent review article suggests four roles of LLMs in computational social science: subject, assistant, collaborator, and evaluator
     }
     \end{center}
     \begin{figure}
@@ -316,7 +316,7 @@ Using causal and computational methods to evaluate \\societal and political impa
   \frametitle{Roles of LLMs in Computational Social Science}
   \begin{center}
     \itemize{
-      \item From more perspectives, we may propose a comprehensive categorization of LLM roles in CSS; to be elaborated in the following slides
+      \item Drawing on more perspectives, we propose a comprehensive categorization of LLM roles in CSS, elaborated in the following slides
     }
   \end{center}
   \begin{center}
@@ -345,7 +345,7 @@ Using causal and computational methods to evaluate \\societal and political impa
       \begin{itemize}
         \item LLMs serve as research subjects, according to \textcite{xu2026large}:
         \begin{itemize}
-          \item Generate survey responses \parencite{dillion2023cana,dominguez-olmedo2024questioninga,hamalainen2023evaluatinga,xie2025variance}
+          \item Generating survey responses \parencite{dillion2023cana,dominguez-olmedo2024questioninga,hamalainen2023evaluatinga,xie2025variance}
           \item Simulating behavior sequences \parencite{wang2025user,park2023generativea,yan2024opencity}
           \item Simulating social interactions \parencite{ashery2025emergent,gao2025s,xie2024can,zhang2024exploring}
         \end{itemize}
@@ -367,7 +367,7 @@ Using causal and computational methods to evaluate \\societal and political impa
 %       \begin{itemize}
 %         \item LLMs serve as research subjects, according to \textcite{xu2026large}:
 %         \begin{itemize}
-%           \item Generate survey responses \parencite{dillion2023cana,dominguez-olmedo2024questioninga,hamalainen2023evaluatinga,xie2025variance}
+%           \item Generating survey responses \parencite{dillion2023cana,dominguez-olmedo2024questioninga,hamalainen2023evaluatinga,xie2025variance}
 %           \item Simulating behavior sequences \parencite{wang2025user,park2023generativea,yan2024opencity}
 %           \item Simulating social interactions \parencite{ashery2025emergent,gao2025s,xie2024can,zhang2024exploring}
 %         \end{itemize}
@@ -399,7 +399,7 @@ Using causal and computational methods to evaluate \\societal and political impa
       \begin{figure}
         \centering
         \includegraphics[width=0.9\linewidth,height=0.6\textheight,keepaspectratio]{../figures/gpt.lucid.png}
-        \caption{Analysis of GPT-3 and human responses from the Lucid su; Fig 3 in \textcite{argyle2023out}}
+        \caption{Analysis of GPT-3 and human responses from the Lucid survey; Fig 3 in \textcite{argyle2023out}}
       \end{figure}
   \end{columns}
 \end{frame}
@@ -413,9 +413,9 @@ Using causal and computational methods to evaluate \\societal and political impa
       \begin{itemize}
       \item \textbf{Cons:}
       \begin{itemize}
-        \item Poorly refelcting ``hard-to-reach \textcolor{red}{populations}'' \parencite{bollen2026nationally}; fail to capture experiential and cultural depth \parencite{pataranutaporn2025simulating}
+        \item Poorly reflect ``hard-to-reach \textcolor{red}{populations}'' \parencite{bollen2026nationally}; fail to capture experiential and cultural depth \parencite{pataranutaporn2025simulating}
         \item Reflect certain partisan \parencite{santurkar2023whose} or cultural \textcolor{red}{biases} \parencite{tao2024cultural}
-        \item Closed to averages but less \textcolor{red}{variation} \parencite{bisbee2024synthetica}; have strong, varying biases and have low-variance in opinnion or attitudinal research\parencite{boelaert2025machine}; likely to both misportray and flatten demographic representations \parencite{wang2025large}; and tend to compress heterogeneity into
+        \item Close to averages but with less \textcolor{red}{variation} \parencite{bisbee2024synthetica}; have strong, varying biases and have low variance in opinion or attitudinal research \parencite{boelaert2025machine}; likely to both misportray and flatten demographic representations \parencite{wang2025large}; and tend to compress heterogeneity into
 simplified typological structures \parencite{xie2025variance}
       \end{itemize}
     \end{itemize}
@@ -423,7 +423,7 @@ simplified typological structures \parencite{xie2025variance}
       \begin{figure}
         \centering
         \includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{../figures/cultural.bias.png}
-        \caption{Deviated LLM-generated answers related to values compared with different countries; Fig 1 in \textcite{tao2024cultural}}
+        \caption{LLM-generated answers on values deviate from those of different countries; Fig 1 in \textcite{tao2024cultural}}
       \end{figure}
   \end{columns}
 \end{frame}
@@ -437,9 +437,9 @@ simplified typological structures \parencite{xie2025variance}
       \begin{itemize}
       \item \textbf{Cons:}
       \begin{itemize}
-        \item Poorly refelcting ``hard-to-reach \textcolor{red}{populations}'' \parencite{bollen2026nationally}; fail to capture experiential and cultural depth \parencite{pataranutaporn2025simulating}
+        \item Poorly reflect ``hard-to-reach \textcolor{red}{populations}'' \parencite{bollen2026nationally}; fail to capture experiential and cultural depth \parencite{pataranutaporn2025simulating}
         \item Reflect certain partisan \parencite{santurkar2023whose} or cultural \textcolor{red}{biases} \parencite{tao2024cultural}
-        \item Closed to averages but less \textcolor{red}{variation} \parencite{bisbee2024synthetica}; have strong, varying biases and have low-variance in opinnion or attitudinal research\parencite{boelaert2025machine}; likely to both misportray and flatten demographic representations \parencite{wang2025large}; and tend to compress heterogeneity into
+        \item Close to averages but with less \textcolor{red}{variation} \parencite{bisbee2024synthetica}; have strong, varying biases and have low variance in opinion or attitudinal research \parencite{boelaert2025machine}; likely to both misportray and flatten demographic representations \parencite{wang2025large}; and tend to compress heterogeneity into
 simplified typological structures \parencite{xie2025variance}
       \end{itemize}
     \end{itemize}
@@ -447,7 +447,7 @@ simplified typological structures \parencite{xie2025variance}
       \begin{figure}
         \centering
         \includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{../figures/xie.eval.part.png}
-        \caption{Failing to capture the dispersion of real-world distribution; Fig 3 in \textcite{xie2025variance}}
+        \caption{Failing to capture the dispersion of real-world distributions; Fig 3 in \textcite{xie2025variance}}
       \end{figure}
   \end{columns}
 \end{frame}
@@ -465,7 +465,7 @@ simplified typological structures \parencite{xie2025variance}
       \begin{figure}
         \centering
         \includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{../figures/validity}
-        \caption{Validity and reliability; in \textcite{babbie2021practice}}
+        \caption{Validity and reliability; from \textcite{babbie2021practice}}
       \end{figure}
   \end{columns}
 \end{frame}
@@ -476,11 +476,11 @@ simplified typological structures \parencite{xie2025variance}
       \footnotesize
       \begin{itemize}
         \item \textit{Validity} and \textit{reliability} remain concerns \parencite{zhou2026be}
-      \item Three strategies to improve
+      \item Three strategies for improvement
       \begin{itemize}
         \item Alignment (pre-use): Adjusting model outputs; mostly done by companies and in computer science studies
         \item Optimization (in-use): \textbf{Fine-tuning or prompting} strategies to improve performance on specific tasks \parencite[e.g.,][]{xie2025variance,tao2024cultural,kolluri2025finetuning}
-        \item Correction (post-use): Post-processing corrections ; an emerging promise in econometric and machine learning literature \parencite[e.g.,][]{chernozhukov2018double, egami2024using}
+        \item Correction (post-use): Post-processing corrections; an emerging promise in the econometric and machine learning literature \parencite[e.g.,][]{chernozhukov2018double, egami2024using}
       \end{itemize}
     \end{itemize}
     \column{0.4\textwidth}
@@ -497,7 +497,7 @@ simplified typological structures \parencite{xie2025variance}
   \begin{columns}[T,onlytextwidth]
     \column{0.5\textwidth}
   \begin{itemize}
-    \item Interviewing human participants (qualitative)\parencite{hanschmann2025ladderchat,li2024lminterview, park2026llma, tuggener2024roleplaying}
+    \item Interviewing human participants (qualitative) \parencite{hanschmann2025ladderchat,li2024lminterview, park2026llma, tuggener2024roleplaying}
     \item \textbf{Supporting experiments} \parencite{velez2025confronting, hackenburg2024evaluating, argyle2023leveraging,allamong2026causal}
     \item Analysing textual content \parencite{gilardi2023chatgpt, jiang2024balanced, goyal2023news, chew2023llmassisted}
     \item Mining social networks \parencite{yu2025leveraging, luceri2024leveraging, feng2024what}
@@ -517,7 +517,7 @@ simplified typological structures \parencite{xie2025variance}
   \begin{columns}[T,onlytextwidth]
     \column{0.5\textwidth}
   \begin{itemize}
-    \item Interviewing human participants (qualitative)\parencite{hanschmann2025ladderchat,li2024lminterview, park2026llma, tuggener2024roleplaying}
+    \item Interviewing human participants (qualitative) \parencite{hanschmann2025ladderchat,li2024lminterview, park2026llma, tuggener2024roleplaying}
     \item Supporting experiments \parencite{velez2025confronting, hackenburg2024evaluating, argyle2023leveraging,allamong2026causal}
     \item \textbf{Analysing textual content} \parencite{gilardi2023chatgpt, jiang2024balanced, goyal2023news, chew2023llmassisted}
     \item Mining social networks \parencite{yu2025leveraging, luceri2024leveraging, feng2024what}
@@ -560,10 +560,10 @@ simplified typological structures \parencite{xie2025variance}
         \only<1>{%
         \includegraphics[width=\linewidth,height=0.3\textheight,keepaspectratio]{lit.1.png}\\[1ex]
         \includegraphics[width=\linewidth,height=0.3\textheight,keepaspectratio]{lit.2.png}
-        \caption{PhD level literature review system conducted by LLM; see \textcite{asai2026synthesizing}}}%
+        \caption{PhD-level literature review system powered by LLMs; see \textcite{asai2026synthesizing}}}%
         \only<2>{%
         \includegraphics[trim=0 0 24 0,clip,width=\linewidth,height=0.6\textheight,keepaspectratio]{better.hypo.png}
-        \caption{Better novelty and excitement in hypotheses generated by LLM; see \textcite{si2024cana}}
+        \caption{Greater novelty and excitement in LLM-generated hypotheses; see \textcite{si2024cana}}
         }%
       \end{figure}
   \end{columns}
@@ -604,8 +604,8 @@ simplified typological structures \parencite{xie2025variance}
   \begin{columns}[T,onlytextwidth]
     \column{0.55\textwidth}
       \begin{itemize}
-        \item ``A communication technology that reconfigures production, circulation, interpretation, and power across media systems, raising critical questions about authenticity, access, and the reproduction of social inequalitie.''\parencite{zhou2026be}
-        \item For example, \textcite{liu2026positivity} evaluates how LLM generated summaries shape public sentiment, the treatment of which is the model.
+        \item ``A communication technology that reconfigures production, circulation, interpretation, and power across media systems, raising critical questions about authenticity, access, and the reproduction of social inequalities.''\parencite{zhou2026be}
+        \item For example, \textcite{liu2026positivity} evaluates how LLM-generated summaries shape public sentiment, where the treatment is the model itself.
       \end{itemize}
     \column{0.45\textwidth}
       \begin{center}
@@ -618,8 +618,26 @@ simplified typological structures \parencite{xie2025variance}
 \end{frame}
 
 % =====================================================================
-\tutframe{Quiz}{Propose one research question involving LLMs as objects in the online chatgroup\\Please briefly clarify: \\(a) the question of interest \\(b) operationalization of your variables \\(c) the most important figure to be presented \\(d) expected contribution }
+\tutframe{Quiz}{Propose one research question involving LLMs as objects in the online group chat\\Please briefly clarify: \\(a) the question of interest \\(b) operationalization of your variables \\(c) the most important figure to be presented \\(d) expected contribution }
 % =====================================================================
+
+
+\begin{frame}
+  \frametitle{*LLM for inference: New frontier}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.5\textwidth}
+      \small
+      \begin{itemize}
+        \item Double/debiased machine learning enables valid causal inference while flexible ML models estimate nuisance functions \parencite{chernozhukov2017double}; building on this, \textcite{imai2026leveraging} leverage the internal representations of generative AI to estimate causal effects of unstructured treatments such as texts and images
+      \end{itemize}
+    \column{0.48\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{imai.pnas.png}
+        \caption{Source: \textcite{imai2026leveraging}}
+      \end{figure}
+  \end{columns}
+\end{frame}
 
 
 % =====================================================================
@@ -630,7 +648,7 @@ simplified typological structures \parencite{xie2025variance}
   \frametitle{LLMs deployed responsibly: Selection}
       \small
       \begin{itemize}
-        \item Consider a model as a function, $f(data, algo, object)$, the differences in each part would substantially shape their in-domain capabilities (like better coding or writing)
+        \item Consider a model as a function, $f(data, algo, object)$; differences in each part substantially shape its in-domain capabilities (like better coding or writing)
         \item In this sense, we may need to choose different models for different tasks, depending on their strengths and limitations
       \end{itemize}
 \end{frame}
@@ -641,7 +659,7 @@ simplified typological structures \parencite{xie2025variance}
     \column{0.48\textwidth}
       \small
       \begin{itemize}
-        \item For example, you may expect \textcolor{blue}{Gemini Carbon} to excel in writing tasks whereas Claude Opus 5.5 outperforms in engineering
+        \item For example, you may expect \textcolor{blue}{Gemini Carbon} to excel at writing tasks, whereas Claude Opus 5.5 outperforms in engineering
       \end{itemize}
     \column{0.5\textwidth}
       \begin{figure}
@@ -658,8 +676,8 @@ simplified typological structures \parencite{xie2025variance}
     \column{0.48\textwidth}
       \small
       \begin{itemize}
-        \item For example, you may expect Gemini Carbon to excel in writing tasks whereas \textcolor{orange}{Claude Opus 5.5} outperforms in engineering
-        \item In general, model labs have different commercialization models, for business model optimized for engineering tasks may prioritize coding capabilities (e.g., Anthropic); please check benchmarks / review the literature / do a pilot test before using a model
+        \item For example, you may expect Gemini Carbon to excel at writing tasks, whereas \textcolor{orange}{Claude Opus 5.5} outperforms in engineering
+        \item In general, model labs follow different commercialization strategies; a lab whose business model targets engineering tasks may prioritize coding capabilities (e.g., Anthropic); please check benchmarks / review the literature / do a pilot test before using a model
       \end{itemize}
     \column{0.5\textwidth}
       \begin{figure}
@@ -690,27 +708,27 @@ simplified typological structures \parencite{xie2025variance}
 
 \begin{frame}
   \frametitle{LLMs deployed responsibly: Reproducibility}
-  % \begin{columns}[T,onlytextwidth]
-  %   \column{0.48\textwidth}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.48\textwidth}
       \small
       \begin{itemize}
         \item Reproducibility is important to science
-        \item Ensure that artificial intelligence part of your research is reproducible by 
+        \item Ensure that the AI part of your research is reproducible by:
         \begin{itemize}
-          \item Prefer API-based access over chat-based access
-          \item Documenting model versions, prompts, thinking-level, and parameters
+          \item Preferring API-based access over chat-based access
+          \item Documenting model versions, prompts, thinking level, and parameters
           \item Providing detailed procedures
           \item Sharing code and data
-          \item Fixing the seed for randomness and temperature (search for details)
+          \item Fixing the random seed and temperature (search for details)
         \end{itemize}
       \end{itemize}
-  %   \column{0.5\textwidth}
-  %     \begin{figure}
-  %       \centering
-  %       \includegraphics[width=0.8\linewidth,height=0.6\textheight,keepaspectratio]{bench.coding.png}
-  %       \caption{Source: \url{https://artificialanalysis.ai/agents/coding-agents\#coding-agents-index} (Nov 3, 2026)}
-  %     \end{figure}
-  % \end{columns}
+    \column{0.5\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{gary.replication.png}
+        \caption{Replication certification at publication; Source: \textcite{king2026}}
+      \end{figure}
+  \end{columns}
 \end{frame}
 
 
@@ -738,9 +756,9 @@ simplified typological structures \parencite{xie2025variance}
 \begin{frame}
   \frametitle{Takeaways}
   \begin{itemize}
-    \item AI models (which includes LLMs) are just tools for high-dimensional data analysis; they can be subjects, objects, and \textcolor{blue}{methods} in quantitative social research
+    \item AI models (including LLMs) are just tools for high-dimensional data analysis; they can be subjects, objects, and \textcolor{blue}{methods} in quantitative social research
     \item \textcolor{blue}{As methods}, they are expected to be used in a responsible way in which validity, reliability, and reproducibility are carefully considered
-    \item \textcolor{blue}{Like any others methods}, despite they evolve rapidly, their use should be based on our taste for good questions in research, industry, and life, which remain relatively central of higher education.
+    \item \textcolor{blue}{Like any other methods}, although they evolve rapidly, their use should rest on our taste for good questions in research, industry, and life, which remains central to higher education.
   \end{itemize}
 \end{frame}
 
@@ -765,18 +783,18 @@ simplified typological structures \parencite{xie2025variance}
   \begin{itemize}
       \item \textbf{Locate the most appropriate AI model for your task}
         \begin{itemize}
-          \item Artificial analysis \url{https://artificialanalysis.ai/}
+          \item Artificial Analysis \url{https://artificialanalysis.ai/}
           \item Arena.ai, blind benchmarking for AI models \url{https://arena.ai/leaderboard/}
         \end{itemize}
       \item \textbf{Find problems in your manuscript}
         \begin{itemize}
           \item Refine, publication-level technical review; adopted by AEA \url{https://www.refine.ink/}
-          \item OpenAIReview, opensource solution of multi-agent manuscript review by UChicago HAI \url{https://github.com/ChicagoHAI/OpenAIReview}
+          \item OpenAIReview, open-source multi-agent manuscript review solution by UChicago HAI \url{https://github.com/ChicagoHAI/OpenAIReview}
           \end{itemize}
-      \item \textbf{Doublecheck references and citations}
+      \item \textbf{Double-check references and citations}
         \begin{itemize}
           \item CiteVerify, ``a local tool for verifying references in research papers'', \url{https://github.com/cuihuash/CiteVerify}
-          \item Chat with frontier models would also help 
+          \item Chatting with frontier models also helps 
           \end{itemize}
   \end{itemize}
 \end{frame}
@@ -786,10 +804,10 @@ simplified typological structures \parencite{xie2025variance}
   \begin{itemize}
       \item \textbf{Organize multiple AI models and services}
         \begin{itemize}
-          \item For macOS, magpie, local AI router management for mac \url{https://github.com/yetone/magpie} 
+          \item For macOS, magpie, a local AI router manager for Mac \url{https://github.com/yetone/magpie} 
           \item For other platforms, cc-switch, \url{https://github.com/farion1231/cc-switch}
         \end{itemize}
-      \item \textbf{Read scientific literature using your own language}
+      \item \textbf{Read scientific literature in your own language}
         \begin{itemize}
           \item PDFMathTranslate, read scientific PDFs in your language \url{https://github.com/PDFMathTranslate/PDFMathReader} \parencite{ouyang-etal-2025-pdfmathtranslate}
         \end{itemize}
@@ -805,7 +823,7 @@ simplified typological structures \parencite{xie2025variance}
       \Huge{\textcolor{white}{Acknowledgments}}
     \end{center}
     \vspace{1cm}
-    \normalsize{\textcolor{white}{Thank to Hongzhan Lin, Yanlin Li, Hao Li, Ziqi Lu, Long Wang, Bei Zhan, Qinghua Qin for their early feedbacks with the topic. All errors are my own.}}
+    \normalsize{\textcolor{white}{Thanks to Hongzhan Lin, Yanlin Li, Hao Li, Ziqi Lu, Long Wang, Bei Zhan, and Qinghua Qin for exchanging early ideas on this topic with me. All errors are my own.}}
     % Chinese names 
     % 林鸿展, 李彦霖, 李昊, 陆子奇, 王龙, 湛北, 秦清华
   \end{frame}

@@ -600,6 +600,24 @@
 % =====================================================================
 
 
+\begin{frame}
+  \frametitle{*大语言模型用于推断：新前沿}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.5\textwidth}
+      \small
+      \begin{itemize}
+        \item 双重/去偏机器学习在用灵活的机器学习模型估计冗余函数的同时，仍能实现有效的因果推断 \parencite{chernozhukov2017double}；在此基础上，\textcite{imai2026leveraging} 利用生成式 AI 的内部表征，估计文本、图像等非结构化处理变量的因果效应
+      \end{itemize}
+    \column{0.48\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{imai.pnas.png}
+        \caption{来源：\textcite{imai2026leveraging}}
+      \end{figure}
+  \end{columns}
+\end{frame}
+
+
 % =====================================================================
 \sectionframe{负责任地使用}
 % =====================================================================
@@ -659,6 +677,8 @@
 
 \begin{frame}
   \frametitle{负责任地使用大语言模型：可复现性}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.48\textwidth}
       \small
       \begin{itemize}
         \item 可复现性对科学至关重要
@@ -671,6 +691,13 @@
           \item 固定随机种子与温度（具体请自行检索）
         \end{itemize}
       \end{itemize}
+    \column{0.5\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{gary.replication.png}
+        \caption{发表时的复现认证；来源：\textcite{king2026}}
+      \end{figure}
+  \end{columns}
 \end{frame}
 
 
@@ -686,7 +713,7 @@
 \begin{frame}
   \frametitle{要点总结}
   \begin{itemize}
-    \item AI 模型（包括大语言模型）在定量社会研究中可以充当研究主体、研究对象和\textcolor{blue}{研究方法}
+    \item AI 模型（包括大语言模型）只是高维数据分析的工具；在定量社会研究中，它们可以充当研究主体、研究对象和\textcolor{blue}{研究方法}
     \item \textcolor{blue}{作为研究方法}，应以负责任的方式使用，审慎考虑效度、信度与可复现性
     \item \textcolor{blue}{与其他方法一样}，尽管它们发展迅速，其使用仍应建立在我们对研究、业界与生活中好问题的品味之上，而这种品味始终是高等教育的核心
   \end{itemize}
@@ -752,7 +779,7 @@
       \Huge{\textcolor{white}{致谢}}
     \end{center}
     \vspace{1cm}
-    \normalsize{\textcolor{white}{感谢林鸿展、李彦霖、李昊、陆子奇、王龙、湛北、秦清华对本主题早期内容提出的反馈。文责自负。}}
+    \normalsize{\textcolor{white}{感谢林鸿展、李彦霖、李昊、陆子奇、王龙、湛北、秦清华在本主题早期构思阶段与我的交流。文责自负。}}
   \end{frame}
 }
 

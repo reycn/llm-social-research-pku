@@ -3232,10 +3232,17 @@
     <bcf:citekey order="108" intorder="1">liu2026positivity</bcf:citekey>
     <bcf:citekey order="109" intorder="1">liu2026positivity</bcf:citekey>
     <bcf:citekey order="110" intorder="1">liu2026positivity</bcf:citekey>
-    <bcf:citekey order="111" intorder="1">angrist2009mostly</bcf:citekey>
-    <bcf:citekey order="112" intorder="1">angrist2009mostly</bcf:citekey>
-    <bcf:citekey order="113" intorder="1">angrist2009mostly</bcf:citekey>
-    <bcf:citekey order="114" intorder="1">ouyang-etal-2025-pdfmathtranslate</bcf:citekey>
+    <bcf:citekey order="111" intorder="1">chernozhukov2017double</bcf:citekey>
+    <bcf:citekey order="112" intorder="1">imai2026leveraging</bcf:citekey>
+    <bcf:citekey order="113" intorder="1">imai2026leveraging</bcf:citekey>
+    <bcf:citekey order="114" intorder="1">imai2026leveraging</bcf:citekey>
+    <bcf:citekey order="115" intorder="1">imai2026leveraging</bcf:citekey>
+    <bcf:citekey order="116" intorder="1">king2026</bcf:citekey>
+    <bcf:citekey order="117" intorder="1">king2026</bcf:citekey>
+    <bcf:citekey order="118" intorder="1">angrist2009mostly</bcf:citekey>
+    <bcf:citekey order="119" intorder="1">angrist2009mostly</bcf:citekey>
+    <bcf:citekey order="120" intorder="1">angrist2009mostly</bcf:citekey>
+    <bcf:citekey order="121" intorder="1">ouyang-etal-2025-pdfmathtranslate</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
