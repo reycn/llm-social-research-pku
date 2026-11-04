@@ -3061,4 +3061,66 @@
       <bcf:entrytype>report</bcf:entrytype>
       <bcf:constraint type="mandatory">
         <bcf:field>author</bcf:field>
-   
+        <bcf:field>title</bcf:field>
+      </bcf:constraint>
+    </bcf:constraints>
+  </bcf:datamodel>
+  <!-- CITATION DATA -->
+  <!-- SECTION 0 -->
+  <bcf:bibdata section="0">
+    <bcf:datasource type="file" datatype="bibtex" glob="false">refs.bib</bcf:datasource>
+  </bcf:bibdata>
+  <bcf:section number="0">
+    <bcf:citekey order="1" intorder="1">zhou2026be</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">zhou2026be</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">zhou2026be</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">poole2023artificial</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">poole2023artificial</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">poole2023artificial</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">zhou2026be</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">vaswani2017attention</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">xu2026large</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">vaswani2017attention</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">vaswani2017attention</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">grimmer2021machine</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">grimmer2021machine</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">grimmer2021machine</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">grimmer2021machine</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">zhao2025making</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">zhao2025making</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">zhao2025making</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">zhao2025making</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">mukerjee2023metrics</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">mukerjee2023metrics</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">mukerjee2023metrics</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">mukerjee2023metrics</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">xu2026large</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">xu2026large</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">xu2026large</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">xu2026large</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">liang2026computational</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">liang2026computational</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">zhou2026be</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">zhou2026be</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">xu2026large</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">xu2026large</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">dillion2023cana</bcf:citekey>
+    <bcf:citekey order="34" intorder="2">dominguez-olmedo2024questioninga</bcf:citekey>
+    <bcf:citekey order="34" intorder="3">hamalainen2023evaluatinga</bcf:citekey>
+    <bcf:citekey order="34" intorder="4">xie2025variance</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">wang2025user</bcf:citekey>
+    <bcf:citekey order="35" intorder="2">park2023generativea</bcf:citekey>
+    <bcf:citekey order="35" intorder="3">yan2024opencity</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">ashery2025emergent</bcf:citekey>
+    <bcf:citekey order="36" intorder="2">gao2025s</bcf:citekey>
+    <bcf:citekey order="36" intorder="3">xie2024can</bcf:citekey>
+    <bcf:citekey order="36" intorder="4">zhang2024exploring</bcf:citekey>
+    <bcf:citekey order="37" intorder="1">park2023generative</bcf:citekey>
+    <bcf:citekey order="38" intorder="1">park2023generative</bcf:citekey>
+    <bcf:citekey order="39" intorder="1">park2023generative</bcf:citekey>
+    <bcf:citekey order="40" intorder="1">park2023generative</bcf:citekey>
+    <bcf:citekey order="41" intorder="1">argyle2023out</bcf:citekey>
+    <bcf:citekey order="42" intorder="1">park2023generative</bcf:citekey>
+    <bcf:citekey order="43" intorder="1">ashery2025emergent</bcf:citekey>
+    <bcf:citekey order="44" intorder="1">argyle2023out</bcf:citekey>
+    <bcf:citekey order="45" intorder="1">argyle2023out</bcf:cit
