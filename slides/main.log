@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.11)  5 NOV 2026 01:09
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.11)  5 NOV 2026 01:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1461,138 +1461,141 @@ File: ../figures/mukerjee.2023.png Graphic file (type bmp)
 <../figures/mukerjee.2023.png>
  [10
 
-] [11
+]
+File: ../figures/vector.anno.pdf Graphic file (type pdf)
+<use ../figures/vector.anno.pdf>
+ [11
 
 ] [12
+
+] [13
 
 ]
 File: ../figures/review.tab.1.png Graphic file (type bmp)
 <../figures/review.tab.1.png>
- [13
+ [14
 
-] [14
+] [15
 
 ]
 File: ../figures/stanford.town.png Graphic file (type bmp)
 <../figures/stanford.town.png>
- [15
+ [16
 
 ]
 File: ../figures/gpt.lucid.png Graphic file (type bmp)
 <../figures/gpt.lucid.png>
- [16
+ [17
 
 ]
 File: ../figures/cultural.bias.png Graphic file (type bmp)
 <../figures/cultural.bias.png>
- [17
+ [18
 
 ]
 File: ../figures/xie.eval.part.png Graphic file (type bmp)
 <../figures/xie.eval.part.png>
- [18
+ [19
 
 ]
 File: ../figures/validity.png Graphic file (type bmp)
 <../figures/validity.png>
- [19
+ [20
 
 ]
 File: ../figures/tao.prompt.better.png Graphic file (type bmp)
 <../figures/tao.prompt.better.png>
- [20
+ [21
 
 ]
 File: ../figures/synthetic.communicative.env.png Graphic file (type bmp)
 <../figures/synthetic.communicative.env.png>
- [21
+ [22
 
 ]
 File: ../figures/fig1.outperform.png Graphic file (type bmp)
 <../figures/fig1.outperform.png>
- [22
+ [23
 
-] [23
+] [24
 
 ]
 File: ../figures/lit.1.png Graphic file (type bmp)
 <../figures/lit.1.png>
 File: ../figures/lit.2.png Graphic file (type bmp)
 <../figures/lit.2.png>
- [24
+ [25
 
 ]
 File: ../figures/better.hypo.png Graphic file (type bmp)
 <../figures/better.hypo.png>
- [25
+ [26
 
-] [26
+] [27
 
 ]
 File: ../figures/ai.dominate.png Graphic file (type bmp)
 <../figures/ai.dominate.png>
- [27
+ [28
 
-] [28
+] [29
 
 ]
 File: ../figures/llm.emotion.png Graphic file (type bmp)
 <../figures/llm.emotion.png>
- [29
+ [30
 
-] [30
+] [31
 
 ]
 File: ../figures/imai.pnas.png Graphic file (type bmp)
 <../figures/imai.pnas.png>
- [31
+ [32
 
-] [32
+] [33
 
 ]
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 692.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 710.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <7> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 692.
- [33
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 710.
+ [34
 
 ]
 File: ../figures/bench.writing.png Graphic file (type bmp)
 <../figures/bench.writing.png>
- [34
+ [35
 
 ]
 File: ../figures/bench.coding.png Graphic file (type bmp)
 <../figures/bench.coding.png>
- [35
+ [36
 
 ]
 File: ../figures/validity.png Graphic file (type bmp)
 <../figures/validity.png>
- [36
+ [37
 
 ]
 File: ../figures/ouyang.2026.png Graphic file (type bmp)
 <../figures/ouyang.2026.png>
- [37
+ [38
 
 ]
 File: ../figures/gary.replication.png Graphic file (type bmp)
 <../figures/gary.replication.png>
- [38
-
-] [39
+ [39
 
 ] [40
 
 ] [41
 
+] [42
+
 ]
 File: ../figures/dont.panic.png Graphic file (type bmp)
 <../figures/dont.panic.png>
- [42
-
-] [43
+ [43
 
 ] [44
 
@@ -1601,6 +1604,8 @@ File: ../figures/dont.panic.png Graphic file (type bmp)
 ] [46
 
 ] [47
+
+] [48
 
 ]
 
@@ -1622,10 +1627,7 @@ Package fontspec Info:
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
 (fontspec)             <->"[FandolFang-Regular.otf]/OT:script=hani;language=dflt;"
 
- [48
-
-] [49
-
+ [49
 
 ] [50
 
@@ -1640,6 +1642,9 @@ Package fontspec Info:
 
 
 ] [54
+
+
+] [55
 
 
 ]
@@ -1664,12 +1669,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41743 strings out of 468168
- 929258 string characters out of 5432815
- 2093162 words of memory out of 5000000
- 69692 multiletter control sequences out of 15000+600000
+ 41756 strings out of 468168
+ 929605 string characters out of 5432815
+ 2097169 words of memory out of 5000000
+ 69704 multiletter control sequences out of 15000+600000
  636819 words of font info for 111 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  128i,20n,123p,750b,5845s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (54 pages).
+Output written on main.pdf (55 pages).
