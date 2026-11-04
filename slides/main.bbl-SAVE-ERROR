@@ -1592,6 +1592,7 @@
       \strng{authornamehash}{14ebbee9c45c168a8d57f952b3756caf}
       \strng{authorfullhash}{54f9924e37a84ef534e0702edede4dfc}
       \strng{authorfullhashraw}{54f9924e37a84ef534e0702edede4dfc}
+      \field{extraname}{1}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
       \field{extradatescope}{labelyear}
@@ -1612,6 +1613,50 @@
       \verb{doi}
       \verb 10.1146/annurev-polisci-053119-015921
       \endverb
+    \endentry
+    \entry{grimmer2022text}{book}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=81e3df64dcc8ffabf2106dfc23b934e0}{%
+           family={Grimmer},
+           familyi={G\bibinitperiod},
+           given={Justin},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ca08ae29f1298af10aa6e11f92b01aae}{%
+           family={Roberts},
+           familyi={R\bibinitperiod},
+           given={Margaret\bibnamedelima E},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f1370510cfe223ff4c2c652b160014ba}{%
+           family={Stewart},
+           familyi={S\bibinitperiod},
+           given={Brandon\bibnamedelima M},
+           giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{14ebbee9c45c168a8d57f952b3756caf}
+      \strng{fullhash}{54f9924e37a84ef534e0702edede4dfc}
+      \strng{fullhashraw}{54f9924e37a84ef534e0702edede4dfc}
+      \strng{bibnamehash}{54f9924e37a84ef534e0702edede4dfc}
+      \strng{authorbibnamehash}{54f9924e37a84ef534e0702edede4dfc}
+      \strng{authornamehash}{14ebbee9c45c168a8d57f952b3756caf}
+      \strng{authorfullhash}{54f9924e37a84ef534e0702edede4dfc}
+      \strng{authorfullhashraw}{54f9924e37a84ef534e0702edede4dfc}
+      \field{extraname}{2}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Text as Data: {{A}} New Framework for Machine Learning and the Social Sciences}
+      \field{year}{2022}
+      \field{dateera}{ce}
     \endentry
     \entry{hackenburg2024evaluating}{article}{}{}
       \name{author}{2}{}{%
@@ -6388,6 +6433,7 @@
       \strng{authornamehash}{14ebbee9c45c168a8d57f952b3756caf}
       \strng{authorfullhash}{54f9924e37a84ef534e0702edede4dfc}
       \strng{authorfullhashraw}{54f9924e37a84ef534e0702edede4dfc}
+      \field{extraname}{1}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
       \field{extradatescope}{labelyear}
@@ -6408,6 +6454,50 @@
       \verb{doi}
       \verb 10.1146/annurev-polisci-053119-015921
       \endverb
+    \endentry
+    \entry{grimmer2022text}{book}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=81e3df64dcc8ffabf2106dfc23b934e0}{%
+           family={Grimmer},
+           familyi={G\bibinitperiod},
+           given={Justin},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ca08ae29f1298af10aa6e11f92b01aae}{%
+           family={Roberts},
+           familyi={R\bibinitperiod},
+           given={Margaret\bibnamedelima E},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f1370510cfe223ff4c2c652b160014ba}{%
+           family={Stewart},
+           familyi={S\bibinitperiod},
+           given={Brandon\bibnamedelima M},
+           giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{14ebbee9c45c168a8d57f952b3756caf}
+      \strng{fullhash}{54f9924e37a84ef534e0702edede4dfc}
+      \strng{fullhashraw}{54f9924e37a84ef534e0702edede4dfc}
+      \strng{bibnamehash}{54f9924e37a84ef534e0702edede4dfc}
+      \strng{authorbibnamehash}{54f9924e37a84ef534e0702edede4dfc}
+      \strng{authornamehash}{14ebbee9c45c168a8d57f952b3756caf}
+      \strng{authorfullhash}{54f9924e37a84ef534e0702edede4dfc}
+      \strng{authorfullhashraw}{54f9924e37a84ef534e0702edede4dfc}
+      \field{extraname}{2}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Text as Data: {{A}} New Framework for Machine Learning and the Social Sciences}
+      \field{year}{2022}
+      \field{dateera}{ce}
     \endentry
     \entry{hackenburg2024evaluating}{article}{}{}
       \name{author}{2}{}{%

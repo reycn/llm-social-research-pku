@@ -171,7 +171,7 @@
 \institute{\textcolor{gray}{
     $^{*}$ 新加坡国立大学计算传播学博士候选人\\邮箱：rongxin@u.nus.edu / 网站：https://rongxin.me\\
 研究方向：运用因果推断与计算方法评估数字信息技术的社会与政治影响}}
-\date{\small \textcolor{gray}{2026 年 11 月 5 日}}
+\date{\small \textcolor{gray}{2026 年 11 月 5 日；北京大学}}
 
 \begin{document}
 
@@ -272,9 +272,9 @@
         \item 按照 \textcite{grimmer2021machine} 的分类，社会科学研究常借助机器学习完成多种任务：
         \begin{itemize}
           \item 发现；例如文本分类 \textcolor{blue}{（教程一）}
-          \item 测量；例如
-          \item 因果推断；例如
-          \item 预测；例如
+          \item 测量；例如回归
+          \item 因果推断；例如异质性处理效应
+          \item 预测；例如预测社会趋势
         \end{itemize}
         \item 如有兴趣，可选修汇丰商学院 FIN528 金融机器学习 / 高级机器学习
       \end{itemize}
@@ -290,7 +290,7 @@
 
 
 % =====================================================================
-\tutframe{TUT1}{使用 RoBERTa 进行情感分类}
+\tutframe{*TUT1}{使用 RoBERTa 进行情感分类\\在线材料：\\\textcolor{white}{\hyperlink{https://colab.research.google.com/github/DhavalTaunk08/NLP_scripts/blob/master/sentiment_analysis_using_roberta.ipynb}{Google Colab 链接}}}
 % =====================================================================
 
 
@@ -544,7 +544,7 @@
 
 
 % =====================================================================
-\tutframe{TUT2}{使用大语言模型进行主题分类\\别忘了效度检验！}
+\tutframe{TUT2}{使用大语言模型进行主题分类\\别忘了效度检验！\\在线材料：\textcolor{white}{\hyperlink{https://github.com/reycn/llm-social-research-pku-tutorials}{GitHub}}}
 % =====================================================================
 
 
@@ -565,6 +565,39 @@
       \end{figure}
   \end{columns}
 \end{frame}
+
+% =====================================================================
+\tutframe{TUT3}{批判性评估大语言模型生成的审稿意见\\\textcolor{white}{\hyperlink{https://github.com/reycn/llm-social-research-pku-tutorials}{GitHub}}}
+% =====================================================================
+
+
+
+\begin{frame}
+  \frametitle{大语言模型作为研究对象}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.55\textwidth}
+      \begin{itemize}
+        \item “一种重塑媒介系统中生产、流通、阐释与权力的传播技术，引发了关于真实性、可及性以及社会不平等再生产的关键问题。”\parencite{zhou2026be}
+        \item 例如，\textcite{liu2026positivity} 评估了大语言模型生成的摘要如何塑造公众情绪，其处理变量即为模型本身。
+      \end{itemize}
+    \column{0.45\textwidth}
+      \begin{center}
+        \begin{figure}
+        \includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{llm.emotion.png}
+        \caption{\textcite{liu2026positivity} 中作为研究对象的 AI 生成摘要（AIGS）}
+        \end{figure}
+      \end{center}
+  \end{columns}
+\end{frame}
+
+% =====================================================================
+\tutframe{小测验}{在线上群组中提出一个以大语言模型为研究对象的研究问题\\请简要说明：\\（a）关注的问题\\（b）变量的操作化\\（c）最重要的一张图\\（d）预期贡献}
+% =====================================================================
+
+
+% =====================================================================
+\sectionframe{负责任地使用}
+% =====================================================================
 
 \begin{frame}
   \frametitle{负责任地使用大语言模型：模型选择}
@@ -591,6 +624,7 @@
       \end{figure}
   \end{columns}
 \end{frame}
+
 \begin{frame}
   \frametitle{负责任地使用大语言模型：模型选择}
   \begin{columns}[T,onlytextwidth]
@@ -609,43 +643,35 @@
   \end{columns}
 \end{frame}
 
+
 \begin{frame}
-  \frametitle{大语言模型作为研究对象}
-  \begin{columns}[T,onlytextwidth]
-    \column{0.55\textwidth}
+  \frametitle{负责任地使用大语言模型：效度与信度}
+      \small
       \begin{itemize}
-        \item “一种重塑媒介系统中生产、流通、阐释与权力的传播技术，引发了关于真实性、可及性以及社会不平等再生产的关键问题。”\parencite{zhou2026be}
-        \item 例如，\textcite{liu2026positivity} 评估了大语言模型生成的摘要如何塑造公众情绪，其处理变量即为模型本身。
+        \item 再次强调：在研究中使用模型输出之前，务必检验其效度与信度
       \end{itemize}
-    \column{0.45\textwidth}
-      \begin{center}
-        \begin{figure}
-        \includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{llm.emotion.png}
-        \caption{\textcite{liu2026positivity} 中作为研究对象的 AI 生成摘要（AIGS）}
-        \end{figure}
-      \end{center}
-  \end{columns}
 \end{frame}
-
-% =====================================================================
-\tutframe{小测验}{随堂问题：在线上小组中提出一个以大语言模型为研究对象的研究问题}
-% =====================================================================
-
-% =====================================================================
-\sectionframe{局限性}
-% =====================================================================
 
 \begin{frame}
-  \frametitle{局限性}
-  \begin{enumerate}
-    \item \textbf{效度。}输出未必测量了我们想测量的内容
-    \item \textbf{可复现性。}闭源模型、静默更新与随机输出
-    \item \textbf{偏差。}训练数据对部分群体和语言代表性过高
-    \item \textbf{幻觉。}捏造事实与文献
-    \item \textbf{伦理。}隐私、知情同意以及向第三方传输数据
-    \item \textbf{过度依赖。}技能退化与未经审视的默认设置
-  \end{enumerate}
+  \frametitle{负责任地使用大语言模型：可复现性}
+      \small
+      \begin{itemize}
+        \item 可复现性对科学至关重要
+        \item 通过以下方式确保研究中人工智能部分可复现：
+        \begin{itemize}
+          \item 优先使用 API 调用，而非聊天界面
+          \item 记录模型版本、提示词、思考等级与参数
+          \item 提供详细的操作流程
+          \item 共享代码与数据
+          \item 固定随机种子与温度（具体请自行检索）
+        \end{itemize}
+      \end{itemize}
 \end{frame}
+
+% =====================================================================
+\tutframe{*TUT4 \& 5}{多模态目标检测与受控刺激材料生成\\\textcolor{white}{在线材料：\hyperlink{https://github.com/reycn/llm-social-research-pku-tutorials}{GitHub}}}
+% =====================================================================
+
 
 % =====================================================================
 \sectionframe{要点总结}
@@ -655,8 +681,8 @@
   \frametitle{要点总结}
   \begin{itemize}
     \item AI 模型（包括大语言模型）在定量社会研究中可以充当研究主体、研究对象和\textcolor{blue}{研究方法}
-    \item \textcolor{blue}{作为研究方法}，应以负责任的方式使用，审慎考虑效度、可复现性、偏差、幻觉、伦理与过度依赖等问题
-    \item \textcolor{blue}{与其他方法一样}，它们发展迅速（且可能越来越快），但对好问题的品味始终是研究（以及业界工作；相信我）的核心
+    \item \textcolor{blue}{作为研究方法}，应以负责任的方式使用，审慎考虑效度、信度与可复现性
+    \item \textcolor{blue}{与其他方法一样}，尽管它们发展迅速，其使用仍应建立在我们对研究、业界与生活中好问题的品味之上，而这种品味始终是高等教育的核心
   \end{itemize}
 \end{frame}
 
@@ -664,7 +690,7 @@
 \begin{frame}
   \frametitle{要点总结}
   \begin{itemize}
-    \item 最后一句话：“……保持怀疑……但别慌！” \parencite{angrist2009mostly}
+    \item “……保持怀疑……但别慌！” \parencite{angrist2009mostly}
   \end{itemize}
   \begin{figure}
     \includegraphics[width=1\textwidth,height=0.6\textheight,keepaspectratio]{../figures/dont.panic.png}
@@ -711,6 +737,18 @@
         \end{itemize}
   \end{itemize}
 \end{frame}
+
+
+{
+  \setbeamercolor{background canvas}{bg=black}
+  \begin{frame}
+    \begin{center}
+      \Huge{\textcolor{white}{致谢}}
+    \end{center}
+    \vspace{1cm}
+    \normalsize{\textcolor{white}{感谢林鸿展、李彦霖、李昊、陆子奇、王龙、湛北、秦清华对本主题早期内容提出的反馈。文责自负。}}
+  \end{frame}
+}
 
 
 \sectionframe{参考文献}

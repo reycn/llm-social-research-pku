@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.11)  4 NOV 2026 22:43
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.11)  4 NOV 2026 22:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1629,8 +1629,17 @@ Package fontspec Info:
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/08/05>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 115CF81E297428569A06AEFDD2CFF28A;677.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
@@ -1638,7 +1647,7 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  41634 strings out of 468168
  925985 string characters out of 5432815
- 2061354 words of memory out of 5000000
+ 2061347 words of memory out of 5000000
  69589 multiletter control sequences out of 15000+600000
  636811 words of font info for 110 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
