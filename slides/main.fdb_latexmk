@@ -1,18 +1,19 @@
 # Fdb version 4
-["biber main"] 1793813723.72401 "main.bcf" "main.bbl" "main" 1793813750.40586 0
-  "main.bcf" 1793813748.02966 147166 dc4c66bc706fefc842b21d53e8a2b61d "xelatex"
+["biber main"] 1793837873.67497 "main.bcf" "main.bbl" "main" 1793837901.71468 0
+  "main.bcf" 1793837897.80106 147166 dc4c66bc706fefc842b21d53e8a2b61d "xelatex"
   "refs.bib" 1793811240.82911 42202 af0e7407ecba0fc72501522277ff2506 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["xdvipdfmx"] 1793813748.11642 "main.xdv" "main.pdf" "main" 1793813750.40787 0
-  "main.xdv" 1793813748.03074 3061556 eefd5108305d5a8d775b4e32c05d052b "xelatex"
+["xdvipdfmx"] 1793837897.8804 "main.xdv" "main.pdf" "main" 1793837901.71669 0
+  "main.xdv" 1793837897.80189 3147068 f7d80215094f1b5d5e0eab988b035baf "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1793813736.82823 "main.tex" "main.xdv" "main" 1793813750.40591 0
+["xelatex"] 1793837886.46532 "main.tex" "main.xdv" "main" 1793837901.71473 0
   "../figures/ai.dominate.png" 1793776031.45439 64695 6bc136e1f4847d08c114a512fe2d8171 ""
+  "../figures/ai.hype.png" 1793837796.21071 1252179 5ac702654eeec5e95d89556c718c3960 ""
   "../figures/bench.coding.png" 1793691328.61006 70918 742962a4b28327ddc0e119a577eee9d4 ""
   "../figures/bench.writing.png" 1793691347.46008 124042 f2e11580baf3f068fad751e3ed1c333e ""
   "../figures/better.hypo.png" 1793775286.98705 16041 3f86e87a98c0402c8177dd5c9b1a08fd ""
@@ -305,12 +306,12 @@
   "/usr/local/texlive/2026/texmf-dist/web2c/texmf.cnf" 1770478701 43630 e9fa012910491fe5ae08a72c3c2997a7 ""
   "/usr/local/texlive/2026/texmf-var/web2c/xetex/xelatex.fmt" 1773163828 5948561 c88b6825410754ac8662ac4a0806877d ""
   "/usr/local/texlive/2026/texmf.cnf" 1772409725 577 648cd9f92f9c0eac486f4c71c85cfbbe ""
-  "main.aux" 1793813748.01478 41868 20853a16822cfe443f962f7def737c27 "xelatex"
-  "main.bbl" 1793813724.93793 408326 71c26cc32b3e76fba7233723e759497d "biber main"
-  "main.nav" 1793813748.03065 6263 4180a044bc56ab2f4283b8e9de0692d9 "xelatex"
-  "main.out" 1793813748.02837 677 115cf81e297428569a06aefdd2cff28a "xelatex"
-  "main.run.xml" 1793813748.03055 2456 ea9f3883384e82d68d02438387ab455c "xelatex"
-  "main.tex" 1793813723.47658 42229 d9c7898a42ce4f69751ce43511e80aab ""
+  "main.aux" 1793837897.78615 42040 860c301fd1ff1ef59579240e463a739c "xelatex"
+  "main.bbl" 1793837874.78502 408326 71c26cc32b3e76fba7233723e759497d "biber main"
+  "main.nav" 1793837897.80181 6355 b8fd68528a8d28d8b4d849d6ddf1554c "xelatex"
+  "main.out" 1793837897.80014 677 115cf81e297428569a06aefdd2cff28a "xelatex"
+  "main.run.xml" 1793837897.80174 2456 ea9f3883384e82d68d02438387ab455c "xelatex"
+  "main.tex" 1793837796.22969 42498 364c87cb594a9c2f4e17c2fa97623704 ""
   (generated)
   "main.aux"
   "main.bcf"

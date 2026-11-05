@@ -527,6 +527,8 @@ INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5
 OUTPUT main.xdv
 INPUT ../figures/responsively.use.png
 INPUT ../figures/responsively.use.png
+INPUT ../figures/ai.hype.png
+INPUT ../figures/ai.hype.png
 INPUT ../figures/percy.intell.png
 INPUT ../figures/percy.intell.png
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm

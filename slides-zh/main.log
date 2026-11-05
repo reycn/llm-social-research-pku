@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.11)  5 NOV 2026 01:35
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.11)  5 NOV 2026 08:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1759,191 +1759,196 @@ File: ../figures/responsively.use.png Graphic file (type bmp)
 [3
 
 ]
-File: ../figures/percy.intell.png Graphic file (type bmp)
-<../figures/percy.intell.png>
+File: ../figures/ai.hype.png Graphic file (type bmp)
+<../figures/ai.hype.png>
  [4
 
-] [5
+]
+File: ../figures/percy.intell.png Graphic file (type bmp)
+<../figures/percy.intell.png>
+ [5
+
+] [6
 
 ]
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <9> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 259.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 268.
 File: ../figures/transformer.png Graphic file (type bmp)
 <../figures/transformer.png>
- [6
+ [7
 
-] [7
+] [8
 
 ]
 File: ../figures/mlss.png Graphic file (type bmp)
 <../figures/mlss.png>
- [8
+ [9
 
 ]
 File: ../figures/ye2023.png Graphic file (type bmp)
 <../figures/ye2023.png>
- [9
+ [10
 
 ]
 File: ../figures/mukerjee.2023.png Graphic file (type bmp)
 <../figures/mukerjee.2023.png>
- [10
+ [11
 
 ]
 File: ../figures/vector.anno.pdf Graphic file (type pdf)
 <use ../figures/vector.anno.pdf>
- [11
-
-] [12
+ [12
 
 ] [13
+
+] [14
 
 ]
 File: ../figures/review.tab.1.png Graphic file (type bmp)
 <../figures/review.tab.1.png>
- [14
+ [15
 
 ]
 
 LaTeX Font Warning: Font shape `TU/PingFangSC(0)/m/it' undefined
-(Font)              using `TU/PingFangSC(0)/m/n' instead on input line 393.
+(Font)              using `TU/PingFangSC(0)/m/n' instead on input line 402.
 
-[15
+[16
 
 ]
 File: ../figures/stanford.town.png Graphic file (type bmp)
 <../figures/stanford.town.png>
- [16
+ [17
 
 ]
 File: ../figures/gpt.lucid.png Graphic file (type bmp)
 <../figures/gpt.lucid.png>
- [17
+ [18
 
 ]
 File: ../figures/cultural.bias.png Graphic file (type bmp)
 <../figures/cultural.bias.png>
- [18
+ [19
 
 ]
 File: ../figures/xie.eval.part.png Graphic file (type bmp)
 <../figures/xie.eval.part.png>
- [19
+ [20
 
 ]
 File: ../figures/validity.png Graphic file (type bmp)
 <../figures/validity.png>
- [20
+ [21
 
 ]
 File: ../figures/tao.prompt.better.png Graphic file (type bmp)
 <../figures/tao.prompt.better.png>
- [21
+ [22
 
 ]
 File: ../figures/synthetic.communicative.env.png Graphic file (type bmp)
 <../figures/synthetic.communicative.env.png>
- [22
+ [23
 
 ]
 File: ../figures/fig1.outperform.png Graphic file (type bmp)
 <../figures/fig1.outperform.png>
- [23
+ [24
 
-] [24
+] [25
 
 ]
 File: ../figures/lit.1.png Graphic file (type bmp)
 <../figures/lit.1.png>
 File: ../figures/lit.2.png Graphic file (type bmp)
 <../figures/lit.2.png>
- [25
+ [26
 
 ]
 File: ../figures/better.hypo.png Graphic file (type bmp)
 <../figures/better.hypo.png>
- [26
+ [27
 
-] [27
+] [28
 
 ]
 File: ../figures/ai.dominate.png Graphic file (type bmp)
 <../figures/ai.dominate.png>
- [28
+ [29
 
-] [29
+] [30
 
 ]
 File: ../figures/llm.emotion.png Graphic file (type bmp)
 <../figures/llm.emotion.png>
 
-[30
+[31
 
-] [31
+] [32
 
 ]
 File: ../figures/imai.pnas.png Graphic file (type bmp)
 <../figures/imai.pnas.png>
- [32
+ [33
 
-] [33
+] [34
 
 ]
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 687.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 696.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <7> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 687.
- [34
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 696.
+ [35
 
 ]
 File: ../figures/bench.writing.png Graphic file (type bmp)
 <../figures/bench.writing.png>
- [35
+ [36
 
 ]
 File: ../figures/bench.coding.png Graphic file (type bmp)
 <../figures/bench.coding.png>
- [36
+ [37
 
 ]
 File: ../figures/validity.png Graphic file (type bmp)
 <../figures/validity.png>
- [37
+ [38
 
 ]
 File: ../figures/ouyang.2026.png Graphic file (type bmp)
 <../figures/ouyang.2026.png>
- [38
+ [39
 
 ]
 File: ../figures/gary.replication.png Graphic file (type bmp)
 <../figures/gary.replication.png>
- [39
-
-] [40
+ [40
 
 ] [41
 
 ] [42
 
+] [43
+
 ]
 File: ../figures/dont.panic.png Graphic file (type bmp)
 <../figures/dont.panic.png>
- [43
+ [44
 
-] [44
+] [45
 
 ]
-[45
+[46
 
-] [46
+] [47
 
 ]
 File: ../figures/qr.png Graphic file (type bmp)
 <../figures/qr.png>
- [47
+ [48
 
-] [48
+] [49
 
 ]
 
@@ -1952,10 +1957,7 @@ Package xeCJK Warning: Unknown CJK family `\CJKttdefault' is being ignored.
 (xeCJK)                Try to use `\setCJKmonofont[<...>]{<...>}' to define
 (xeCJK)                it.
 
-[49
-
-] [50
-
+[50
 
 ] [51
 
@@ -1970,6 +1972,9 @@ Package xeCJK Warning: Unknown CJK family `\CJKttdefault' is being ignored.
 
 
 ] [55
+
+
+] [56
 
 
 ]
@@ -1998,12 +2003,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42534 strings out of 468168
- 978100 string characters out of 5432815
- 2106503 words of memory out of 5000000
- 70465 multiletter control sequences out of 15000+600000
+ 42580 strings out of 468168
+ 980499 string characters out of 5432815
+ 2109979 words of memory out of 5000000
+ 70510 multiletter control sequences out of 15000+600000
  636923 words of font info for 124 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  128i,20n,123p,693b,5849s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (55 pages, 3000316 bytes).
+Output written on main.xdv (56 pages, 3085460 bytes).
