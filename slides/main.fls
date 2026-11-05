@@ -600,8 +600,6 @@ INPUT ../figures/gary.replication.png
 INPUT ../figures/dont.panic.png
 INPUT ../figures/dont.panic.png
 INPUT ../figures/dont.panic.png
-INPUT ../figures/qr.png
-INPUT ../figures/qr.png
 OUTPUT main.nav
 OUTPUT main.toc
 OUTPUT main.snm

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.11)  5 NOV 2026 08:18
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.11)  5 NOV 2026 10:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1918,10 +1918,7 @@ File: ../figures/dont.panic.png Graphic file (type bmp)
 
 ] [47
 
-]
-File: ../figures/qr.png Graphic file (type bmp)
-<../figures/qr.png>
- [48
+] [48
 
 ]
 [49
@@ -1989,12 +1986,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41779 strings out of 468168
- 929925 string characters out of 5432815
- 2099569 words of memory out of 5000000
- 69726 multiletter control sequences out of 15000+600000
+ 41768 strings out of 468168
+ 929711 string characters out of 5432815
+ 2099194 words of memory out of 5000000
+ 69716 multiletter control sequences out of 15000+600000
  636819 words of font info for 111 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  128i,20n,123p,693b,5845s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (56 pages, 3147068 bytes).
+Output written on main.xdv (56 pages, 3146676 bytes).
