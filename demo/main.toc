@@ -1,0 +1,7 @@
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@sectionintoc {2}{Pre-LLMs AI}{6}{0}{2}
+\beamer@sectionintoc {3}{LLMs}{9}{0}{3}
+\beamer@sectionintoc {4}{Deploy Responsively}{22}{0}{4}
+\beamer@sectionintoc {5}{Takeaways}{26}{0}{5}
+\beamer@sectionintoc {6}{Resources}{29}{0}{6}
+\beamer@sectionintoc {7}{References}{33}{0}{7}

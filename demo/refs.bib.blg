@@ -1,0 +1,25 @@
+[0] Config.pm:328> INFO - This is Biber 2.21 running in TOOL mode
+[0] Config.pm:331> INFO - Logfile is 'refs.bib.blg'
+[28] biber-darwin:342> INFO - === Tue Nov  3, 2026, 16:35:19
+[40] Biber.pm:4674> INFO - Looking for bibtex file 'refs.bib'
+[40] bibtex.pm:1713> INFO - LaTeX decoding ...
+[50] bibtex.pm:1519> INFO - Found BibTeX data source 'refs.bib'
+[119] Biber.pm:1709> INFO - Datamodel validation starting
+[121] Biber.pm:1759> INFO - Datamodel validation complete
+[125] UCollate.pm:68> INFO - Overriding locale 'en_US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[125] UCollate.pm:68> INFO - Overriding locale 'en_US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[125] Biber.pm:4307> INFO - Sorting list 'tool/global//global/global/global' of type 'entry' with template 'tool' and locale 'en_US'
+[125] Biber.pm:4313> INFO - No sort tailoring available for locale 'en_US'
+[130] bibtex.pm:440> INFO - Writing '/dev/null' with encoding 'UTF-8'
+[130] bibtex.pm:481> INFO - Output to /dev/null
+[130] Biber.pm:132> WARN - Datamodel: article entry 'zhou2026be' (refs.bib): Invalid field 'publisher' for entrytype 'article'
+[130] Biber.pm:132> WARN - Datamodel: article entry 'king2013how' (refs.bib): Invalid field 'publisher' for entrytype 'article'
+[131] Biber.pm:132> WARN - Datamodel: article entry 'king2013how' (refs.bib): Invalid ISSN in value of field 'issn'
+[131] Biber.pm:132> WARN - Datamodel: article entry 'argyle2023out' (refs.bib): Invalid ISSN in value of field 'issn'
+[131] Biber.pm:132> WARN - Datamodel: article entry 'bisbee2024synthetica' (refs.bib): Invalid ISSN in value of field 'issn'
+[131] Biber.pm:132> WARN - Datamodel: article entry 'bollen2026nationally' (refs.bib): Invalid ISSN in value of field 'issn'
+[131] Biber.pm:132> WARN - Datamodel: article entry 'boelaert2025machine' (refs.bib): Invalid field 'publisher' for entrytype 'article'
+[131] Biber.pm:132> WARN - Datamodel: article entry 'pataranutaporn2025simulating' (refs.bib): Invalid field 'publisher' for entrytype 'article'
+[131] Biber.pm:132> WARN - Datamodel: inproceedings entry 'santurkar2023whose' (refs.bib): Invalid field 'issn' for entrytype 'inproceedings'
+[131] Biber.pm:132> WARN - Datamodel: article entry 'wang2025large' (refs.bib): Invalid field 'publisher' for entrytype 'article'
+[131] Biber.pm:134> INFO - WARNINGS: 10
