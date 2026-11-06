@@ -1,17 +1,16 @@
 Slides for *Responsibly Deploy AI in Quantitative Social Research*, shared at PHBS.
-<details open>
-<summary><b>English slides</b></summary>
 
-[![English slides](./slides/cover.png)](./slides/main.pdf)
-
-</details>
-
-<details>
-<summary><b>中文幻灯片</b></summary>
-
-[![中文幻灯片](./slides-zh/cover.png)](./slides-zh/main.pdf)
-
-</details>
+## Nov 7, 2026, In-class demo, NUS
+- TBD
 
 
-**Tutorials**: [GitHub](https://github.com/reycn/llm-social-research-pku-tutorials)
+## Nov 6, 2026, Online sharing for Econ
+- [English slides](./slides/main.pdf)
+
+
+## Nov 5, 2026, Peking University
+- [English slides](./slides/main.pdf)
+- [中文幻灯片](./slides-zh/main.pdf)
+
+## Tutorials
+[GitHub](https://github.com/reycn/llm-social-research-pku-tutorials)
