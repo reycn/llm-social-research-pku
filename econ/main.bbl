@@ -19,6 +19,108 @@
 
 \refsection{0}
   \datalist[entry]{nyt/apasortcite//global/global/global}
+    \entry{abadie2003economic}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=da499bff747c5f6cd0ec9185c820ba4d}{%
+           family={Abadie},
+           familyi={A\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=990a64faa006b28cd41f2075997cba18}{%
+           family={Gardeazabal},
+           familyi={G\bibinitperiod},
+           given={Javier},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Economic Association}%
+      }
+      \strng{namehash}{f722330d5128ffafe3dd6ff1eae7e9c0}
+      \strng{fullhash}{f722330d5128ffafe3dd6ff1eae7e9c0}
+      \strng{fullhashraw}{f722330d5128ffafe3dd6ff1eae7e9c0}
+      \strng{bibnamehash}{f722330d5128ffafe3dd6ff1eae7e9c0}
+      \strng{authorbibnamehash}{f722330d5128ffafe3dd6ff1eae7e9c0}
+      \strng{authornamehash}{f722330d5128ffafe3dd6ff1eae7e9c0}
+      \strng{authorfullhash}{f722330d5128ffafe3dd6ff1eae7e9c0}
+      \strng{authorfullhashraw}{f722330d5128ffafe3dd6ff1eae7e9c0}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{0002-8282}
+      \field{journaltitle}{American Economic Review}
+      \field{langid}{english}
+      \field{number}{1}
+      \field{shortjournal}{Am. Econ. Rev.}
+      \field{shorttitle}{The Economic Costs of Conflict}
+      \field{title}{The Economic Costs of Conflict: {{A}} Case Study of the {{Basque Country}}}
+      \field{volume}{93}
+      \field{year}{2003}
+      \field{dateera}{ce}
+      \field{pages}{113\bibrangedash 132}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1257/000282803321455188
+      \endverb
+    \endentry
+    \entry{abadie2015comparative}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=da499bff747c5f6cd0ec9185c820ba4d}{%
+           family={Abadie},
+           familyi={A\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b45c00701af03c6c0ab37b49f5d375c5}{%
+           family={Diamond},
+           familyi={D\bibinitperiod},
+           given={Alexis},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=be94165c21f502aeaed11e611358d6be}{%
+           family={Hainmueller},
+           familyi={H\bibinitperiod},
+           given={Jens},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{bd5b50178614500025771572867fc86c}
+      \strng{fullhash}{bb1c0d171effadee95d0232167198de0}
+      \strng{fullhashraw}{bb1c0d171effadee95d0232167198de0}
+      \strng{bibnamehash}{bb1c0d171effadee95d0232167198de0}
+      \strng{authorbibnamehash}{bb1c0d171effadee95d0232167198de0}
+      \strng{authornamehash}{bd5b50178614500025771572867fc86c}
+      \strng{authorfullhash}{bb1c0d171effadee95d0232167198de0}
+      \strng{authorfullhashraw}{bb1c0d171effadee95d0232167198de0}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{00925853}
+      \field{journaltitle}{American Journal of Political Science}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{number}{2}
+      \field{shortjournal}{Am. J. Polit. Sci.}
+      \field{shorttitle}{Comparative {{Politics}} and the {{Synthetic Control Method}}}
+      \field{title}{Comparative {{Politics}} and the {{Synthetic Control Method}}}
+      \field{volume}{59}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{pages}{495\bibrangedash 510}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1111/ajps.12116
+      \endverb
+    \endentry
     \entry{allamong2026causal}{article}{}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=c7e5fddb0772ca48e917d724c10db2c9}{%
@@ -985,6 +1087,81 @@
       \verb 10.1111/ectj.12097
       \endverb
     \endentry
+    \entry{chetty2026experimentally}{misc}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=7a853740afbc544905334cf607b3cd51}{%
+           family={Chetty},
+           familyi={C\bibinitperiod},
+           given={Raj},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=73ca27aa5f6ec9984b5fc29dfa8ab169}{%
+           family={Fogel},
+           familyi={F\bibinitperiod},
+           given={Jamie},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=571c7bf71524e7f1a01a182010ad3b77}{%
+           family={Katz},
+           familyi={K\bibinitperiod},
+           given={Lawrence\bibnamedelima F.},
+           giveni={L\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=980b0fdef061e656a6f0886939db2023}{%
+           family={Noray},
+           familyi={N\bibinitperiod},
+           given={Kadeem},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=608bab25d38e5daef9f3cfdd01ffe94d}{%
+           family={Porter},
+           familyi={P\bibinitperiod},
+           given={Sonya},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=259728d8a148879a51c83aba515d3dee}{%
+           family={Reisinger},
+           familyi={R\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{de9f176c59c95a4d2de134921515d461}
+      \strng{fullhash}{f70e2b4ce4d899838b85eebf2c8b9bc0}
+      \strng{fullhashraw}{f70e2b4ce4d899838b85eebf2c8b9bc0}
+      \strng{bibnamehash}{f70e2b4ce4d899838b85eebf2c8b9bc0}
+      \strng{authorbibnamehash}{f70e2b4ce4d899838b85eebf2c8b9bc0}
+      \strng{authornamehash}{de9f176c59c95a4d2de134921515d461}
+      \strng{authorfullhash}{f70e2b4ce4d899838b85eebf2c8b9bc0}
+      \strng{authorfullhashraw}{f70e2b4ce4d899838b85eebf2c8b9bc0}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{eprintclass}{econ.GN}
+      \field{eprinttype}{arXiv}
+      \field{month}{11}
+      \field{number}{arXiv:2611.03938}
+      \field{shorttitle}{Experimentally {{Validated Digital Twins}}}
+      \field{title}{Experimentally {{Validated Digital Twins}}: {{Evaluating Workforce Training Programs}} in the {{Age}} of {{Big Data}}}
+      \field{urlday}{6}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2611.03938
+      \endverb
+      \verb{eprint}
+      \verb 2611.03938
+      \endverb
+    \endentry
     \entry{chew2023llmassisted}{online}{}{}
       \name{author}{5}{}{%
         {{un=0,uniquepart=base,hash=0c4365e44bccb058a5494bc9dcbc4a50}{%
@@ -1046,6 +1223,59 @@
       \endverb
       \verb{eprint}
       \verb 2306.14924
+      \endverb
+    \endentry
+    \entry{currie2020technology}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=c740e1c3a89d6974ff6cbc7e787f8b3a}{%
+           family={Currie},
+           familyi={C\bibinitperiod},
+           given={Janet},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=50ce8b4d5b6dfccf1d1ee775377cb356}{%
+           family={Kleven},
+           familyi={K\bibinitperiod},
+           given={Henrik},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=91f1942dadca5f3405441ffd2e9e21da}{%
+           family={Zwiers},
+           familyi={Z\bibinitperiod},
+           given={Esmée},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{383db68caeea4e749d0ca7cdf2e712bd}
+      \strng{fullhash}{2395863d0a3d27b62cc2e7e79230227b}
+      \strng{fullhashraw}{2395863d0a3d27b62cc2e7e79230227b}
+      \strng{bibnamehash}{2395863d0a3d27b62cc2e7e79230227b}
+      \strng{authorbibnamehash}{2395863d0a3d27b62cc2e7e79230227b}
+      \strng{authornamehash}{383db68caeea4e749d0ca7cdf2e712bd}
+      \strng{authorfullhash}{2395863d0a3d27b62cc2e7e79230227b}
+      \strng{authorfullhashraw}{2395863d0a3d27b62cc2e7e79230227b}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{day}{1}
+      \field{issn}{2574-0768, 2574-0776}
+      \field{journaltitle}{AEA Papers and Proceedings}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{shortjournal}{AEA Pap. Proc.}
+      \field{shorttitle}{Technology and {{Big Data Are Changing Economics}}}
+      \field{title}{Technology and {{Big Data Are Changing Economics}}: {{Mining Text}} to {{Track Methods}}}
+      \field{volume}{110}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{pages}{42\bibrangedash 48}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1257/pandp.20201058
       \endverb
     \endentry
     \entry{dennstadt2024title}{article}{}{}
@@ -3727,6 +3957,62 @@
       \range{pages}{-1}
       \verb{doi}
       \verb 10.1093/pnasnexus/pgae346
+      \endverb
+    \endentry
+    \entry{torreblanca2026credibility}{online}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=a8be18a12e8a746bba5dde6e47bead58}{%
+           family={Torreblanca},
+           familyi={T\bibinitperiod},
+           given={Carolina},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=edb9722e5cded1c847e8df3b82a3e7ec}{%
+           family={Dinneen},
+           familyi={D\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5deb565427711f3a9d245c1d09dc0dc9}{%
+           family={Grossman},
+           familyi={G\bibinitperiod},
+           given={Guy},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=525088c4272a93c67f7c5e47f118568c}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Yiqing},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c131e564937aed265c3a83abe691ef46}
+      \strng{fullhash}{28a3f7ea35e3a1ce4ae5be70ecd8ae91}
+      \strng{fullhashraw}{28a3f7ea35e3a1ce4ae5be70ecd8ae91}
+      \strng{bibnamehash}{28a3f7ea35e3a1ce4ae5be70ecd8ae91}
+      \strng{authorbibnamehash}{28a3f7ea35e3a1ce4ae5be70ecd8ae91}
+      \strng{authornamehash}{c131e564937aed265c3a83abe691ef46}
+      \strng{authorfullhash}{28a3f7ea35e3a1ce4ae5be70ecd8ae91}
+      \strng{authorfullhashraw}{28a3f7ea35e3a1ce4ae5be70ecd8ae91}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{20}
+      \field{eprintclass}{cs.DL}
+      \field{eprinttype}{arXiv}
+      \field{month}{8}
+      \field{title}{The {{Credibility Revolution}} in {{Political Science}}}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2601.11542
+      \endverb
+      \verb{eprint}
+      \verb 2601.11542
       \endverb
     \endentry
     \entry{tuggener2024roleplaying}{inbook}{}{}
@@ -5130,6 +5416,108 @@
     \endentry
   \enddatalist
   \datalist[entry]{nyt/global//global/global/global}
+    \entry{abadie2015comparative}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=da499bff747c5f6cd0ec9185c820ba4d}{%
+           family={Abadie},
+           familyi={A\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b45c00701af03c6c0ab37b49f5d375c5}{%
+           family={Diamond},
+           familyi={D\bibinitperiod},
+           given={Alexis},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=be94165c21f502aeaed11e611358d6be}{%
+           family={Hainmueller},
+           familyi={H\bibinitperiod},
+           given={Jens},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{bd5b50178614500025771572867fc86c}
+      \strng{fullhash}{bb1c0d171effadee95d0232167198de0}
+      \strng{fullhashraw}{bb1c0d171effadee95d0232167198de0}
+      \strng{bibnamehash}{bb1c0d171effadee95d0232167198de0}
+      \strng{authorbibnamehash}{bb1c0d171effadee95d0232167198de0}
+      \strng{authornamehash}{bd5b50178614500025771572867fc86c}
+      \strng{authorfullhash}{bb1c0d171effadee95d0232167198de0}
+      \strng{authorfullhashraw}{bb1c0d171effadee95d0232167198de0}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{00925853}
+      \field{journaltitle}{American Journal of Political Science}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{number}{2}
+      \field{shortjournal}{Am. J. Polit. Sci.}
+      \field{shorttitle}{Comparative {{Politics}} and the {{Synthetic Control Method}}}
+      \field{title}{Comparative {{Politics}} and the {{Synthetic Control Method}}}
+      \field{volume}{59}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{pages}{495\bibrangedash 510}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1111/ajps.12116
+      \endverb
+    \endentry
+    \entry{abadie2003economic}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=da499bff747c5f6cd0ec9185c820ba4d}{%
+           family={Abadie},
+           familyi={A\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=990a64faa006b28cd41f2075997cba18}{%
+           family={Gardeazabal},
+           familyi={G\bibinitperiod},
+           given={Javier},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Economic Association}%
+      }
+      \strng{namehash}{f722330d5128ffafe3dd6ff1eae7e9c0}
+      \strng{fullhash}{f722330d5128ffafe3dd6ff1eae7e9c0}
+      \strng{fullhashraw}{f722330d5128ffafe3dd6ff1eae7e9c0}
+      \strng{bibnamehash}{f722330d5128ffafe3dd6ff1eae7e9c0}
+      \strng{authorbibnamehash}{f722330d5128ffafe3dd6ff1eae7e9c0}
+      \strng{authornamehash}{f722330d5128ffafe3dd6ff1eae7e9c0}
+      \strng{authorfullhash}{f722330d5128ffafe3dd6ff1eae7e9c0}
+      \strng{authorfullhashraw}{f722330d5128ffafe3dd6ff1eae7e9c0}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{0002-8282}
+      \field{journaltitle}{American Economic Review}
+      \field{langid}{english}
+      \field{number}{1}
+      \field{shortjournal}{Am. Econ. Rev.}
+      \field{shorttitle}{The Economic Costs of Conflict}
+      \field{title}{The Economic Costs of Conflict: {{A}} Case Study of the {{Basque Country}}}
+      \field{volume}{93}
+      \field{year}{2003}
+      \field{dateera}{ce}
+      \field{pages}{113\bibrangedash 132}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1257/000282803321455188
+      \endverb
+    \endentry
     \entry{allamong2026causal}{article}{}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=c7e5fddb0772ca48e917d724c10db2c9}{%
@@ -6096,6 +6484,81 @@
       \verb 10.1111/ectj.12097
       \endverb
     \endentry
+    \entry{chetty2026experimentally}{misc}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=7a853740afbc544905334cf607b3cd51}{%
+           family={Chetty},
+           familyi={C\bibinitperiod},
+           given={Raj},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=73ca27aa5f6ec9984b5fc29dfa8ab169}{%
+           family={Fogel},
+           familyi={F\bibinitperiod},
+           given={Jamie},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=571c7bf71524e7f1a01a182010ad3b77}{%
+           family={Katz},
+           familyi={K\bibinitperiod},
+           given={Lawrence\bibnamedelima F.},
+           giveni={L\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=980b0fdef061e656a6f0886939db2023}{%
+           family={Noray},
+           familyi={N\bibinitperiod},
+           given={Kadeem},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=608bab25d38e5daef9f3cfdd01ffe94d}{%
+           family={Porter},
+           familyi={P\bibinitperiod},
+           given={Sonya},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=259728d8a148879a51c83aba515d3dee}{%
+           family={Reisinger},
+           familyi={R\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{de9f176c59c95a4d2de134921515d461}
+      \strng{fullhash}{f70e2b4ce4d899838b85eebf2c8b9bc0}
+      \strng{fullhashraw}{f70e2b4ce4d899838b85eebf2c8b9bc0}
+      \strng{bibnamehash}{f70e2b4ce4d899838b85eebf2c8b9bc0}
+      \strng{authorbibnamehash}{f70e2b4ce4d899838b85eebf2c8b9bc0}
+      \strng{authornamehash}{de9f176c59c95a4d2de134921515d461}
+      \strng{authorfullhash}{f70e2b4ce4d899838b85eebf2c8b9bc0}
+      \strng{authorfullhashraw}{f70e2b4ce4d899838b85eebf2c8b9bc0}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{eprintclass}{econ.GN}
+      \field{eprinttype}{arXiv}
+      \field{month}{11}
+      \field{number}{arXiv:2611.03938}
+      \field{shorttitle}{Experimentally {{Validated Digital Twins}}}
+      \field{title}{Experimentally {{Validated Digital Twins}}: {{Evaluating Workforce Training Programs}} in the {{Age}} of {{Big Data}}}
+      \field{urlday}{6}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2611.03938
+      \endverb
+      \verb{eprint}
+      \verb 2611.03938
+      \endverb
+    \endentry
     \entry{chew2023llmassisted}{online}{}{}
       \name{author}{5}{}{%
         {{un=0,uniquepart=base,hash=0c4365e44bccb058a5494bc9dcbc4a50}{%
@@ -6157,6 +6620,59 @@
       \endverb
       \verb{eprint}
       \verb 2306.14924
+      \endverb
+    \endentry
+    \entry{currie2020technology}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=c740e1c3a89d6974ff6cbc7e787f8b3a}{%
+           family={Currie},
+           familyi={C\bibinitperiod},
+           given={Janet},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=50ce8b4d5b6dfccf1d1ee775377cb356}{%
+           family={Kleven},
+           familyi={K\bibinitperiod},
+           given={Henrik},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=91f1942dadca5f3405441ffd2e9e21da}{%
+           family={Zwiers},
+           familyi={Z\bibinitperiod},
+           given={Esmée},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{383db68caeea4e749d0ca7cdf2e712bd}
+      \strng{fullhash}{2395863d0a3d27b62cc2e7e79230227b}
+      \strng{fullhashraw}{2395863d0a3d27b62cc2e7e79230227b}
+      \strng{bibnamehash}{2395863d0a3d27b62cc2e7e79230227b}
+      \strng{authorbibnamehash}{2395863d0a3d27b62cc2e7e79230227b}
+      \strng{authornamehash}{383db68caeea4e749d0ca7cdf2e712bd}
+      \strng{authorfullhash}{2395863d0a3d27b62cc2e7e79230227b}
+      \strng{authorfullhashraw}{2395863d0a3d27b62cc2e7e79230227b}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{day}{1}
+      \field{issn}{2574-0768, 2574-0776}
+      \field{journaltitle}{AEA Papers and Proceedings}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{shortjournal}{AEA Pap. Proc.}
+      \field{shorttitle}{Technology and {{Big Data Are Changing Economics}}}
+      \field{title}{Technology and {{Big Data Are Changing Economics}}: {{Mining Text}} to {{Track Methods}}}
+      \field{volume}{110}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{pages}{42\bibrangedash 48}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1257/pandp.20201058
       \endverb
     \endentry
     \entry{dennstadt2024title}{article}{}{}
@@ -8838,6 +9354,62 @@
       \range{pages}{-1}
       \verb{doi}
       \verb 10.1093/pnasnexus/pgae346
+      \endverb
+    \endentry
+    \entry{torreblanca2026credibility}{online}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=a8be18a12e8a746bba5dde6e47bead58}{%
+           family={Torreblanca},
+           familyi={T\bibinitperiod},
+           given={Carolina},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=edb9722e5cded1c847e8df3b82a3e7ec}{%
+           family={Dinneen},
+           familyi={D\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5deb565427711f3a9d245c1d09dc0dc9}{%
+           family={Grossman},
+           familyi={G\bibinitperiod},
+           given={Guy},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=525088c4272a93c67f7c5e47f118568c}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Yiqing},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c131e564937aed265c3a83abe691ef46}
+      \strng{fullhash}{28a3f7ea35e3a1ce4ae5be70ecd8ae91}
+      \strng{fullhashraw}{28a3f7ea35e3a1ce4ae5be70ecd8ae91}
+      \strng{bibnamehash}{28a3f7ea35e3a1ce4ae5be70ecd8ae91}
+      \strng{authorbibnamehash}{28a3f7ea35e3a1ce4ae5be70ecd8ae91}
+      \strng{authornamehash}{c131e564937aed265c3a83abe691ef46}
+      \strng{authorfullhash}{28a3f7ea35e3a1ce4ae5be70ecd8ae91}
+      \strng{authorfullhashraw}{28a3f7ea35e3a1ce4ae5be70ecd8ae91}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{20}
+      \field{eprintclass}{cs.DL}
+      \field{eprinttype}{arXiv}
+      \field{month}{8}
+      \field{title}{The {{Credibility Revolution}} in {{Political Science}}}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2601.11542
+      \endverb
+      \verb{eprint}
+      \verb 2601.11542
       \endverb
     \endentry
     \entry{tuggener2024roleplaying}{inbook}{}{}

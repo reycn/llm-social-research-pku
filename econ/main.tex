@@ -169,7 +169,7 @@
 \institute{\textcolor{gray}{
     $^{*}$ PhD Candidate in Computational Communication, National University of Singapore\\Email: rongxin@u.nus.edu / Website: https://rongxin.me\\
 Using causal and computational methods to evaluate \\societal and political impacts of digital information technologies}}
-\date{\small \textcolor{gray}{November 5, 2026; Online}}
+\date{\small \textcolor{gray}{November 6, 2026; Online}}
 
 \begin{document}
 
@@ -296,18 +296,19 @@ Using causal and computational methods to evaluate \\societal and political impa
 
 
 \begin{frame}
-  \frametitle{Example in Econ: Tracking Credibility Revolution}
+  \frametitle{Example in Econ: Synthetic Control}
   \begin{columns}[T,onlytextwidth]
     \column{0.5\textwidth}
       \footnotesize
       \begin{itemize}
-        \item \textcite{goldsmith2024tracking} uses ``natural language processing'' to track the credibility revolution across fields
+        \item \textcite{abadie2003economic} uses synthetic control units to estimate the economic costs of conflict in the Basque Country
+        \item The control units are machine-constructed synthetic; similarly in \textcite{abadie2015comparative}
       \end{itemize}
     \column{0.48\textwidth}
       \begin{figure}
         \centering
-        \includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{goldsmith2024tracking.png}
-        \caption{Source: \textcite{goldsmith2024tracking}}
+        \includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{abadie2003economic.png}
+        \caption{Source: \textcite{abadie2003economic}}
       \end{figure}
   \end{columns}
 \end{frame}
@@ -614,6 +615,28 @@ simplified typological structures \parencite{xie2025variance}
 \end{frame}
 
 
+
+
+\begin{frame}
+  \frametitle{Example in PS: Tracking Credibility Revolution}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.5\textwidth}
+      \footnotesize
+      \begin{itemize}
+        \item \textcite{torreblanca2026credibility} uses large language model to annotate papers in their review artical tracking the credibility revolution in political science; following \textcite{currie2020technology, goldsmith2024tracking} in economics.
+      \end{itemize}
+    \column{0.48\textwidth}
+      \begin{figure}
+        \centering
+        \IfFileExists{../figures/torreblanca2026credibility.png}{%
+          \includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{torreblanca2026credibility.png}}{%
+          \fbox{\parbox[c][0.4\textheight][c]{0.9\linewidth}{\centering\small figure missing}}}
+        \caption{Source: \textcite{torreblanca2026credibility}}
+      \end{figure}
+  \end{columns}
+\end{frame}
+
+
 % =====================================================================
 \tutframe{TUT2}{Topic classification using LLMs\\Don't forget about validation!\\Online material: \textcolor{white}{\hyperlink{https://github.com/reycn/llm-social-research-pku-tutorials}{GitHub}}}
 % =====================================================================
@@ -709,13 +732,26 @@ simplified typological structures \parencite{xie2025variance}
     \column{0.5\textwidth}
       \small
       \begin{itemize}
-        \item Double/debiased machine learning enables valid causal inference while flexible ML models estimate nuisance functions \parencite{chernozhukov2017double}; building on this, \textcite{imai2026leveraging} leverage the internal representations of generative AI to estimate causal effects of unstructured treatments such as texts and images
+        \item Double/debiased machine learning enables valid causal inference while flexible ML models estimate nuisance functions \parencite{chernozhukov2017double}
+        \item Building upon DML, \textcite{imai2026leveraging} leverage the internal representations of generative AI to estimate causal effects of unstructured treatments such as texts and images
+        \only<2>{%
+        \item DML estimators, moreover, are (a) closed to RCT baselines yet have slightly (b) lower RMSE \parencite{chetty2026experimentally}
+        }%
       \end{itemize}
     \column{0.48\textwidth}
       \begin{figure}
         \centering
+        \only<1>{%
         \includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{imai.pnas.png}
+
         \caption{Source: \textcite{imai2026leveraging}}
+        }%
+
+        \only<2>{%
+        \includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{chetty2026experimentally.png}
+
+        \caption{Source: \textcite{chetty2026experimentally}}
+        }%
       \end{figure}
   \end{columns}
 \end{frame}
