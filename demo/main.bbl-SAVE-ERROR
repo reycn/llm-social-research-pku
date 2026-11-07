@@ -837,154 +837,6 @@
       \verb 10.1017/pan.2025.10022
       \endverb
     \endentry
-    \entry{chernozhukov2017double}{article}{}{}
-      \name{author}{6}{}{%
-        {{un=0,uniquepart=base,hash=c75cbe2cefd1e532f636a50892605d06}{%
-           family={Chernozhukov},
-           familyi={C\bibinitperiod},
-           given={Victor},
-           giveni={V\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ef4b66d2ca2dde47ec1b0afa98306775}{%
-           family={Chetverikov},
-           familyi={C\bibinitperiod},
-           given={Denis},
-           giveni={D\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=d3c2cc443c71254678269de10d61d61c}{%
-           family={Demirer},
-           familyi={D\bibinitperiod},
-           given={Mert},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=7e6b0ea4eee38822cdb0a4361e98752c}{%
-           family={Duflo},
-           familyi={D\bibinitperiod},
-           given={Esther},
-           giveni={E\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=b38b53cdfa3ce5b62046f22663d5cc6f}{%
-           family={Hansen},
-           familyi={H\bibinitperiod},
-           given={Christian},
-           giveni={C\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=9c98526d9f1775b95096664c9cf0c633}{%
-           family={Newey},
-           familyi={N\bibinitperiod},
-           given={Whitney},
-           giveni={W\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{e8ad45c8076487daa445bfbeb4e02a04}
-      \strng{fullhash}{e1a12cf73f48bd79781ea27c9191c2a8}
-      \strng{fullhashraw}{e1a12cf73f48bd79781ea27c9191c2a8}
-      \strng{bibnamehash}{e1a12cf73f48bd79781ea27c9191c2a8}
-      \strng{authorbibnamehash}{e1a12cf73f48bd79781ea27c9191c2a8}
-      \strng{authornamehash}{e8ad45c8076487daa445bfbeb4e02a04}
-      \strng{authorfullhash}{e1a12cf73f48bd79781ea27c9191c2a8}
-      \strng{authorfullhashraw}{e1a12cf73f48bd79781ea27c9191c2a8}
-      \field{extraname}{1}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{0002-8282}
-      \field{journaltitle}{American Economic Review}
-      \field{langid}{english}
-      \field{month}{5}
-      \field{number}{5}
-      \field{shortjournal}{Am. Econ. Rev.}
-      \field{title}{Double/{{Debiased}}/{{Neyman Machine Learning}} of {{Treatment Effects}}}
-      \field{volume}{107}
-      \field{year}{2017}
-      \field{dateera}{ce}
-      \field{pages}{261\bibrangedash 265}
-      \range{pages}{5}
-      \verb{doi}
-      \verb 10.1257/aer.p20171038
-      \endverb
-    \endentry
-    \entry{chernozhukov2018double}{article}{}{}
-      \name{author}{7}{}{%
-        {{un=0,uniquepart=base,hash=c75cbe2cefd1e532f636a50892605d06}{%
-           family={Chernozhukov},
-           familyi={C\bibinitperiod},
-           given={Victor},
-           giveni={V\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ef4b66d2ca2dde47ec1b0afa98306775}{%
-           family={Chetverikov},
-           familyi={C\bibinitperiod},
-           given={Denis},
-           giveni={D\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=d3c2cc443c71254678269de10d61d61c}{%
-           family={Demirer},
-           familyi={D\bibinitperiod},
-           given={Mert},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=7e6b0ea4eee38822cdb0a4361e98752c}{%
-           family={Duflo},
-           familyi={D\bibinitperiod},
-           given={Esther},
-           giveni={E\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=b38b53cdfa3ce5b62046f22663d5cc6f}{%
-           family={Hansen},
-           familyi={H\bibinitperiod},
-           given={Christian},
-           giveni={C\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=9c98526d9f1775b95096664c9cf0c633}{%
-           family={Newey},
-           familyi={N\bibinitperiod},
-           given={Whitney},
-           giveni={W\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=bf615cc72310078c444f0c653a1fc5e7}{%
-           family={Robins},
-           familyi={R\bibinitperiod},
-           given={James},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{e8ad45c8076487daa445bfbeb4e02a04}
-      \strng{fullhash}{7892f5fdea2b46a0fb4e6c031c27c781}
-      \strng{fullhashraw}{7892f5fdea2b46a0fb4e6c031c27c781}
-      \strng{bibnamehash}{7892f5fdea2b46a0fb4e6c031c27c781}
-      \strng{authorbibnamehash}{7892f5fdea2b46a0fb4e6c031c27c781}
-      \strng{authornamehash}{e8ad45c8076487daa445bfbeb4e02a04}
-      \strng{authorfullhash}{7892f5fdea2b46a0fb4e6c031c27c781}
-      \strng{authorfullhashraw}{7892f5fdea2b46a0fb4e6c031c27c781}
-      \field{extraname}{2}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{day}{1}
-      \field{issn}{1368-4221}
-      \field{journaltitle}{The Econometrics Journal}
-      \field{month}{2}
-      \field{number}{1}
-      \field{shortjournal}{Econom. J.}
-      \field{title}{Double/Debiased Machine Learning for Treatment and Structural Parameters}
-      \field{volume}{21}
-      \field{year}{2018}
-      \field{dateera}{ce}
-      \field{pages}{C1\bibrangedash C68}
-      \range{pages}{-1}
-      \verb{doi}
-      \verb 10.1111/ectj.12097
-      \endverb
-    \endentry
     \entry{chew2023llmassisted}{online}{}{}
       \name{author}{5}{}{%
         {{un=0,uniquepart=base,hash=0c4365e44bccb058a5494bc9dcbc4a50}{%
@@ -1228,69 +1080,6 @@
       \endverb
       \verb{eprint}
       \verb 2306.07951
-      \endverb
-    \endentry
-    \entry{egami2024using}{article}{}{}
-      \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=3458ba5c0d9e560fac615b3040d8e6cd}{%
-           family={Egami},
-           familyi={E\bibinitperiod},
-           given={Naoki},
-           giveni={N\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=8141fc89d0745e064b54daca8f9ba1cc}{%
-           family={Hinck},
-           familyi={H\bibinitperiod},
-           given={Musashi},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=f1370510cfe223ff4c2c652b160014ba}{%
-           family={Stewart},
-           familyi={S\bibinitperiod},
-           given={Brandon\bibnamedelima M},
-           giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=454da81f69b92ea6f0708dd62407bb61}{%
-           family={Wei},
-           familyi={W\bibinitperiod},
-           given={Hanying},
-           giveni={H\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{621aed5a048fe65f5cfdaeb2170166b1}
-      \strng{fullhash}{ffe765ba16dc0eaac3940a8ba118530e}
-      \strng{fullhashraw}{ffe765ba16dc0eaac3940a8ba118530e}
-      \strng{bibnamehash}{ffe765ba16dc0eaac3940a8ba118530e}
-      \strng{authorbibnamehash}{ffe765ba16dc0eaac3940a8ba118530e}
-      \strng{authornamehash}{621aed5a048fe65f5cfdaeb2170166b1}
-      \strng{authorfullhash}{ffe765ba16dc0eaac3940a8ba118530e}
-      \strng{authorfullhashraw}{ffe765ba16dc0eaac3940a8ba118530e}
-      \field{sortinit}{E}
-      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{journaltitle}{Preprint from November}
-      \field{langid}{english}
-      \field{shortjournal}{Prepr. Novemb.}
-      \field{shorttitle}{Using Large Language Model Annotations for the Social Sciences}
-      \field{title}{Using Large Language Model Annotations for the Social Sciences: {{A}} General Framework of Using Predicted Variables in Downstream Analyses}
-      \field{urlday}{12}
-      \field{urlmonth}{5}
-      \field{urlyear}{2026}
-      \field{volume}{17}
-      \field{year}{2024}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{2024}
-      \range{pages}{1}
-      \verb{urlraw}
-      \verb https://naokiegami.com/paper/dsl_ss.pdf
-      \endverb
-      \verb{url}
-      \verb https://naokiegami.com/paper/dsl_ss.pdf
       \endverb
     \endentry
     \entry{feng2024what}{inbook}{}{}
@@ -1733,38 +1522,6 @@
       \verb 38848300
       \endverb
     \endentry
-    \entry{liang2026computational}{unpublished}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=70bd0b030f1ed5a3711529d9ab47785c}{%
-           family={{Hai Liang}},
-           familyi={H\bibinitperiod}}}%
-      }
-      \strng{namehash}{70bd0b030f1ed5a3711529d9ab47785c}
-      \strng{fullhash}{70bd0b030f1ed5a3711529d9ab47785c}
-      \strng{fullhashraw}{70bd0b030f1ed5a3711529d9ab47785c}
-      \strng{bibnamehash}{70bd0b030f1ed5a3711529d9ab47785c}
-      \strng{authorbibnamehash}{70bd0b030f1ed5a3711529d9ab47785c}
-      \strng{authornamehash}{70bd0b030f1ed5a3711529d9ab47785c}
-      \strng{authorfullhash}{70bd0b030f1ed5a3711529d9ab47785c}
-      \strng{authorfullhashraw}{70bd0b030f1ed5a3711529d9ab47785c}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{A {{Computational Approach}} to {{Human}} - {{AI Communication}}}
-      \field{venue}{Singapore}
-      \field{year}{2026}
-      \field{dateera}{ce}
-      \verb{urlraw}
-      \verb www.dropbox.com/scl/fi/nlq3k73akoln87ebkkxsr/NUS.pdf?rlkey=0kzml5htrvthlhvqa6m6w9ee2&e=1&dl=0
-      \endverb
-      \verb{url}
-      \verb www.dropbox.com/scl/fi/nlq3k73akoln87ebkkxsr/NUS.pdf?rlkey=0kzml5htrvthlhvqa6m6w9ee2&e=1&dl=0
-      \endverb
-    \endentry
     \entry{hamalainen2023evaluatinga}{article}{}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=59d733562ff38e66f46fa0d24fd03276}{%
@@ -1915,55 +1672,6 @@
       \range{pages}{18}
       \verb{doi}
       \verb 10.1007/978-3-031-88045-2_4
-      \endverb
-    \endentry
-    \entry{imai2026leveraging}{article}{}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=3fb69a8c942c769b74775b484c82bbe9}{%
-           family={Imai},
-           familyi={I\bibinitperiod},
-           given={Kosuke},
-           giveni={K\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=7aad2ddf8217def3d1ece0931f3e7a29}{%
-           family={Nakamura},
-           familyi={N\bibinitperiod},
-           given={Kentaro},
-           giveni={K\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Proceedings of the National Academy of Sciences}%
-      }
-      \strng{namehash}{78041fd2022b92966203bb05d2f90553}
-      \strng{fullhash}{78041fd2022b92966203bb05d2f90553}
-      \strng{fullhashraw}{78041fd2022b92966203bb05d2f90553}
-      \strng{bibnamehash}{78041fd2022b92966203bb05d2f90553}
-      \strng{authorbibnamehash}{78041fd2022b92966203bb05d2f90553}
-      \strng{authornamehash}{78041fd2022b92966203bb05d2f90553}
-      \strng{authorfullhash}{78041fd2022b92966203bb05d2f90553}
-      \strng{authorfullhashraw}{78041fd2022b92966203bb05d2f90553}
-      \field{sortinit}{I}
-      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{day}{8}
-      \field{journaltitle}{Proceedings of the National Academy of Sciences}
-      \field{langid}{english}
-      \field{month}{9}
-      \field{number}{36}
-      \field{shortjournal}{Proc. Natl. Acad. Sci.}
-      \field{title}{Leveraging Generative {{AI}} for Causal Inference with Unstructured Data}
-      \field{volume}{123}
-      \field{year}{2026}
-      \field{dateera}{ce}
-      \field{pages}{e2530532123}
-      \range{pages}{-1}
-      \verb{doi}
-      \verb 10.1073/pnas.2530532123
       \endverb
     \endentry
     \entry{jiang2024balanced}{inbook}{}{}
@@ -2274,93 +1982,6 @@
       \field{title}{Replication Certification at Publication: Checkable by Anyone, Anywhere, in Seconds, Forever}
       \field{year}{2026}
     \endentry
-    \entry{kolluri2025finetuning}{inbook}{}{}
-      \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=78a0303b3ccee421ed43e942cd5ba890}{%
-           family={Kolluri},
-           familyi={K\bibinitperiod},
-           given={Akaash},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=c7cbdb887d43b9bd508c8ef6df4bcf81}{%
-           family={Wu},
-           familyi={W\bibinitperiod},
-           given={Shengguang},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=a6d2d4802375c9b3367011ada5e50822}{%
-           family={Park},
-           familyi={P\bibinitperiod},
-           given={Joon\bibnamedelima Sung},
-           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=bb1df70dce464605ddd9cf83485d8db1}{%
-           family={Bernstein},
-           familyi={B\bibinitperiod},
-           given={Michael\bibnamedelima S.},
-           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
-           givenun=0}}%
-      }
-      \name{editor}{4}{}{%
-        {{hash=a870e7c2218dedf8fa395067da42b08f}{%
-           family={Christodoulopoulos},
-           familyi={C\bibinitperiod},
-           given={Christos},
-           giveni={C\bibinitperiod}}}%
-        {{hash=12ef4925945d218592da34e0e46c4eb4}{%
-           family={Chakraborty},
-           familyi={C\bibinitperiod},
-           given={Tanmoy},
-           giveni={T\bibinitperiod}}}%
-        {{hash=90630365a12b98e0c6e6ae9e11f9927b}{%
-           family={Rose},
-           familyi={R\bibinitperiod},
-           given={Carolyn},
-           giveni={C\bibinitperiod}}}%
-        {{hash=ffb2927628843580b437b649623420ac}{%
-           family={Peng},
-           familyi={P\bibinitperiod},
-           given={Violet},
-           giveni={V\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Suzhou, China}%
-      }
-      \list{publisher}{1}{%
-        {Association for Computational Linguistics}%
-      }
-      \strng{namehash}{f99ff2f77b063d235f0c58a38e8d2b7a}
-      \strng{fullhash}{0c649bf98775f1efaa6613d3358b57af}
-      \strng{fullhashraw}{0c649bf98775f1efaa6613d3358b57af}
-      \strng{bibnamehash}{0c649bf98775f1efaa6613d3358b57af}
-      \strng{authorbibnamehash}{0c649bf98775f1efaa6613d3358b57af}
-      \strng{authornamehash}{f99ff2f77b063d235f0c58a38e8d2b7a}
-      \strng{authorfullhash}{0c649bf98775f1efaa6613d3358b57af}
-      \strng{authorfullhashraw}{0c649bf98775f1efaa6613d3358b57af}
-      \strng{editorbibnamehash}{272fa3789a8dc88d7f1dbc00f047ce47}
-      \strng{editornamehash}{7161839d6d65e78b31a4135336c8ebdb}
-      \strng{editorfullhash}{272fa3789a8dc88d7f1dbc00f047ce47}
-      \strng{editorfullhashraw}{272fa3789a8dc88d7f1dbc00f047ce47}
-      \field{sortinit}{K}
-      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Proceedings of the 2025 {{Conference}} on {{Empirical Methods}} in {{Natural Language Processing}}}
-      \field{eventtitle}{{{EMNLP}} 2025}
-      \field{isbn}{979-8-89176-332-6}
-      \field{month}{11}
-      \field{title}{Finetuning {{LLMs}} for {{Human Behavior Prediction}} in {{Social Science Experiments}}}
-      \field{year}{2025}
-      \field{dateera}{ce}
-      \field{pages}{30096\bibrangedash 30111}
-      \range{pages}{16}
-      \verb{doi}
-      \verb 10.18653/v1/2025.emnlp-main.1530
-      \endverb
-    \endentry
     \entry{li2024lminterview}{inbook}{}{}
       \name{author}{9}{}{%
         {{un=1,uniquepart=given,hash=44ba08c3888fd1c23af0474f48010d40}{%
@@ -2545,14 +2166,48 @@
       \verb 10.18653/v1/2024.acl-long.547
       \endverb
     \endentry
+    \entry{liang2026computational}{unpublished}{}{}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=036f862f5e7a81ff154852133b8117f5}{%
+           family={Liang},
+           familyi={L\bibinitperiod},
+           given={Hai},
+           giveni={H\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{036f862f5e7a81ff154852133b8117f5}
+      \strng{fullhash}{036f862f5e7a81ff154852133b8117f5}
+      \strng{fullhashraw}{036f862f5e7a81ff154852133b8117f5}
+      \strng{bibnamehash}{036f862f5e7a81ff154852133b8117f5}
+      \strng{authorbibnamehash}{036f862f5e7a81ff154852133b8117f5}
+      \strng{authornamehash}{036f862f5e7a81ff154852133b8117f5}
+      \strng{authorfullhash}{036f862f5e7a81ff154852133b8117f5}
+      \strng{authorfullhashraw}{036f862f5e7a81ff154852133b8117f5}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A {{Computational Approach}} to {{Human}} - {{AI Communication}}}
+      \field{venue}{Singapore}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb www.dropbox.com/scl/fi/nlq3k73akoln87ebkkxsr/NUS.pdf?rlkey=0kzml5htrvthlhvqa6m6w9ee2&e=1&dl=0
+      \endverb
+      \verb{url}
+      \verb www.dropbox.com/scl/fi/nlq3k73akoln87ebkkxsr/NUS.pdf?rlkey=0kzml5htrvthlhvqa6m6w9ee2&e=1&dl=0
+      \endverb
+    \endentry
     \entry{liang2024can}{article}{}{}
       \name{author}{12}{}{%
-        {{un=0,uniquepart=base,hash=c37e00c1ca8aafe56159ff4ab1f6e040}{%
+        {{un=1,uniquepart=given,hash=c37e00c1ca8aafe56159ff4ab1f6e040}{%
            family={Liang},
            familyi={L\bibinitperiod},
            given={Weixin},
            giveni={W\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
         {{un=0,uniquepart=base,hash=4a029fd7cea6a9c680cd411bbb8ad43c}{%
            family={Zhang},
            familyi={Z\bibinitperiod},
@@ -2635,7 +2290,6 @@
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{day}{25}
@@ -4854,56 +4508,6 @@
       \range{pages}{64}
       \verb{doi}
       \verb 10.18653/v1/2024.acl-long.782
-      \endverb
-    \endentry
-    \entry{zhao2025making}{article}{}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=915a6c16dfbc964adfb34e35f69a1d35}{%
-           family={Zhao},
-           familyi={Z\bibinitperiod},
-           given={Luming},
-           giveni={L\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=d60e001d742659e646a947ea71bee467}{%
-           family={Ye},
-           familyi={Y\bibinitperiod},
-           given={WeiMing},
-           giveni={W\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Routledge}%
-      }
-      \strng{namehash}{f99dbb6ec6b8c5097e4f911b40d2f0cc}
-      \strng{fullhash}{f99dbb6ec6b8c5097e4f911b40d2f0cc}
-      \strng{fullhashraw}{f99dbb6ec6b8c5097e4f911b40d2f0cc}
-      \strng{bibnamehash}{f99dbb6ec6b8c5097e4f911b40d2f0cc}
-      \strng{authorbibnamehash}{f99dbb6ec6b8c5097e4f911b40d2f0cc}
-      \strng{authornamehash}{f99dbb6ec6b8c5097e4f911b40d2f0cc}
-      \strng{authorfullhash}{f99dbb6ec6b8c5097e4f911b40d2f0cc}
-      \strng{authorfullhashraw}{f99dbb6ec6b8c5097e4f911b40d2f0cc}
-      \field{sortinit}{Z}
-      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{day}{4}
-      \field{issn}{1751-2786}
-      \field{journaltitle}{Journalism Practice}
-      \field{month}{3}
-      \field{number}{3}
-      \field{shortjournal}{Journal. Pract.}
-      \field{shorttitle}{Making {{Laughter}}}
-      \field{title}{Making {{Laughter}}: {{How Chinese Official Media Produce News}} on the {{Douyin}} ({{TikTok}})}
-      \field{volume}{19}
-      \field{year}{2025}
-      \field{dateera}{ce}
-      \field{pages}{665\bibrangedash 689}
-      \range{pages}{25}
-      \verb{doi}
-      \verb 10.1080/17512786.2023.2199720
       \endverb
     \endentry
     \entry{zheng2023judging}{online}{}{}
@@ -5935,154 +5539,6 @@
       \verb 10.1017/pan.2025.10022
       \endverb
     \endentry
-    \entry{chernozhukov2017double}{article}{}{}
-      \name{author}{6}{}{%
-        {{un=0,uniquepart=base,hash=c75cbe2cefd1e532f636a50892605d06}{%
-           family={Chernozhukov},
-           familyi={C\bibinitperiod},
-           given={Victor},
-           giveni={V\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ef4b66d2ca2dde47ec1b0afa98306775}{%
-           family={Chetverikov},
-           familyi={C\bibinitperiod},
-           given={Denis},
-           giveni={D\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=d3c2cc443c71254678269de10d61d61c}{%
-           family={Demirer},
-           familyi={D\bibinitperiod},
-           given={Mert},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=7e6b0ea4eee38822cdb0a4361e98752c}{%
-           family={Duflo},
-           familyi={D\bibinitperiod},
-           given={Esther},
-           giveni={E\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=b38b53cdfa3ce5b62046f22663d5cc6f}{%
-           family={Hansen},
-           familyi={H\bibinitperiod},
-           given={Christian},
-           giveni={C\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=9c98526d9f1775b95096664c9cf0c633}{%
-           family={Newey},
-           familyi={N\bibinitperiod},
-           given={Whitney},
-           giveni={W\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{e8ad45c8076487daa445bfbeb4e02a04}
-      \strng{fullhash}{e1a12cf73f48bd79781ea27c9191c2a8}
-      \strng{fullhashraw}{e1a12cf73f48bd79781ea27c9191c2a8}
-      \strng{bibnamehash}{e1a12cf73f48bd79781ea27c9191c2a8}
-      \strng{authorbibnamehash}{e1a12cf73f48bd79781ea27c9191c2a8}
-      \strng{authornamehash}{e8ad45c8076487daa445bfbeb4e02a04}
-      \strng{authorfullhash}{e1a12cf73f48bd79781ea27c9191c2a8}
-      \strng{authorfullhashraw}{e1a12cf73f48bd79781ea27c9191c2a8}
-      \field{extraname}{1}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{0002-8282}
-      \field{journaltitle}{American Economic Review}
-      \field{langid}{english}
-      \field{month}{5}
-      \field{number}{5}
-      \field{shortjournal}{Am. Econ. Rev.}
-      \field{title}{Double/{{Debiased}}/{{Neyman Machine Learning}} of {{Treatment Effects}}}
-      \field{volume}{107}
-      \field{year}{2017}
-      \field{dateera}{ce}
-      \field{pages}{261\bibrangedash 265}
-      \range{pages}{5}
-      \verb{doi}
-      \verb 10.1257/aer.p20171038
-      \endverb
-    \endentry
-    \entry{chernozhukov2018double}{article}{}{}
-      \name{author}{7}{}{%
-        {{un=0,uniquepart=base,hash=c75cbe2cefd1e532f636a50892605d06}{%
-           family={Chernozhukov},
-           familyi={C\bibinitperiod},
-           given={Victor},
-           giveni={V\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ef4b66d2ca2dde47ec1b0afa98306775}{%
-           family={Chetverikov},
-           familyi={C\bibinitperiod},
-           given={Denis},
-           giveni={D\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=d3c2cc443c71254678269de10d61d61c}{%
-           family={Demirer},
-           familyi={D\bibinitperiod},
-           given={Mert},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=7e6b0ea4eee38822cdb0a4361e98752c}{%
-           family={Duflo},
-           familyi={D\bibinitperiod},
-           given={Esther},
-           giveni={E\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=b38b53cdfa3ce5b62046f22663d5cc6f}{%
-           family={Hansen},
-           familyi={H\bibinitperiod},
-           given={Christian},
-           giveni={C\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=9c98526d9f1775b95096664c9cf0c633}{%
-           family={Newey},
-           familyi={N\bibinitperiod},
-           given={Whitney},
-           giveni={W\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=bf615cc72310078c444f0c653a1fc5e7}{%
-           family={Robins},
-           familyi={R\bibinitperiod},
-           given={James},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{e8ad45c8076487daa445bfbeb4e02a04}
-      \strng{fullhash}{7892f5fdea2b46a0fb4e6c031c27c781}
-      \strng{fullhashraw}{7892f5fdea2b46a0fb4e6c031c27c781}
-      \strng{bibnamehash}{7892f5fdea2b46a0fb4e6c031c27c781}
-      \strng{authorbibnamehash}{7892f5fdea2b46a0fb4e6c031c27c781}
-      \strng{authornamehash}{e8ad45c8076487daa445bfbeb4e02a04}
-      \strng{authorfullhash}{7892f5fdea2b46a0fb4e6c031c27c781}
-      \strng{authorfullhashraw}{7892f5fdea2b46a0fb4e6c031c27c781}
-      \field{extraname}{2}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{day}{1}
-      \field{issn}{1368-4221}
-      \field{journaltitle}{The Econometrics Journal}
-      \field{month}{2}
-      \field{number}{1}
-      \field{shortjournal}{Econom. J.}
-      \field{title}{Double/Debiased Machine Learning for Treatment and Structural Parameters}
-      \field{volume}{21}
-      \field{year}{2018}
-      \field{dateera}{ce}
-      \field{pages}{C1\bibrangedash C68}
-      \range{pages}{-1}
-      \verb{doi}
-      \verb 10.1111/ectj.12097
-      \endverb
-    \endentry
     \entry{chew2023llmassisted}{online}{}{}
       \name{author}{5}{}{%
         {{un=0,uniquepart=base,hash=0c4365e44bccb058a5494bc9dcbc4a50}{%
@@ -6326,69 +5782,6 @@
       \endverb
       \verb{eprint}
       \verb 2306.07951
-      \endverb
-    \endentry
-    \entry{egami2024using}{article}{}{}
-      \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=3458ba5c0d9e560fac615b3040d8e6cd}{%
-           family={Egami},
-           familyi={E\bibinitperiod},
-           given={Naoki},
-           giveni={N\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=8141fc89d0745e064b54daca8f9ba1cc}{%
-           family={Hinck},
-           familyi={H\bibinitperiod},
-           given={Musashi},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=f1370510cfe223ff4c2c652b160014ba}{%
-           family={Stewart},
-           familyi={S\bibinitperiod},
-           given={Brandon\bibnamedelima M},
-           giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=454da81f69b92ea6f0708dd62407bb61}{%
-           family={Wei},
-           familyi={W\bibinitperiod},
-           given={Hanying},
-           giveni={H\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{621aed5a048fe65f5cfdaeb2170166b1}
-      \strng{fullhash}{ffe765ba16dc0eaac3940a8ba118530e}
-      \strng{fullhashraw}{ffe765ba16dc0eaac3940a8ba118530e}
-      \strng{bibnamehash}{ffe765ba16dc0eaac3940a8ba118530e}
-      \strng{authorbibnamehash}{ffe765ba16dc0eaac3940a8ba118530e}
-      \strng{authornamehash}{621aed5a048fe65f5cfdaeb2170166b1}
-      \strng{authorfullhash}{ffe765ba16dc0eaac3940a8ba118530e}
-      \strng{authorfullhashraw}{ffe765ba16dc0eaac3940a8ba118530e}
-      \field{sortinit}{E}
-      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{journaltitle}{Preprint from November}
-      \field{langid}{english}
-      \field{shortjournal}{Prepr. Novemb.}
-      \field{shorttitle}{Using Large Language Model Annotations for the Social Sciences}
-      \field{title}{Using Large Language Model Annotations for the Social Sciences: {{A}} General Framework of Using Predicted Variables in Downstream Analyses}
-      \field{urlday}{12}
-      \field{urlmonth}{5}
-      \field{urlyear}{2026}
-      \field{volume}{17}
-      \field{year}{2024}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{2024}
-      \range{pages}{1}
-      \verb{urlraw}
-      \verb https://naokiegami.com/paper/dsl_ss.pdf
-      \endverb
-      \verb{url}
-      \verb https://naokiegami.com/paper/dsl_ss.pdf
       \endverb
     \endentry
     \entry{feng2024what}{inbook}{}{}
@@ -6831,38 +6224,6 @@
       \verb 38848300
       \endverb
     \endentry
-    \entry{liang2026computational}{unpublished}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=70bd0b030f1ed5a3711529d9ab47785c}{%
-           family={{Hai Liang}},
-           familyi={H\bibinitperiod}}}%
-      }
-      \strng{namehash}{70bd0b030f1ed5a3711529d9ab47785c}
-      \strng{fullhash}{70bd0b030f1ed5a3711529d9ab47785c}
-      \strng{fullhashraw}{70bd0b030f1ed5a3711529d9ab47785c}
-      \strng{bibnamehash}{70bd0b030f1ed5a3711529d9ab47785c}
-      \strng{authorbibnamehash}{70bd0b030f1ed5a3711529d9ab47785c}
-      \strng{authornamehash}{70bd0b030f1ed5a3711529d9ab47785c}
-      \strng{authorfullhash}{70bd0b030f1ed5a3711529d9ab47785c}
-      \strng{authorfullhashraw}{70bd0b030f1ed5a3711529d9ab47785c}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{A {{Computational Approach}} to {{Human}} - {{AI Communication}}}
-      \field{venue}{Singapore}
-      \field{year}{2026}
-      \field{dateera}{ce}
-      \verb{urlraw}
-      \verb www.dropbox.com/scl/fi/nlq3k73akoln87ebkkxsr/NUS.pdf?rlkey=0kzml5htrvthlhvqa6m6w9ee2&e=1&dl=0
-      \endverb
-      \verb{url}
-      \verb www.dropbox.com/scl/fi/nlq3k73akoln87ebkkxsr/NUS.pdf?rlkey=0kzml5htrvthlhvqa6m6w9ee2&e=1&dl=0
-      \endverb
-    \endentry
     \entry{hamalainen2023evaluatinga}{article}{}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=59d733562ff38e66f46fa0d24fd03276}{%
@@ -7013,55 +6374,6 @@
       \range{pages}{18}
       \verb{doi}
       \verb 10.1007/978-3-031-88045-2_4
-      \endverb
-    \endentry
-    \entry{imai2026leveraging}{article}{}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=3fb69a8c942c769b74775b484c82bbe9}{%
-           family={Imai},
-           familyi={I\bibinitperiod},
-           given={Kosuke},
-           giveni={K\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=7aad2ddf8217def3d1ece0931f3e7a29}{%
-           family={Nakamura},
-           familyi={N\bibinitperiod},
-           given={Kentaro},
-           giveni={K\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Proceedings of the National Academy of Sciences}%
-      }
-      \strng{namehash}{78041fd2022b92966203bb05d2f90553}
-      \strng{fullhash}{78041fd2022b92966203bb05d2f90553}
-      \strng{fullhashraw}{78041fd2022b92966203bb05d2f90553}
-      \strng{bibnamehash}{78041fd2022b92966203bb05d2f90553}
-      \strng{authorbibnamehash}{78041fd2022b92966203bb05d2f90553}
-      \strng{authornamehash}{78041fd2022b92966203bb05d2f90553}
-      \strng{authorfullhash}{78041fd2022b92966203bb05d2f90553}
-      \strng{authorfullhashraw}{78041fd2022b92966203bb05d2f90553}
-      \field{sortinit}{I}
-      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{day}{8}
-      \field{journaltitle}{Proceedings of the National Academy of Sciences}
-      \field{langid}{english}
-      \field{month}{9}
-      \field{number}{36}
-      \field{shortjournal}{Proc. Natl. Acad. Sci.}
-      \field{title}{Leveraging Generative {{AI}} for Causal Inference with Unstructured Data}
-      \field{volume}{123}
-      \field{year}{2026}
-      \field{dateera}{ce}
-      \field{pages}{e2530532123}
-      \range{pages}{-1}
-      \verb{doi}
-      \verb 10.1073/pnas.2530532123
       \endverb
     \endentry
     \entry{jiang2024balanced}{inbook}{}{}
@@ -7372,93 +6684,6 @@
       \field{title}{Replication Certification at Publication: Checkable by Anyone, Anywhere, in Seconds, Forever}
       \field{year}{2026}
     \endentry
-    \entry{kolluri2025finetuning}{inbook}{}{}
-      \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=78a0303b3ccee421ed43e942cd5ba890}{%
-           family={Kolluri},
-           familyi={K\bibinitperiod},
-           given={Akaash},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=c7cbdb887d43b9bd508c8ef6df4bcf81}{%
-           family={Wu},
-           familyi={W\bibinitperiod},
-           given={Shengguang},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=a6d2d4802375c9b3367011ada5e50822}{%
-           family={Park},
-           familyi={P\bibinitperiod},
-           given={Joon\bibnamedelima Sung},
-           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=bb1df70dce464605ddd9cf83485d8db1}{%
-           family={Bernstein},
-           familyi={B\bibinitperiod},
-           given={Michael\bibnamedelima S.},
-           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
-           givenun=0}}%
-      }
-      \name{editor}{4}{}{%
-        {{hash=a870e7c2218dedf8fa395067da42b08f}{%
-           family={Christodoulopoulos},
-           familyi={C\bibinitperiod},
-           given={Christos},
-           giveni={C\bibinitperiod}}}%
-        {{hash=12ef4925945d218592da34e0e46c4eb4}{%
-           family={Chakraborty},
-           familyi={C\bibinitperiod},
-           given={Tanmoy},
-           giveni={T\bibinitperiod}}}%
-        {{hash=90630365a12b98e0c6e6ae9e11f9927b}{%
-           family={Rose},
-           familyi={R\bibinitperiod},
-           given={Carolyn},
-           giveni={C\bibinitperiod}}}%
-        {{hash=ffb2927628843580b437b649623420ac}{%
-           family={Peng},
-           familyi={P\bibinitperiod},
-           given={Violet},
-           giveni={V\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Suzhou, China}%
-      }
-      \list{publisher}{1}{%
-        {Association for Computational Linguistics}%
-      }
-      \strng{namehash}{f99ff2f77b063d235f0c58a38e8d2b7a}
-      \strng{fullhash}{0c649bf98775f1efaa6613d3358b57af}
-      \strng{fullhashraw}{0c649bf98775f1efaa6613d3358b57af}
-      \strng{bibnamehash}{0c649bf98775f1efaa6613d3358b57af}
-      \strng{authorbibnamehash}{0c649bf98775f1efaa6613d3358b57af}
-      \strng{authornamehash}{f99ff2f77b063d235f0c58a38e8d2b7a}
-      \strng{authorfullhash}{0c649bf98775f1efaa6613d3358b57af}
-      \strng{authorfullhashraw}{0c649bf98775f1efaa6613d3358b57af}
-      \strng{editorbibnamehash}{272fa3789a8dc88d7f1dbc00f047ce47}
-      \strng{editornamehash}{7161839d6d65e78b31a4135336c8ebdb}
-      \strng{editorfullhash}{272fa3789a8dc88d7f1dbc00f047ce47}
-      \strng{editorfullhashraw}{272fa3789a8dc88d7f1dbc00f047ce47}
-      \field{sortinit}{K}
-      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Proceedings of the 2025 {{Conference}} on {{Empirical Methods}} in {{Natural Language Processing}}}
-      \field{eventtitle}{{{EMNLP}} 2025}
-      \field{isbn}{979-8-89176-332-6}
-      \field{month}{11}
-      \field{title}{Finetuning {{LLMs}} for {{Human Behavior Prediction}} in {{Social Science Experiments}}}
-      \field{year}{2025}
-      \field{dateera}{ce}
-      \field{pages}{30096\bibrangedash 30111}
-      \range{pages}{16}
-      \verb{doi}
-      \verb 10.18653/v1/2025.emnlp-main.1530
-      \endverb
-    \endentry
     \entry{li2024lminterview}{inbook}{}{}
       \name{author}{9}{}{%
         {{un=1,uniquepart=given,hash=44ba08c3888fd1c23af0474f48010d40}{%
@@ -7643,14 +6868,48 @@
       \verb 10.18653/v1/2024.acl-long.547
       \endverb
     \endentry
+    \entry{liang2026computational}{unpublished}{}{}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=036f862f5e7a81ff154852133b8117f5}{%
+           family={Liang},
+           familyi={L\bibinitperiod},
+           given={Hai},
+           giveni={H\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{036f862f5e7a81ff154852133b8117f5}
+      \strng{fullhash}{036f862f5e7a81ff154852133b8117f5}
+      \strng{fullhashraw}{036f862f5e7a81ff154852133b8117f5}
+      \strng{bibnamehash}{036f862f5e7a81ff154852133b8117f5}
+      \strng{authorbibnamehash}{036f862f5e7a81ff154852133b8117f5}
+      \strng{authornamehash}{036f862f5e7a81ff154852133b8117f5}
+      \strng{authorfullhash}{036f862f5e7a81ff154852133b8117f5}
+      \strng{authorfullhashraw}{036f862f5e7a81ff154852133b8117f5}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A {{Computational Approach}} to {{Human}} - {{AI Communication}}}
+      \field{venue}{Singapore}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb www.dropbox.com/scl/fi/nlq3k73akoln87ebkkxsr/NUS.pdf?rlkey=0kzml5htrvthlhvqa6m6w9ee2&e=1&dl=0
+      \endverb
+      \verb{url}
+      \verb www.dropbox.com/scl/fi/nlq3k73akoln87ebkkxsr/NUS.pdf?rlkey=0kzml5htrvthlhvqa6m6w9ee2&e=1&dl=0
+      \endverb
+    \endentry
     \entry{liang2024can}{article}{}{}
       \name{author}{12}{}{%
-        {{un=0,uniquepart=base,hash=c37e00c1ca8aafe56159ff4ab1f6e040}{%
+        {{un=1,uniquepart=given,hash=c37e00c1ca8aafe56159ff4ab1f6e040}{%
            family={Liang},
            familyi={L\bibinitperiod},
            given={Weixin},
            giveni={W\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
         {{un=0,uniquepart=base,hash=4a029fd7cea6a9c680cd411bbb8ad43c}{%
            family={Zhang},
            familyi={Z\bibinitperiod},
@@ -7733,7 +6992,6 @@
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{day}{25}
@@ -9952,56 +9210,6 @@
       \range{pages}{64}
       \verb{doi}
       \verb 10.18653/v1/2024.acl-long.782
-      \endverb
-    \endentry
-    \entry{zhao2025making}{article}{}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=915a6c16dfbc964adfb34e35f69a1d35}{%
-           family={Zhao},
-           familyi={Z\bibinitperiod},
-           given={Luming},
-           giveni={L\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=d60e001d742659e646a947ea71bee467}{%
-           family={Ye},
-           familyi={Y\bibinitperiod},
-           given={WeiMing},
-           giveni={W\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Routledge}%
-      }
-      \strng{namehash}{f99dbb6ec6b8c5097e4f911b40d2f0cc}
-      \strng{fullhash}{f99dbb6ec6b8c5097e4f911b40d2f0cc}
-      \strng{fullhashraw}{f99dbb6ec6b8c5097e4f911b40d2f0cc}
-      \strng{bibnamehash}{f99dbb6ec6b8c5097e4f911b40d2f0cc}
-      \strng{authorbibnamehash}{f99dbb6ec6b8c5097e4f911b40d2f0cc}
-      \strng{authornamehash}{f99dbb6ec6b8c5097e4f911b40d2f0cc}
-      \strng{authorfullhash}{f99dbb6ec6b8c5097e4f911b40d2f0cc}
-      \strng{authorfullhashraw}{f99dbb6ec6b8c5097e4f911b40d2f0cc}
-      \field{sortinit}{Z}
-      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{day}{4}
-      \field{issn}{1751-2786}
-      \field{journaltitle}{Journalism Practice}
-      \field{month}{3}
-      \field{number}{3}
-      \field{shortjournal}{Journal. Pract.}
-      \field{shorttitle}{Making {{Laughter}}}
-      \field{title}{Making {{Laughter}}: {{How Chinese Official Media Produce News}} on the {{Douyin}} ({{TikTok}})}
-      \field{volume}{19}
-      \field{year}{2025}
-      \field{dateera}{ce}
-      \field{pages}{665\bibrangedash 689}
-      \range{pages}{25}
-      \verb{doi}
-      \verb 10.1080/17512786.2023.2199720
       \endverb
     \endentry
     \entry{zheng2023judging}{online}{}{}
